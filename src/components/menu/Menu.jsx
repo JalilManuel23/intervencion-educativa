@@ -26,27 +26,3 @@ export const Menu = () => {
       </nav>
     )
 }
-
-/**
- * 
- *  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-            <div class="container">
-                <div className="col-3 d-flex justify-content-between">
-                    <img className="logos d-inline-block align-text-top" src={ imagenes.utd } alt="logo UTD" />
-                    <img className="logos d-inline-block align-text-top" src={ imagenes.enfermeria } alt="logo Enfermeria" />
-                    <img className="logos d-inline-block align-text-top" src={ imagenes.ujed } alt="logo UJED" />
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse d-flex justify-content-between"  id="navbarNavAltMarkup">
-                    <div class="navbar-nav mx-auto">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        <a class="nav-link" href="#">Taller 1</a>
-                        <a class="nav-link" href="#">Taller 2</a>
-                        <a class="nav-link" href="#">Taller 3</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
- */
