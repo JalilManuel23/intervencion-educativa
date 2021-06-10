@@ -1,0 +1,26 @@
+.img-opcion-menu {
+    max-width: 15%;
+    margin-right: 30px;
+}
+
+.opcion-menu {
+    background: rgb(179, 216, 142);
+    max-width: 80%;
+    border-radius: 10px;
+    margin: 20px 0;
+    color: #FFF;
+}
+
+.azul1 {
+    background: #004aad;;
+}
+
+.azul2 {
+    background: #246cce;
+}
+.azul3 {
+    background: #468fee;
+}
+.azul4 {
+    background: #6fa1e6;
+}
