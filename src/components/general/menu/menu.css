@@ -1,0 +1,7 @@
+.logos {
+    max-height: 60px;
+}
+
+.navbar {
+    box-shadow: var(--sombra);
+}

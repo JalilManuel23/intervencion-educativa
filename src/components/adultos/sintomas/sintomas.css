@@ -1,0 +1,14 @@
+.encabezado{ 
+    color: white;
+    border-radius: 10px;
+}
+
+.regresar-menu, .regresar-menu:hover {
+    color: rgb(107, 103, 103);
+    font-size: 1.5rem;
+}
+
+.regresar-menu:hover {
+    transform: scale(1.01);
+    color: #000000;
+}

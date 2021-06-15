@@ -20,6 +20,11 @@ footer {
     margin: 10px 0;
 }
 
+.opcion:hover {
+    transform: scale(1.01);
+    box-shadow: var(--sombra);
+}
+
 .encabezado{ 
     color: white;
     border-radius: 10px;

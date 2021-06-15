@@ -1,0 +1,46 @@
+.introduccion {
+    min-height: 95vh;
+    background-image: linear-gradient(140deg, #9f90f4 0, #6c6cd8 50%, #274bbd 100%);
+}
+
+.img-introduccion {
+    border-radius: 50%;
+    width: 45vh;
+    height: 40vh;
+    border: 1rem white solid;
+}
+
+.contenedor-intro {
+    background: #fff;
+    color: rgb(128, 126, 126);
+    width: 100%;
+    border-radius: 30px;
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.seguir-leyendo {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.seguir-leyendo:hover {
+    transform: scale(1.01);
+    color: #c1bbe6;
+}
+
+.div-img-intro {
+    width: 40%;
+}
+
+
+@media screen and (max-width: 1200px) {
+    /* .div-img-intro, .div-img-intro img {
+        display: none;
+    } */
+    
+    .contenedor-intro {
+        width: 100%;
+    }
+}

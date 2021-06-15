@@ -1,0 +1,28 @@
+.intro-ninos {
+    background: #ff97b0;
+    min-height: 100vh;
+}
+
+.tit-intro-ninos {
+    color: #FFF;
+    font-size: 5vmin;
+    text-align: center;
+}
+
+.info-intro-ninos {
+    padding-left: 8vmin;
+}
+
+.img-intro-ninos {
+    border-radius: 2rem;
+    max-width: 100%;
+}
+
+.intro-ninos2 {
+    background: #ffb053;
+    min-height: 100vh;
+}
+
+.img-sorprendido {
+    max-height: 50%;
+}

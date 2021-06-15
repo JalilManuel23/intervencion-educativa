@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import imagenes from '../../assets/images';
+import imagenes from '../../../assets/images';
 import './menu.css';
 
 export const Menu = () => {

@@ -4,11 +4,15 @@
 }
 
 .opcion-menu {
-    background: rgb(179, 216, 142);
     max-width: 80%;
     border-radius: 10px;
     margin: 20px 0;
     color: #FFF;
+}
+
+.opcion-menu:hover {
+    transform: scale(1.01);
+    box-shadow: var(--sombra);
 }
 
 .azul1 {
