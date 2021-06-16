@@ -22,9 +22,6 @@ export const IntroduccionParte2 = () => {
                 <p className="text-center mt-4">
                     <Link to="sintomas-ninos" className="seguir-leyendo">Seguir leyendo >></Link>
                 </p>
-
-
-
             </div>
         </div>
     )

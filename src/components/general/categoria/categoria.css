@@ -1,12 +1,3 @@
-.categoria {
-    min-height: 100vh;
-}
-
-footer {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='200' preserveAspectRatio='none' viewBox='0 0 1920 200'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1071%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c20 C 76.8%2c27.6 230.4%2c55 384%2c58 C 537.6%2c61 614.4%2c28.4 768%2c35 C 921.6%2c41.6 998.4%2c92.8 1152%2c91 C 1305.6%2c89.2 1382.4%2c30 1536%2c26 C 1689.6%2c22 1843.2%2c62 1920%2c71L1920 200L0 200z' fill='rgba(45%2c 109%2c 177%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c184 C 96%2c176.8 288%2c152 480%2c148 C 672%2c144 768%2c172.4 960%2c164 C 1152%2c155.6 1248%2c108.6 1440%2c106 C 1632%2c103.4 1824%2c142 1920%2c151L1920 200L0 200z' fill='rgba(73%2c 137%2c 206%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1071'%3e%3crect width='1920' height='200' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-    height: 200px;
-}
-
 .opcion {
     background: rgb(185, 72, 72);
     display: flex;
@@ -23,6 +14,7 @@ footer {
 .opcion:hover {
     transform: scale(1.01);
     box-shadow: var(--sombra);
+    cursor: pointer;
 }
 
 .encabezado{ 
