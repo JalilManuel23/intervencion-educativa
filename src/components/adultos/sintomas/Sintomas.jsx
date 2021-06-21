@@ -3,7 +3,16 @@ import './sintomas.css';
 import imagenes from '../../../assets/images';
 import { Link } from 'react-router-dom';
 
+import audioSintomas from "../../../assets/sounds/sintomas_adulto.mp3";
+import audioSintomasNino from "../../../assets/sounds/sintomas_nino.mp3";
+
+import { usePlayAudio } from "../../../hooks/usePlayAudio";
+
 export const Sintomas = ({ tipo, color }) => {
+
+    let audio = ( tipo == 'ninos' ) ? audioSintomasNino : audioSintomas;
+
+    usePlayAudio( audio );
 
     let imagen = ( tipo == 'ninos' ) ? <img src={ imagenes.sintomasNinos } alt="sintomas" /> : <img src={ imagenes.sintomas } alt="sintomas" />;
     
@@ -24,7 +33,7 @@ export const Sintomas = ({ tipo, color }) => {
 
                         { imagen }
                         
-                        <Link to="/categoria" className="regresar-menu mt-3"> Regresar al menú </Link>
+                        <Link to="/" className="regresar-menu mt-3"> Regresar al menú </Link>
                     </div>
                 </div>
             </div>

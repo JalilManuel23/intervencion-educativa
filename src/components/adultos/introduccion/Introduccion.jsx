@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './introduccion.css';
 import imagenes from '../../../assets/images';
 import { Link } from 'react-router-dom';
 
+import audioIntro from "../../../assets/sounds/adulto_informacion_covid_19.mp3";
+import { usePlayAudio } from "../../../hooks/usePlayAudio";
+
 export const Introduccion = () => {
+
+    usePlayAudio( audioIntro );
+
     return (
         <>
             <div className="introduccion">

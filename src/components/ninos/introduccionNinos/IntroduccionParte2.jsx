@@ -2,7 +2,13 @@ import React from 'react';
 import imagenes from '../../../assets/images';
 import { Link } from 'react-router-dom';
 
+import audioCovidNino from "../../../assets/sounds/familia_covid_2.mp3";
+import { usePlayAudio } from "../../../hooks/usePlayAudio";
+
 export const IntroduccionParte2 = () => {
+
+    usePlayAudio( audioCovidNino );
+
     return (
         <div className="intro-ninos2">
 

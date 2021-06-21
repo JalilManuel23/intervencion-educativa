@@ -3,7 +3,14 @@ import imagenes from '../../../assets/images';
 import { Link } from 'react-router-dom';
 import './introduccionNinos.css';
 
+import audioInfoNino from "../../../assets/sounds/informacion_covid_19_nino.mp3";
+import { usePlayAudio } from "../../../hooks/usePlayAudio";
+
+
 export const IntroduccionNinos = () => {
+
+    usePlayAudio( audioInfoNino );
+
     return (
         <div className="intro-ninos">
             <div className="container">
@@ -16,7 +23,7 @@ export const IntroduccionNinos = () => {
                         />
                     </div>
                     <div className="info-intro-ninos d-flex flex-column justify-content-between align-items-center col-12 col-md-6">
-                        <p className="tit-intro-ninos">¿Por qué hablan de algo que se llama CORONAVIRUS?</p>
+                        <p className="tit-intro-ninos">¿Por qué todos hablan de algo que se llama CORONAVIRUS?</p>
                         <p className="contenedor-intro">CORONAVIRUS es un grupo de virus que pueden hacer que las personas se sientan enfermas.</p>
                         <Link to="introduccion-ninos2" className="seguir-leyendo">Seguir leyendo>></Link>
                     </div>

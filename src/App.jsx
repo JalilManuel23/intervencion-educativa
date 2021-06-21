@@ -27,10 +27,6 @@ export const App = () => {
                     return <Inicio />
                 }}>
                 </Route>
-                <Route exact path="/categoria" render={() => {
-                    return <Categoria />
-                }}>
-                </Route>
                 <Route exact path="/menu-adultos" render={() => {
                     return <MenuAdultos />
                 }}>
