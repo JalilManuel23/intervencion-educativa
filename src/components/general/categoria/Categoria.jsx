@@ -3,7 +3,9 @@ import './categoria.css';
 import imagenes from '../../../assets/images';
 import { Redirect } from 'react-router-dom';
 
-export const Categoria = () => {
+import { setStopAudio } from '../../../hooks/setStopAudio';
+
+export const Categoria = ({ audio }) => {
     const [redirect, setRedirect] = useState(null);
 
     if (redirect != null) {
@@ -21,14 +23,22 @@ export const Categoria = () => {
 
                 <div className="row d-flex flex-column align-items-center flex-md-row justify-content-md-around mt-5">
                     <div className="opcion ninos col-4"
-                        onClick={() => setRedirect("/menu-ninos")}
+                        onClick={() => {
+                            setStopAudio( audio );
+                            setRedirect("/menu-ninos");
+                        }
+                    }
                         data-bs-dismiss="modal"
                     >
                         <img src={imagenes.nino} className="img-opcion"></img>
                         <p className="nombre-opcion">Niños</p>
                     </div>
                     <div className="opcion col-4"
-                        onClick={() => setRedirect("/menu-adultos")}
+                        onClick={() => {
+                            setStopAudio( audio );
+                            setRedirect("/menu-adultos")
+                        }
+                    }
                         data-bs-dismiss="modal"
                     >
                         <img src={imagenes.adulto} className="img-opcion"></img>

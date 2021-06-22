@@ -5,10 +5,11 @@ import { Link } from 'react-router-dom';
 
 import audioIntro from "../../../assets/sounds/adulto_informacion_covid_19.mp3";
 import { usePlayAudio } from "../../../hooks/usePlayAudio";
+import { setStopAudio } from '../../../hooks/setStopAudio';
 
 export const Introduccion = () => {
 
-    usePlayAudio( audioIntro );
+    let sound = usePlayAudio( audioIntro );
 
     return (
         <>
@@ -33,7 +34,16 @@ export const Introduccion = () => {
                                     </p>
                                 </div>
                             </div>
-                            <Link to="sintomas-adultos" className="seguir-leyendo">Seguir leyendo >></Link>
+                            <Link 
+                                to="sintomas-adultos" 
+                                className="seguir-leyendo"
+                                onClick={ () => {                                         
+                                        setStopAudio( sound );
+                                    }
+                                }
+                            >
+                                Seguir leyendo >>
+                            </Link>
                         </div>
                     </div>
                 </div>

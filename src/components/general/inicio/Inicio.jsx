@@ -30,10 +30,19 @@ export const Inicio = () => {
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button 
+                                    type="button" 
+                                    class="btn-close" 
+                                    data-bs-dismiss="modal" 
+                                    aria-label="Close" 
+                                    onClick={ () => {
+                                        audio.pause();
+                                        audio.currentTime = 0;
+                                    }}
+                                ></button>
                             </div>
                             <div class="modal-body">
-                                <Categoria />
+                                <Categoria audio={ audio } />
                             </div>
                         </div>
                     </div>

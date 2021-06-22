@@ -9,4 +9,6 @@ export const usePlayAudio = ( audio ) => {
             sound.play();
         }, 1000)
     }, []);
+
+    return sound;
 }

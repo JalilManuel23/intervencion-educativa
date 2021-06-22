@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 
 import audioCovidNino from "../../../assets/sounds/familia_covid_2.mp3";
 import { usePlayAudio } from "../../../hooks/usePlayAudio";
+import { setStopAudio } from '../../../hooks/setStopAudio';
 
 export const IntroduccionParte2 = () => {
 
-    usePlayAudio( audioCovidNino );
+    let sound = usePlayAudio( audioCovidNino );
 
     return (
         <div className="intro-ninos2">
@@ -26,7 +27,16 @@ export const IntroduccionParte2 = () => {
                 </div>
 
                 <p className="text-center mt-4">
-                    <Link to="sintomas-ninos" className="seguir-leyendo">Seguir leyendo >></Link>
+                    <Link 
+                        to="sintomas-ninos" 
+                        className="seguir-leyendo"
+                        onClick={ () => {                                         
+                                setStopAudio( sound );
+                            }
+                        }
+                    >
+                        Seguir leyendo >>
+                    </Link>
                 </p>
             </div>
         </div>

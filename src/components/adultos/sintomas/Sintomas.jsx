@@ -7,12 +7,13 @@ import audioSintomas from "../../../assets/sounds/sintomas_adulto.mp3";
 import audioSintomasNino from "../../../assets/sounds/sintomas_nino.mp3";
 
 import { usePlayAudio } from "../../../hooks/usePlayAudio";
+import { setStopAudio } from "../../../hooks/setStopAudio";
 
 export const Sintomas = ({ tipo, color }) => {
 
     let audio = ( tipo == 'ninos' ) ? audioSintomasNino : audioSintomas;
 
-    usePlayAudio( audio );
+    let sound = usePlayAudio( audio );
 
     let imagen = ( tipo == 'ninos' ) ? <img src={ imagenes.sintomasNinos } alt="sintomas" /> : <img src={ imagenes.sintomas } alt="sintomas" />;
     
@@ -33,7 +34,16 @@ export const Sintomas = ({ tipo, color }) => {
 
                         { imagen }
                         
-                        <Link to="/" className="regresar-menu mt-3"> Regresar al menú </Link>
+                        <Link 
+                            to="/" 
+                            className="regresar-menu mt-3"
+                            onClick={ () => {                                         
+                                    setStopAudio( sound );
+                                }
+                            }
+                        > 
+                            Regresar al menú 
+                        </Link>
                     </div>
                 </div>
             </div>
