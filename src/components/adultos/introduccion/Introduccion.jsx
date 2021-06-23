@@ -10,7 +10,7 @@ import { AudioPlayer } from '../../general/audioPlayer/AudioPlayer';
 
 export const Introduccion = () => {
 
-    let sound = usePlayAudio(audioIntro);
+    let sound = usePlayAudio( audioIntro );
 
     return (
         <>

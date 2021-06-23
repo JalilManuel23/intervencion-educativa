@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import audioCovidNino from "../../../assets/sounds/familia_covid_2.mp3";
 import { usePlayAudio } from "../../../hooks/usePlayAudio";
 import { setStopAudio } from '../../../hooks/setStopAudio';
+import { AudioPlayer } from '../../general/audioPlayer/AudioPlayer';
 
 export const IntroduccionParte2 = () => {
 
@@ -38,6 +39,7 @@ export const IntroduccionParte2 = () => {
                         Seguir leyendo >>
                     </Link>
                 </p>
+                <AudioPlayer sound={ sound } />
             </div>
         </div>
     )

@@ -6,6 +6,7 @@ import './introduccionNinos.css';
 import audioInfoNino from "../../../assets/sounds/informacion_covid_19_nino.mp3";
 import { usePlayAudio } from "../../../hooks/usePlayAudio";
 import { setStopAudio } from '../../../hooks/setStopAudio';
+import { AudioPlayer } from '../../general/audioPlayer/AudioPlayer';
 
 export const IntroduccionNinos = () => {
 
@@ -37,6 +38,7 @@ export const IntroduccionNinos = () => {
                         </Link>
                     </div>
                 </div>
+                <AudioPlayer sound={ sound } />
             </div>
         </div>
     )

@@ -6,7 +6,6 @@ import { RestartAudio } from './audioPlayerOptions/RestartAudio';
 import { CloseOpen } from './audioPlayerOptions/CloseOpen';
 
 export const AudioPlayer = ({ sound }) => {
-
     const [isPlaying, setIsPlaying] = useState( true );
     const [isOpen, setIsOpen] = useState( true );
 
@@ -20,8 +19,8 @@ export const AudioPlayer = ({ sound }) => {
             {
                 isOpen && 
                     <>
-                        <PlayPause isPlaying={ isPlaying } setIsPlaying={ setIsPlaying } />
-                        <RestartAudio />
+                        <PlayPause isPlaying={ isPlaying } setIsPlaying={ setIsPlaying } sound={ sound } />
+                        <RestartAudio isPlaying={ isPlaying } setIsPlaying={ setIsPlaying } sound={ sound } />
                     </>
             }
             <CloseOpen isOpen={ isOpen } setIsOpen={ setIsOpen } />

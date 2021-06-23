@@ -8,6 +8,7 @@ import audioSintomasNino from "../../../assets/sounds/sintomas_nino.mp3";
 
 import { usePlayAudio } from "../../../hooks/usePlayAudio";
 import { setStopAudio } from "../../../hooks/setStopAudio";
+import { AudioPlayer } from '../../general/audioPlayer/AudioPlayer';
 
 export const Sintomas = ({ tipo, color }) => {
 
@@ -46,6 +47,7 @@ export const Sintomas = ({ tipo, color }) => {
                         </Link>
                     </div>
                 </div>
+                <AudioPlayer sound={ sound } />
             </div>
         </div>
     )
