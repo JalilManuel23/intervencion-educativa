@@ -6,10 +6,11 @@ import { Link } from 'react-router-dom';
 import audioIntro from "../../../assets/sounds/adulto_informacion_covid_19.mp3";
 import { usePlayAudio } from "../../../hooks/usePlayAudio";
 import { setStopAudio } from '../../../hooks/setStopAudio';
+import { AudioPlayer } from '../../general/audioPlayer/AudioPlayer';
 
 export const Introduccion = () => {
 
-    let sound = usePlayAudio( audioIntro );
+    let sound = usePlayAudio(audioIntro);
 
     return (
         <>
@@ -34,18 +35,19 @@ export const Introduccion = () => {
                                     </p>
                                 </div>
                             </div>
-                            <Link 
-                                to="sintomas-adultos" 
+                            <Link
+                                to="sintomas-adultos"
                                 className="seguir-leyendo"
-                                onClick={ () => {                                         
-                                        setStopAudio( sound );
-                                    }
+                                onClick={() => {
+                                    setStopAudio(sound);
+                                }
                                 }
                             >
                                 Seguir leyendo >>
                             </Link>
                         </div>
                     </div>
+                    <AudioPlayer sound={ sound } />
                 </div>
             </div>
 

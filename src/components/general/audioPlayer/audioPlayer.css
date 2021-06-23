@@ -1,0 +1,19 @@
+.audio-player {
+    width: 200px;
+    height: 60px;
+    background: rgb(223, 224, 222);
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    border-radius: 20px;
+    box-shadow: var(--sombra);
+}
+
+.opcion-audio-player {
+    font-size: larger;
+    color: rgb(27, 78, 80);
+}
+
+.opcion-audio-player:hover {
+    cursor: pointer;
+}
