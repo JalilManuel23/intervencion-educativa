@@ -3,18 +3,26 @@ import './memorama.css';
 
 export const Memorama = () => {
     return (
-        <div className="memorama container d-flex flex-column align-items-center mt-5 p-4">
-            <h3>Título</h3>
-            <div className="cartas d-flex flex-wrap">
-                <div className="carta col-4 col-md-2">C</div>
-                <div className="carta col-4 col-md-2">C</div>
-                <div className="carta col-4 col-md-2">C</div>
-                <div className="carta col-3 col-md-2">C</div>
-                <div className="carta col-3 col-md-2">C</div>
-                <div className="carta col-3 col-md-2">C</div>
-                <div className="carta col-3 col-md-2">C</div>
-                <div className="carta col-3 col-md-2">C</div>
+        <div className="memorama container d-flex flex-column align-items-center mt-5">
+            <h1>Título</h1>
+            <div className="cartas d-flex flex-column align-items-center">
+                <div class="row-cartas mt-3">
+                    <div className="carta">d</div>
+                    <div className="carta">d</div>
+                    <div className="carta">d</div>
+                    <div className="carta">d</div>
+                    <div className="carta">d</div>
+                </div>
+                <div class="row-cartas mt-3">
+                    <div className="carta">d</div>
+                    <div className="carta">d</div>
+                    <div className="carta">d</div>
+                    <div className="carta">d</div>
+                    <div className="carta">d</div>
+                </div>
             </div>
+            <p className="mt-4">Puntos: 2</p>
+            <p>Tiempo: 2:05</p>
         </div>
     )
 }

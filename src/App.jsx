@@ -39,7 +39,7 @@ export const App = () => {
                 }}>
                 </Route>
                 {/* Ruta de prueba */}
-                <Route exact path="/memorama" component={<Memorama  />} />
+                <Route exact path="/memorama" component={ Memorama } />
             </Switch>
         </Router>
     )
