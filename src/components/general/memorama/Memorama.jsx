@@ -1,5 +1,7 @@
 import React from 'react';
 import './memorama.css';
+import { datosEjemplo } from './data/sample';
+import { Carta } from './Carta';
 
 export const Memorama = () => {
     return (
@@ -7,18 +9,13 @@ export const Memorama = () => {
             <h1>Título</h1>
             <div className="cartas d-flex flex-column align-items-center">
                 <div class="row-cartas mt-3">
-                    <div className="carta">d</div>
-                    <div className="carta">d</div>
-                    <div className="carta">d</div>
-                    <div className="carta">d</div>
-                    <div className="carta">d</div>
-                </div>
-                <div class="row-cartas mt-3">
-                    <div className="carta">d</div>
-                    <div className="carta">d</div>
-                    <div className="carta">d</div>
-                    <div className="carta">d</div>
-                    <div className="carta">d</div>
+                    {
+                        datosEjemplo.map( carta => {
+                            return(
+                                <Carta key={ carta.id } info={ carta } />
+                            )   
+                        })
+                    }
                 </div>
             </div>
             <p className="mt-4">Puntos: 2</p>
