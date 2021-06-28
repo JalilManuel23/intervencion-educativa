@@ -51,13 +51,13 @@ export const datosEjemplo = [
     },
     {
         "id": 8,
-        "idRespuesta": "D",
+        "idRespuesta": "E",
         "data": "Ejemplo 5",
         "img": imagenes.utd
     },
     {
         "id": 9,
-        "idRespuesta": "D",
+        "idRespuesta": "E",
         "data": "Ejemplo 5",
         "img": imagenes.utd
     }
