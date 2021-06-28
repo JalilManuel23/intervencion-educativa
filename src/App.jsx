@@ -17,36 +17,19 @@ import { Sintomas } from './components/adultos/sintomas/Sintomas';
 import { IntroduccionNinos } from './components/ninos/introduccionNinos/IntroduccionNinos';
 import { Menu } from './components/general/menu/Menu';
 import { IntroduccionParte2 } from './components/ninos/introduccionNinos/IntroduccionParte2';
+import { Memorama } from './components/general/memorama/Memorama';
 
 export const App = () => {
     return (
         <Router>
             <Menu />
             <Switch>
-                <Route exact path="/" render={() => {
-                    return <Inicio />
-                }}>
-                </Route>
-                <Route exact path="/menu-adultos" render={() => {
-                    return <MenuAdultos />
-                }}>
-                </Route>
-                <Route exact path="/menu-ninos" render={() => {
-                    return <MenuNinos />
-                }}>
-                </Route>
-                <Route exact path="/introduccion-adultos" render={() => {
-                    return <Introduccion />
-                }}>
-                </Route>
-                <Route exact path="/introduccion-ninos" render={() => {
-                    return <IntroduccionNinos />
-                }}>
-                </Route>
-                <Route exact path="/introduccion-ninos2" render={() => {
-                    return <IntroduccionParte2 />
-                }}>
-                </Route>
+                <Route exact path="/" component={ Inicio } />
+                <Route exact path="/menu-adultos" component={ MenuAdultos } />
+                <Route exact path="/menu-ninos" component={ MenuNinos } />
+                <Route exact path="/introduccion-adultos" component={ Introduccion } />
+                <Route exact path="/introduccion-ninos" component={ IntroduccionNinos } />
+                <Route exact path="/introduccion-ninos2" component={ IntroduccionParte2 } />
                 <Route exact path="/sintomas-adultos" render={() => {
                     return <Sintomas tipo="adultos" color="#0249ac" />
                 }}>
@@ -55,6 +38,8 @@ export const App = () => {
                     return <Sintomas tipo="ninos" color="#6fa1e6"  />
                 }}>
                 </Route>
+                {/* Ruta de prueba */}
+                <Route exact path="/memorama" component={<Memorama  />} />
             </Switch>
         </Router>
     )

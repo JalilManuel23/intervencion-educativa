@@ -23,7 +23,7 @@ export const Sintomas = ({ tipo, color }) => {
     }
 
     return (
-        <div className="categoria d-flex flex-column justify-content-between">
+        <div className="categoria d-flex flex-column justify-content-between animate__animated animate__fadeIn">
             <div className="container">
                 <div className="row ">
                     <div className="encabezado col-12 text-center mt-5" style={ colors }>

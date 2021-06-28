@@ -14,7 +14,7 @@ export const Introduccion = () => {
 
     return (
         <>
-            <div className="introduccion">
+            <div className="introduccion animate__animated animate__fadeIn">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3 d-none d-md-flex justify-content-center align-items-center div-img-intro">

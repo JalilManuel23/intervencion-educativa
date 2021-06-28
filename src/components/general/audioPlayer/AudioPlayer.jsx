@@ -9,7 +9,7 @@ export const AudioPlayer = ({ sound }) => {
     const [isPlaying, setIsPlaying] = useState( true );
     const [isOpen, setIsOpen] = useState( true );
 
-    let ancho = ( isOpen ) ? "200px" : "80px"
+    let ancho = ( isOpen ) ? "200px" : "80px";
 
     return (
         <div 

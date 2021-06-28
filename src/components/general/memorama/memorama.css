@@ -1,0 +1,12 @@
+.cartas {
+    width: 80%;
+}
+
+.carta {
+    border: 1px solid rgb(160, 146, 146);
+    min-height: 30vh;
+    padding: 20px;
+    margin: 1%;
+    box-shadow: var( --sombra );
+    /* width: 20%; */
+}

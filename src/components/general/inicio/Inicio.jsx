@@ -13,7 +13,7 @@ export const Inicio = () => {
     }
 
     return (
-        <div className="bg-inicio">
+        <div className="bg-inicio ">
             <div className="inicio container d-flex flex-column align-items-center justify-content-center">
                 <h1 className="titulo-inicio">Taller para la prevención del COVID-19</h1>
 

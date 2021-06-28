@@ -13,7 +13,7 @@ export const IntroduccionNinos = () => {
     let sound = usePlayAudio( audioInfoNino );
 
     return (
-        <div className="intro-ninos">
+        <div className="intro-ninos animate__animated animate__fadeIn">
             <div className="container">
                 <div className="row d-flex pt-5">
                     <div className="img-container-intro-ninos col-md-5 col-12 d-flex mb-5">
