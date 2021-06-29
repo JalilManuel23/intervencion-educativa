@@ -3,14 +3,15 @@ import './memorama.css';
 import construirBaraja from './utils/construirBaraja';
 import { Carta } from './Carta';
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 export const Memorama = () => {
 
     const [baraja, setBaraja] = useState( construirBaraja() );
     const [parejaSeleccionada, setParejaSeleccionada] = useState( [] );
     const [estaComparando, setEstaComparando] = useState( false );
-
-    const seleccionarCarta = ( carta ) => { 
+    
+    const seleccionarCarta  = ( carta )  =>  { 
         if(
             estaComparando || 
             carta.fueAdivinada ||
@@ -19,12 +20,14 @@ export const Memorama = () => {
             return;
         }
 
-        setParejaSeleccionada( [ ...parejaSeleccionada, carta ] );
+        setParejaSeleccionada( [ ...parejaSeleccionada , carta ] );
+    }
 
+    useEffect(() => {
         if( parejaSeleccionada.length === 2 ) {
             compararPareja( parejaSeleccionada );
         }
-    }
+    }, [ parejaSeleccionada ]);
 
     const compararPareja = ( pareja ) => { 
         setEstaComparando( true );
