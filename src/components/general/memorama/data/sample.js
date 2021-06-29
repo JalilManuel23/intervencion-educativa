@@ -2,63 +2,39 @@ import imagenes from '../../../../assets/images';
 
 export const datosEjemplo = [
     {
-        "id": 0,
-        "idRespuesta": "A",
-        "data": "Ejemplo 1",
-        "img": imagenes.utd
-    },
-    {
         "id": 1,
         "idRespuesta": "A",
         "data": "Ejemplo 1",
-        "img": imagenes.utd
+        "img": imagenes.utd,
+        "fueAdivinada": false
     },
     {
-        "id": 2,
+        "id": 20,
         "idRespuesta": "B",
         "data": "Ejemplo 2",
-        "img": imagenes.utd
+        "img": imagenes.utd,
+        "fueAdivinada": false
     },
     {
-        "id": 3,
-        "idRespuesta": "B",
-        "data": "Ejemplo 2",
-        "img": imagenes.utd
-    },
-    {
-        "id": 4,
+        "id": 40,
         "idRespuesta": "C",
         "data": "Ejemplo 3",
-        "img": imagenes.utd
+        "img": imagenes.utd,
+        "fueAdivinada": false
     },
     {
-        "id": 5,
-        "idRespuesta": "C",
-        "data": "Ejemplo 3",
-        "img": imagenes.utd
-    },
-    {
-        "id": 6,
+        "id": 60,
         "idRespuesta": "D",
         "data": "Ejemplo 4",
-        "img": imagenes.utd
+        "img": imagenes.utd,
+        "fueAdivinada": false
     },
+
     {
-        "id": 7,
-        "idRespuesta": "D",
-        "data": "Ejemplo 4",
-        "img": imagenes.utd
-    },
-    {
-        "id": 8,
+        "id": 80,
         "idRespuesta": "E",
         "data": "Ejemplo 5",
-        "img": imagenes.utd
-    },
-    {
-        "id": 9,
-        "idRespuesta": "E",
-        "data": "Ejemplo 5",
-        "img": imagenes.utd
+        "img": imagenes.utd,
+        "fueAdivinada": false
     }
 ]

@@ -1,29 +1,32 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
+import ReactCardFlip from 'react-card-flip';
 
-export const Carta = ({ info, setSelectedCards, isActive }) => {
-    let { idRespuesta, data, img } = info;
+export const Carta = (
+		{ 
+			info,
+			estaSiendoComparada,
+			seleccionarCarta,
+			fueAdivinada,
+		}
+	) => {
 
-    const [active, setActive] = useState( isActive );
+	let { data, img } = info;
 
-    // console.log( active );
+	return (
+		<div onClick={ seleccionarCarta }>
+			<ReactCardFlip isFlipped={ estaSiendoComparada || fueAdivinada } flipDirection="vertical">
+				<div className="carta"></div>
+			
 
-    return (
-        <div 
-            className="carta"    
-            onClick={ () => {
-                setActive( !active );
-                setSelectedCards( selectedCards => [ ...selectedCards, idRespuesta ]);
-            }}        
-        >
-            {
-                ( active ) ?
-                    <div className="info animate__animated animate__zoomIn d-flex flex-column justify-content-center align-items-center">
-                        { data }
-                        <img src={ img } className="img-carta" alt={ data }/>
-                    </div>  
-                : console.log('voltear cartas')
-            }
-        </div>
-    );
+				<div
+					className="carta"
+				>
+					<div className="info d-flex flex-column justify-content-center align-items-center">
+						{data}
+						<img src={img} className="img-carta" alt={data} />
+					</div>
+				</div>
+			</ReactCardFlip>
+		</div>
+	);
 }
