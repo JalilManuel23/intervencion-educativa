@@ -5,6 +5,12 @@ import { Carta } from './Carta';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Swal from 'sweetalert2';
+import { playAudio } from "../../../hooks/playAudio";
+import audioSeleccionar from "../../../assets/sounds/seleccionar_carta.mp3";
+import audioMezclar from "../../../assets/sounds/mezclar.mp3";
+import audioMal from "../../../assets/sounds/mal.mp3";
+import audioBien from "../../../assets/sounds/bien.mp3";
+import audioGanar from "../../../assets/sounds/ganar.mp3";
 
 export const Memorama = () => {
 
@@ -13,7 +19,13 @@ export const Memorama = () => {
     const [estaComparando, setEstaComparando] = useState(false);
     const [numeroDeIntentos, setNumeroDeIntentos] = useState(0);
 
+    const [aciertos, setAciertos] = useState(0);
+    const [errores, setErrores] = useState(0);
+
     const seleccionarCarta = (carta) => {
+
+        playAudio( audioSeleccionar );
+
         if (
             estaComparando ||
             carta.fueAdivinada ||
@@ -39,13 +51,19 @@ export const Memorama = () => {
             let newBaraja = baraja;
 
             if (carta1.data === carta2.data) {
+                playAudio( audioBien );
+                setAciertos(aciertos+1)
                 newBaraja = newBaraja.map((carta) => {
                     if (carta.data !== carta1.data) {
                         return carta;
                     }
 
                     return { ...carta, fueAdivinada: true };
+
                 })
+            } else {
+                playAudio( audioMal );
+                setErrores(errores+1)
             }
 
             verificarSiHayGanador( newBaraja );
@@ -61,13 +79,13 @@ export const Memorama = () => {
         if (
             baraja.filter((carta) => !carta.fueAdivinada).length === 0
         ) {
+            playAudio( audioGanar );
             Swal.fire({
                 title: `¡Has ganado en ${ numeroDeIntentos } intentos!`,
                 showDenyButton: true,
                 confirmButtonText: `Jugar de nuevo`,
                 denyButtonText: `Cerrar`,
             }).then((result) => {
-                /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
                     reiniciarJuego();
                 } else if (result.isDenied) {
@@ -78,10 +96,13 @@ export const Memorama = () => {
     }
 
     const reiniciarJuego = () => { 
+        playAudio( audioMezclar );
         setBaraja(construirBaraja());
         setParejaSeleccionada([]);
         setEstaComparando(false);
         setNumeroDeIntentos(0);
+        setAciertos(0)
+        setErrores(0)
     }
 
     return (
@@ -104,6 +125,18 @@ export const Memorama = () => {
                     })
                 }
             </div>
+            
+                <div className="opciones d-flex justify-content-around align-items-center my-4">
+                    <div className="bg-success text-white p-2 puntos"> Aciertos: {aciertos}  </div>
+                    <div className="bg-danger text-white p-2 puntos"> Errores: {errores} </div>
+                    <button className="btn btn-outline-dark btn-outline-primary" onClick = { () => {reiniciarJuego() }}>
+                        <span> Reiniciar</span> 
+                    </button>   
+                </div>
+            
+
+ 
+        
         </div>
     )
 }

@@ -34,8 +34,13 @@
     max-width: 100%;
 }
 
-.d-none {
-    display: none;
+.opciones {
+    width: 40%;
+}
+
+.puntos {
+    font-size: 1rem;
+    border-radius: 10px;
 }
 
 @media (max-width: 560px) {
