@@ -85,11 +85,12 @@ export const Memorama = () => {
                 showDenyButton: true,
                 confirmButtonText: `Jugar de nuevo`,
                 denyButtonText: `Cerrar`,
+                icon: 'success'
             }).then((result) => {
                 if (result.isConfirmed) {
                     reiniciarJuego();
                 } else if (result.isDenied) {
-                    Swal.fire('Changes are not saved', '', 'info')
+                    Swal.fire('¡Gracias por jugar!', '', '');
                 }
             })
         }
@@ -107,7 +108,7 @@ export const Memorama = () => {
 
     return (
         <div className="memorama container d-flex flex-column align-items-center mt-5">
-            <h1>Título</h1>
+            <h1>Memorama "Sintomas COVID-19"</h1>
 
             <div class="row-cartas mt-3">
                 {

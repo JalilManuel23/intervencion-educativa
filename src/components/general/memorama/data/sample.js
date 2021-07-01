@@ -2,39 +2,24 @@ import imagenes from '../../../../assets/images';
 
 export const datosEjemplo = [
     {
-        "id": 1,
-        "idRespuesta": "A",
-        "data": "Ejemplo 1",
-        "img": imagenes.utd,
-        "fueAdivinada": false
+        "data": "Tos",
+        "img": imagenes.tos
     },
     {
-        "id": 20,
-        "idRespuesta": "B",
-        "data": "Ejemplo 2",
-        "img": imagenes.utd,
-        "fueAdivinada": false
+        "data": "Fatiga",
+        "img": imagenes.fatiga
     },
     {
-        "id": 40,
-        "idRespuesta": "C",
-        "data": "Ejemplo 3",
-        "img": imagenes.utd,
-        "fueAdivinada": false
+        "data": "Dolor muscular",
+        "img": imagenes.dolor
     },
     {
-        "id": 60,
-        "idRespuesta": "D",
-        "data": "Ejemplo 4",
-        "img": imagenes.utd,
-        "fueAdivinada": false
+        "data": "Fiebre",
+        "img": imagenes.fiebre
     },
 
     {
-        "id": 80,
-        "idRespuesta": "E",
-        "data": "Ejemplo 5",
-        "img": imagenes.utd,
-        "fueAdivinada": false
+        "data": "Dolor de cabeza",
+        "img": imagenes.dolorCabeza
     }
 ]

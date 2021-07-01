@@ -13,6 +13,12 @@ import nino from './images/niño.png';
 import adulto from './images/adulto.jpg';
 import sintomasNinos from './images/sintomas_niños.png';
 
+import tos from './images/memorama-sintomas/tos.png';
+import fatiga from './images/memorama-sintomas/fatiga.png';
+import dolor from './images/memorama-sintomas/dolor.png';
+import fiebre from './images/memorama-sintomas/fiebre.png';
+import dolorCabeza from './images/memorama-sintomas/dolor-de-cabeza.png';
+
 export default {
     "utd": utd,
     "enfermeria": enfermeria,
@@ -27,5 +33,11 @@ export default {
     "nina": nina,
     "sintomasNinos": sintomasNinos,
     "nino": nino,
-    "adulto": adulto
+    "adulto": adulto,
+
+    "tos": tos,
+    "fatiga": fatiga,
+    "dolor": dolor,
+    "fiebre": fiebre,
+    "dolorCabeza": dolorCabeza,
 }
