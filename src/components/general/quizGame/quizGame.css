@@ -2,11 +2,12 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    text-transform: uppercase;
 }
 
 .tiempo-imgs {
     height: 60vh;
-    background: rgb(51, 67, 139);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask12941%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='rgba(83%2c 57%2c 105%2c 1)'%3e%3c/rect%3e%3crect width='563.68' height='563.68' clip-path='url(%26quot%3b%23SvgjsClipPath12942%26quot%3b)' x='734.36' y='-18.16' fill='url(%23SvgjsPattern12943)' transform='rotate(77.45%2c 1016.2%2c 263.68)'%3e%3c/rect%3e%3crect width='336' height='336' clip-path='url(%26quot%3b%23SvgjsClipPath12944%26quot%3b)' x='326.22' y='474.75' fill='url(%23SvgjsPattern12945)' transform='rotate(245.7%2c 494.22%2c 642.75)'%3e%3c/rect%3e%3cpath d='M863.9 527.6 L676.48 493.31000000000006L901.6288248156259 379.0161751843743z' stroke='rgba(255%2c 255%2c 255%2c 1)' stroke-width='1' stroke-dasharray='3%2c 3'%3e%3c/path%3e%3cpath d='M1567.12 120.24L1554.46 122.23 1549.75 110.32 1537.1 112.31 1532.38 100.4 1519.73 102.38 1515.02 90.48' stroke='rgba(255%2c 255%2c 255%2c 1)' stroke-width='1' stroke-dasharray='2%2c 2'%3e%3c/path%3e%3cpath d='M873.68 943.57L886.3 945.73 886.97 958.52 899.59 960.68 900.26 973.46 912.88 975.62 913.55 988.41' stroke='rgba(255%2c 255%2c 255%2c 1)' stroke-width='1' stroke-dasharray='3%2c 3'%3e%3c/path%3e%3ccircle r='123.34727080275906' cx='629.37' cy='734.96' stroke='rgba(110%2c 188%2c 182%2c 1)' stroke-width='1.92' stroke-dasharray='3%2c 2'%3e%3c/circle%3e%3crect width='696' height='696' clip-path='url(%26quot%3b%23SvgjsClipPath12946%26quot%3b)' x='194.91' y='-0.3' fill='url(%23SvgjsPattern12947)' transform='rotate(167.34%2c 542.91%2c 347.7)'%3e%3c/rect%3e%3crect width='348.32' height='348.32' clip-path='url(%26quot%3b%23SvgjsClipPath12948%26quot%3b)' x='953.98' y='387.84' fill='url(%23SvgjsPattern12949)' transform='rotate(126.39%2c 1128.14%2c 562)'%3e%3c/rect%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask12941'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cpattern x='0' y='0' width='563.68' height='10.84' patternUnits='userSpaceOnUse' id='SvgjsPattern12943'%3e%3crect width='563.68' height='5.42' x='0' y='0' fill='rgba(238%2c 73%2c 72%2c 1)'%3e%3c/rect%3e%3crect width='563.68' height='5.42' x='0' y='5.42' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/rect%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath12942'%3e%3ccircle r='140.92' cx='1016.2' cy='263.68'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='336' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern12945'%3e%3crect width='336' height='3' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3crect width='336' height='3' x='0' y='3' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/rect%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath12944'%3e%3ccircle r='84' cx='494.22' cy='642.75'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='696' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern12947'%3e%3crect width='696' height='3' x='0' y='0' fill='rgba(110%2c 188%2c 182%2c 1)'%3e%3c/rect%3e%3crect width='696' height='3' x='0' y='3' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/rect%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath12946'%3e%3ccircle r='174' cx='542.91' cy='347.7'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6.22' height='6.22' patternUnits='userSpaceOnUse' id='SvgjsPattern12949'%3e%3cpath d='M0 6.22L3.11 0L6.22 6.22' stroke='rgba(110%2c 188%2c 182%2c 1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath12948'%3e%3ccircle r='87.08' cx='1128.14' cy='562'%3e%3c/circle%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,6 +25,7 @@
     justify-content: space-around;
     background: #FFF;
     border-radius: 5px;
+    text-transform: capitalize;
 }
 
 .aciertos-mal p {
@@ -32,14 +34,14 @@
 
 .preguntas-container {
     height: 40vh;
-    background: rgb(160, 49, 49);
+    background: #c83e42;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
 }
 
 .preguntas-titulo {
-    background: rgb(233, 159, 159);
+    background: #ef4a4e;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +60,7 @@ h4 {
 }
 
 .secc-preguntas {
-    background: rgb(129, 66, 66);
+    background: #eae0d4;
     border-radius: 20px;
     padding: 2vmin;
 }
@@ -85,6 +87,6 @@ h4 {
 
 .respuesta:hover {
     cursor: pointer;
-    filter: brightness(85%);
-    background: #FFF;
+    /* filter: brightness(85%); */
+    background: #ddcebf;
 }
