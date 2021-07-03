@@ -1,0 +1,90 @@
+.juego-preguntas {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.tiempo-imgs {
+    height: 60vh;
+    background: rgb(51, 67, 139);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tiempo {
+    font-family: 'Digital';
+    font-size: 5rem;
+    color: #FFF;
+}
+
+.aciertos-mal {
+    display: flex;
+    justify-content: space-around;
+    background: #FFF;
+    border-radius: 5px;
+}
+
+.aciertos-mal p {
+    margin: 10px;
+}
+
+.preguntas-container {
+    height: 40vh;
+    background: rgb(160, 49, 49);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.preguntas-titulo {
+    background: rgb(233, 159, 159);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vmin;
+    box-shadow: var(--sombra);
+}
+
+.preguntas-titulo h4 {
+    font-weight: bold;
+    color: #FFF;
+}
+
+h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.secc-preguntas {
+    background: rgb(129, 66, 66);
+    border-radius: 20px;
+    padding: 2vmin;
+}
+
+.container-preguntas {
+    height: 80%;
+}
+
+.pregunta {
+    text-align: center;
+    padding: 2vmin 1vmin 1vmin 1vmin;
+}
+
+.respuestas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.respuesta {
+    width: 50%;
+    text-align: center;
+    padding: 1vmin;
+}
+
+.respuesta:hover {
+    cursor: pointer;
+    filter: brightness(85%);
+    background: #FFF;
+}

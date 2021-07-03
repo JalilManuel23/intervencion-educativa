@@ -2,13 +2,9 @@ import React from 'react';
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link,
-    useRouteMatch,
-    useParams
+    Route
 } from "react-router-dom";
 
-import { Categoria } from './components/general/categoria/Categoria';
 import { Inicio } from './components/general/inicio/Inicio';
 import { Introduccion } from './components/adultos/introduccion/Introduccion';
 import { MenuAdultos } from './components/adultos/menuAdultos/MenuAdultos';
@@ -18,6 +14,7 @@ import { IntroduccionNinos } from './components/ninos/introduccionNinos/Introduc
 import { Menu } from './components/general/menu/Menu';
 import { IntroduccionParte2 } from './components/ninos/introduccionNinos/IntroduccionParte2';
 import { Memorama } from './components/general/memorama/Memorama';
+import { QuizGame } from './components/general/quizGame/QuizGame';
 
 export const App = () => {
     return (
@@ -38,8 +35,9 @@ export const App = () => {
                     return <Sintomas tipo="ninos" color="#6fa1e6"  />
                 }}>
                 </Route>
-                {/* Ruta de prueba */}
+                {/* Rutas de prueba */}
                 <Route exact path="/memorama" component={ Memorama } />
+                <Route exact path="/quiz" component={ QuizGame } />
             </Switch>
         </Router>
     )

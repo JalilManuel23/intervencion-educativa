@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Digital';
+    src: url('./assets/fonts/DS-DIGIB.TTF')  format('truetype')
+}
+
 :root {
     --sombra: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
