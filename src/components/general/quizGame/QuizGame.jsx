@@ -1,5 +1,6 @@
 import React from 'react';
 import './quizGame.css';
+import { PreguntaRespuestas } from './PreguntaRespuestas';
 
 export const QuizGame = () => {
     return (
@@ -17,13 +18,7 @@ export const QuizGame = () => {
             <div className="preguntas-container">
                 <div className="container secc-preguntas">
                     <div className="container-preguntas">
-                        <h5 className="pregunta">¿Pregunta ....?</h5>
-                        <div className="respuestas">
-                            <p className="respuesta">Respuesta 1</p>
-                            <p className="respuesta">Respuesta 2</p>
-                            <p className="respuesta">Respuesta 3</p>
-                            <p className="respuesta">Respuesta 4</p>
-                        </div>
+                        <PreguntaRespuestas />
                     </div>
                 </div>
             </div>
