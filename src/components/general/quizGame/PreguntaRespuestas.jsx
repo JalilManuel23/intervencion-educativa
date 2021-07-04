@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { questionsSample } from "./data/sample";
-import { juegoFinalizado } from './juegoFinalizado';
+import { juegoFinalizado } from './utils/juegoFinalizado';
+import { bienMal } from './utils/bienMal';
+
+import { playAudio } from "../../../hooks/playAudio";
+import audioBien from "../../../assets/sounds/bien.mp3";
+import audioMal from "../../../assets/sounds/mal.mp3";
+import audioGanar from "../../../assets/sounds/ganar.mp3";
 
 export const PreguntaRespuestas = (
     { 
@@ -8,27 +14,32 @@ export const PreguntaRespuestas = (
         setNumPregunta,
         setAciertos,
         setMal,
-        reiniciarCronometro 
+        reiniciarCronometro,
+        reiniciarJuego 
     }
 ) => {
-    
     let { pregunta, respuestas } = questionsSample[ numPregunta ];
 
     const verificarRespuesta = ( key ) => { 
         if( ( numPregunta + 1 ) < questionsSample.length ) {
 
-            ( key === 'correcta' ) 
-                ?
-                    setAciertos( aciertos => aciertos + 1 )
-                :
-                    setMal( mal => mal + 1 )
+            if( key === 'correcta' ) {
+                setAciertos( aciertos => aciertos + 1 );
+                bienMal( true );
+                playAudio( audioBien );
+            } else {
+                setMal( mal => mal + 1 );
+                bienMal( false );
+                playAudio( audioMal );
+            }
 
-            setTimeout(() => {
-                reiniciarCronometro();
-                setNumPregunta( numPregunta + 1 );
-            }, 1000);
+            reiniciarCronometro();
+            setNumPregunta( numPregunta + 1 );
+            // setTimeout(() => {
+            // }, 1000);
         } else {
-            juegoFinalizado();
+            playAudio( audioGanar );
+            juegoFinalizado( reiniciarJuego() );
         }
     }
 

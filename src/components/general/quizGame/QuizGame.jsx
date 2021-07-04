@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './quizGame.css';
 import { PreguntaRespuestas } from './PreguntaRespuestas';
 import { questionsSample } from "./data/sample";
-import { juegoFinalizado } from './juegoFinalizado';
+import { juegoFinalizado } from './utils/juegoFinalizado';
 
 export const QuizGame = () => {
-    let duracion = 60;
+    let duracion = 10;
     let cantidadPreguntas = questionsSample.length;
 
     const [cronometro, setCronometro] = useState( duracion );
@@ -21,15 +21,23 @@ export const QuizGame = () => {
         } else {
             if(( numPregunta + 1 ) < cantidadPreguntas ) {
                 setNumPregunta( numPregunta + 1 );
-                setCronometro( duracion );    
+                setCronometro( duracion );   
             } else {
                 juegoFinalizado();
             };
+            setMal( mal + 1 );
         }
     }, [ cronometro ]);
 
     const reiniciarCronometro = () => { 
         setCronometro( duracion );
+    }
+
+    const reiniciarJuego = () => { 
+        setCronometro( duracion );
+        setNumPregunta( 0 );
+        setAciertos( 0 );
+        setMal( 0 );
     }
 
     return (
@@ -53,6 +61,7 @@ export const QuizGame = () => {
                             setAciertos={ setAciertos }
                             setMal={ setMal }
                             reiniciarCronometro={ reiniciarCronometro }
+                            reiniciarJuego={ reiniciarJuego }
                         />
                     </div>
                 </div>
