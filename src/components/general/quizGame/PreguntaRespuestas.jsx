@@ -1,37 +1,38 @@
 import React, { useState } from 'react';
-import Swal from 'sweetalert2';
 import { questionsSample } from "./data/sample";
+import { juegoFinalizado } from './juegoFinalizado';
 
-export const PreguntaRespuestas = () => {
-    const [numPregunta, setNumPregunta] = useState( 0 );
+export const PreguntaRespuestas = (
+    { 
+        numPregunta, 
+        setNumPregunta,
+        setAciertos,
+        setMal,
+        reiniciarCronometro 
+    }
+) => {
     
     let { pregunta, respuestas } = questionsSample[ numPregunta ];
 
-    const verificarRespuesta = () => { 
+    const verificarRespuesta = ( key ) => { 
         if( ( numPregunta + 1 ) < questionsSample.length ) {
 
-            
+            ( key === 'correcta' ) 
+                ?
+                    setAciertos( aciertos => aciertos + 1 )
+                :
+                    setMal( mal => mal + 1 )
 
             setTimeout(() => {
+                reiniciarCronometro();
                 setNumPregunta( numPregunta + 1 );
             }, 1000);
         } else {
-            Swal.fire({
-                title: `¡Has terminado el juego!`,
-                showDenyButton: true,
-                confirmButtonText: `Jugar de nuevo`,
-                denyButtonText: `Cerrar`,
-                icon: 'success'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    // reiniciarJuego();
-                } else if (result.isDenied) {
-                    Swal.fire('¡Gracias por jugar!', '', '');
-                }
-            })
+            juegoFinalizado();
         }
     }
 
+    
 
     return (
         <>
@@ -42,8 +43,8 @@ export const PreguntaRespuestas = () => {
                         return(
                             <p 
                                 key={ key } 
-                                className="respuesta"
-                                onClick={ () => verificarRespuesta() }
+                                className='respuesta'
+                                onClick={ () => verificarRespuesta( key ) }
                             >
                                 { respuestas[ key ] }
                             </p>
