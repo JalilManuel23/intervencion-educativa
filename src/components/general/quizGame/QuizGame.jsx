@@ -14,6 +14,7 @@ export const QuizGame = () => {
     const [mal, setMal] = useState( 0 );
 
     useEffect(() => {
+        console.log( cronometro );
         if( cronometro > 0 ){
             setTimeout( () => {
                 setCronometro( cronometro - 1 );
@@ -28,17 +29,6 @@ export const QuizGame = () => {
             setMal( mal + 1 );
         }
     }, [ cronometro ]);
-
-    const reiniciarCronometro = () => { 
-        setCronometro( duracion );
-    }
-
-    const reiniciarJuego = () => { 
-        setCronometro( duracion );
-        setNumPregunta( 0 );
-        setAciertos( 0 );
-        setMal( 0 );
-    }
 
     return (
         <div className="juego-preguntas">
@@ -60,8 +50,8 @@ export const QuizGame = () => {
                             setNumPregunta={ setNumPregunta }
                             setAciertos={ setAciertos }
                             setMal={ setMal }
-                            reiniciarCronometro={ reiniciarCronometro }
-                            reiniciarJuego={ reiniciarJuego }
+                            setCronometro={ setCronometro }
+                            duracion={ duracion }
                         />
                     </div>
                 </div>

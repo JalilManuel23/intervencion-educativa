@@ -1,0 +1,19 @@
+.opcion-menu-seleccion {
+    background: #86e173;
+    padding: 0.8rem;
+    border-radius: 20px;
+    color: #FFF;
+}
+
+.opcion-menu-seleccion:hover {
+    transform: scale(1.01);
+    box-shadow: var(--sombra);
+}
+
+.img-opcion-seleccion {
+    max-width: 100px;
+}
+
+.texto-opcion-menu {
+    font-size: 1.4rem;
+}

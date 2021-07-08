@@ -13,6 +13,14 @@ import nino from './images/niño.png';
 import adulto from './images/adulto.jpg';
 import sintomasNinos from './images/sintomas_niños.png';
 
+import lavadoManos from './images/taller1/lavado-de-manos.png';
+import uno from './images/taller1/1.png';
+import dos from './images/taller1/2.png';
+import tres from './images/taller1/3.png';
+import cuatro from './images/taller1/4.png';
+import cinco from './images/taller1/5.png';
+import seis from './images/taller1/6.png';
+
 import tos from './images/memorama-sintomas/tos.png';
 import fatiga from './images/memorama-sintomas/fatiga.png';
 import dolor from './images/memorama-sintomas/dolor.png';
@@ -34,6 +42,13 @@ export default {
     "sintomasNinos": sintomasNinos,
     "nino": nino,
     "adulto": adulto,
+    "lavadoManos": lavadoManos,
+    "uno": uno,
+    "dos": dos,
+    "tres": tres,
+    "cuatro": cuatro,
+    "cinco": cinco,
+    "seis": seis,
 
     "tos": tos,
     "fatiga": fatiga,

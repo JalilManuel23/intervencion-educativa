@@ -14,8 +14,8 @@ export const PreguntaRespuestas = (
         setNumPregunta,
         setAciertos,
         setMal,
-        reiniciarCronometro,
-        reiniciarJuego 
+        setCronometro,
+        duracion
     }
 ) => {
     let { pregunta, respuestas } = questionsSample[ numPregunta ];
@@ -33,13 +33,13 @@ export const PreguntaRespuestas = (
                 playAudio( audioMal );
             }
 
-            reiniciarCronometro();
+            setCronometro( duracion );
             setNumPregunta( numPregunta + 1 );
             // setTimeout(() => {
             // }, 1000);
         } else {
             playAudio( audioGanar );
-            juegoFinalizado( reiniciarJuego() );
+            juegoFinalizado();
         }
     }
 
