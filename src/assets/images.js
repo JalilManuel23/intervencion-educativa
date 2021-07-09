@@ -20,6 +20,9 @@ import tres from './images/taller1/3.png';
 import cuatro from './images/taller1/4.png';
 import cinco from './images/taller1/5.png';
 import seis from './images/taller1/6.png';
+import lavadoDeManosDos from './images/taller1/lavado-de-manos-2.png';
+import historia from './images/taller1/je.png';
+import diaLavado from './images/taller1/dia-lavado.png';
 
 import tos from './images/memorama-sintomas/tos.png';
 import fatiga from './images/memorama-sintomas/fatiga.png';
@@ -49,6 +52,10 @@ export default {
     "cuatro": cuatro,
     "cinco": cinco,
     "seis": seis,
+    "lavadoDeManosDos": lavadoDeManosDos,
+    "historia": historia,
+    "diaLavado": diaLavado,
+
 
     "tos": tos,
     "fatiga": fatiga,

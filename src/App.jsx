@@ -18,6 +18,11 @@ import { QuizGame } from './components/general/quizGame/QuizGame';
 import { PuzzleGame } from './components/general/puzzle/PuzzleGame'
 import { LavadoManos } from './components/adultos/lavadoManos/LavadoManos';
 import { OpcionesLavadoManos } from './components/adultos/lavadoManos/OpcionesLavadoManos';
+import { IntroduccionLavadoManos } from './components/adultos/lavadoManos/IntroduccionLavadoManos';
+import { Historia } from './components/adultos/lavadoManos/Historia';
+import { PresentacionVideo1 } from './components/adultos/lavadoManos/PresentacionVideo1';
+import { Video1 } from './components/adultos/lavadoManos/Video1';
+import { DiaLavadoManos } from './components/adultos/lavadoManos/DiaLavadoManos';
 
 export const App = () => {
     return (
@@ -32,8 +37,13 @@ export const App = () => {
                 <Route exact path="/introduccion-ninos2" component={ IntroduccionParte2 } />
 
                 {/* Taller 1 de adultos */}
-                <Route exact path="/presentacion-lavado-manos" component={ LavadoManos } />
-                <Route exact path="/opciones-lavado-manos" component={ OpcionesLavadoManos } />
+                <Route exact path="/adultos/lavado-manos/presentacion" component={ LavadoManos } />
+                <Route exact path="/adultos/lavado-manos/opciones" component={ OpcionesLavadoManos } />
+                <Route exact path="/adultos/lavado-manos/introduccion" component={ IntroduccionLavadoManos } />
+                <Route exact path="/adultos/lavado-manos/historia" component={ Historia } />
+                <Route exact path="/adultos/lavado-manos/presentacion-video1" component={ PresentacionVideo1 } />
+                <Route exact path="/adultos/lavado-manos/video1" component={ Video1 } />
+                <Route exact path="/adultos/lavado-manos/dia-lavado-manos" component={ DiaLavadoManos } />
 
 
                 <Route exact path="/sintomas-adultos" render={() => {
