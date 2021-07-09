@@ -23,6 +23,10 @@ import seis from './images/taller1/6.png';
 import lavadoDeManosDos from './images/taller1/lavado-de-manos-2.png';
 import historia from './images/taller1/je.png';
 import diaLavado from './images/taller1/dia-lavado.png';
+import doctora from './images/taller1/dra.png';
+import joven from './images/taller1/joven.png';
+import agua from './images/taller1/agua.jpg';
+import jabon from './images/taller1/jabon.png';
 
 import tos from './images/memorama-sintomas/tos.png';
 import fatiga from './images/memorama-sintomas/fatiga.png';
@@ -55,7 +59,10 @@ export default {
     "lavadoDeManosDos": lavadoDeManosDos,
     "historia": historia,
     "diaLavado": diaLavado,
-
+    "doctora": doctora,
+    "joven": joven,
+    "agua": agua,
+    "jabon": jabon,
 
     "tos": tos,
     "fatiga": fatiga,
