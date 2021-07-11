@@ -18,6 +18,10 @@
     border: 2rem white solid;
 }
 
+.img-introduccion-completa {
+    max-width: 80vh;
+}
+
 .contenedor-intro {
     background: #fff;
     color: rgb(128, 126, 126);

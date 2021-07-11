@@ -1,11 +1,17 @@
 import React from 'react';
 import './css/estilos.css';
 import { Link } from 'react-router-dom';
-import imagenes from '../../assets/images';
 
 export const Presentacion3 = ({
-    imagen,
-    parrafo,
+    titulo,
+    imagen1,
+    imagen2,
+    parrafo1,
+    parrafo2,
+    sub1,
+    sub2,
+    sub3,
+    lista,
     enlace
 }) => {
     return (
@@ -13,37 +19,42 @@ export const Presentacion3 = ({
             <div className="container">
                 <div className="row">
                     <div className="col-12 col-md-4 mt-5">
-                        <h2 className="titulo display-5">HISTORIA</h2>
-                        <p className="subtitulo">Lavado de manos</p>
+                        <h2 className="titulo display-5">{ titulo }</h2>
+                        <p className="subtitulo">{ sub1 }</p>
                         <p>
-                            Durante el año 1846, el médico Húngaro Ignaz Semmelweis, constató y fundamentó que 
-                            el lavado de manos entre el personal de salud disminuyó la mortalidad y otros pacedimientos
-                            entre los pacientes.
+                            { parrafo1 }
                         </p>
                     </div>
                     <div className="col-12 col-md-8 mt-5">
                         <div className="d-flex border-bottom p-3">
                             <div>
-                                <h6 className="subtitulo-grande">Ignaz Semmelweis</h6>
+                                <h6 className="subtitulo-grande">{ sub2 }</h6>
                                 <p>
-                                    Propuso el lavado de manos entre el personal médico, y se evidenció que la mortalidad se 
-                                    disminuyó abruptamente a partir de ese momento, ésta estrategia se mantuvo
-                                    por varios años.
+                                    { parrafo2 }
                                 </p>
                             </div>
-                            <img src={ imagenes.historia } className="img1-presentacion-3" />
+                            <img src={ imagen1 } className="img1-presentacion-3" />
                         </div>
                         <div className="d-flex mt-4">
                             <div className="pr-1 border-end">
-                                <p className="subtitulo">Personajes que realizaron aportes que muestran lavado de manos es una medida para evitar infecciones:</p>
+                                <p className="subtitulo">{ sub3 }</p>
                                 <ul>
-                                    <li>Ignaz Semmelweis</li>
-                                    <li>Oliver Holmes</li>
+                                    {
+                                        lista.map( item => {
+                                            return <li>{ item }</li>
+                                        })
+                                    }
                                 </ul>
                             </div>
-                            <img src={ imagenes.historia2 } className="img2-presentacion-3 p-2" />
+                            <img src={ imagen2 } className="img2-presentacion-3 p-2" />
                         </div>
                     </div>
+                    <Link
+                        to={ enlace }
+                        className="regresar-menu mt-3"
+                    >
+                        Seguir leyendo >>
+                    </Link>
                 </div>
             </div>
         </div>
