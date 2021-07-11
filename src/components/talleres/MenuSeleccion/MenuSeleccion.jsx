@@ -13,15 +13,15 @@ export const MenuSeleccion = () => {
             <div className="container my-5">
                 <div className="row ">
                     <div className="col-12 col-md-6">
-                        <OpcionMenuSeleccion texto="Introducción" imagen={ imagenes.uno } ruta="/lavado-manos/introduccion" />
-                        <OpcionMenuSeleccion texto="Lavado de manos social" imagen={ imagenes.dos } ruta="/lavado-manos/introduccion" />
-                        <OpcionMenuSeleccion texto="Elementos necesarios" imagen={ imagenes.tres } ruta="/lavado-manos/introduccion" />
+                        <OpcionMenuSeleccion texto="Introducción" imagen={ imagenes.uno } ruta="/adultos/lavado-manos/introduccion" />
+                        <OpcionMenuSeleccion texto="Lavado de manos social" imagen={ imagenes.dos } ruta="/adultos/lavado-manos/lavado-social" />
+                        <OpcionMenuSeleccion texto="Elementos necesarios" imagen={ imagenes.tres } ruta="/adultos/lavado-manos/elementos-necesarios" />
                     </div>
 
                     <div className="col-12 col-md-6"> 
-                        <OpcionMenuSeleccion texto="5 momentos del lavado de manos" imagen={ imagenes.cuatro } ruta="/lavado-manos/introduccion" />
-                        <OpcionMenuSeleccion texto="Tecnica correcta de lavado" imagen={ imagenes.cinco } ruta="/lavado-manos/introduccion" />
-                        <OpcionMenuSeleccion texto="Cuestionario" imagen={ imagenes.seis} ruta="/lavado-manos/introduccion" />
+                        <OpcionMenuSeleccion texto="5 momentos del lavado de manos" imagen={ imagenes.cuatro } ruta="/adultos/lavado-manos/video2" />
+                        <OpcionMenuSeleccion texto="Tecnica correcta de lavado" imagen={ imagenes.cinco } ruta="/adultos/lavado-manos/introduccion" />
+                        <OpcionMenuSeleccion texto="Cuestionario" imagen={ imagenes.seis} ruta="/adultos/lavado-manos/introduccion" />
                     </div>
                 </div>
             </div>

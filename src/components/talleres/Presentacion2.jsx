@@ -21,7 +21,7 @@ export const Presentacion2 = ({
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3 d-none d-md-flex justify-content-center align-items-center div-img-intro">
-                            <img src={imagen}
+                            <img src={ imagen }
                                 alt="adulto mujer"
                                 className="img-introduccion d-none d-md-block"
                             />
@@ -41,7 +41,7 @@ export const Presentacion2 = ({
                                 to={ enlace }
                                 className="seguir-leyendo"
                                 onClick={() => {
-                                    setStopAudio(sound);
+                                    setStopAudio( sound );
                                 }
                                 }
                             >

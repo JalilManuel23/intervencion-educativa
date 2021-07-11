@@ -9,7 +9,7 @@ export const MenuAdultos = () => {
                 <div className="row d-flex flex-column align-items-center">
                     <OpcionMenu texto="Introducción: ¿Qué es el COVID-19?" color="#004aad" ruta="/introduccion-adultos" />
 
-                    <OpcionMenu texto="Taller 1: Lavado de manos" color='#246cce' />
+                    <OpcionMenu texto="Taller 1: Lavado de manos" color='#246cce' ruta="/adultos/lavado-manos/presentacion" />
 
                     <OpcionMenu texto="Taller 2" color='#468fee' />
 

@@ -22,6 +22,7 @@ import cinco from './images/taller1/5.png';
 import seis from './images/taller1/6.png';
 import lavadoDeManosDos from './images/taller1/lavado-de-manos-2.png';
 import historia from './images/taller1/je.png';
+import historia2 from './images/taller1/historia2.jpg';
 import diaLavado from './images/taller1/dia-lavado.png';
 import doctora from './images/taller1/dra.png';
 import joven from './images/taller1/joven.png';
@@ -58,6 +59,7 @@ export default {
     "seis": seis,
     "lavadoDeManosDos": lavadoDeManosDos,
     "historia": historia,
+    "historia2": historia2,
     "diaLavado": diaLavado,
     "doctora": doctora,
     "joven": joven,

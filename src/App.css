@@ -17,3 +17,23 @@ a {
 a:hover {
     color: #FFF;
 }
+
+.titulo, .subtitulo, .subtitulo-grande {
+    text-transform: uppercase;
+}
+
+.titulo {
+    font-weight: bold;
+    color: rgb(0, 11, 110);
+}
+
+.subtitulo {
+    color: rgb(69, 77, 82);
+    font-weight: 500;
+}
+
+.subtitulo-grande {
+    color: rgb(26, 125, 190);
+    font-size: 5vmin;
+    font-weight: lighter;
+}
