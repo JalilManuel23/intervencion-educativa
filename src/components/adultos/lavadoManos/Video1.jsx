@@ -5,7 +5,7 @@ export const Video1 = () => {
     return (
         <VerVideo 
             enlaceVideo="https://www.youtube.com/embed/vTeOgI7IGjA"
-            enlace="/adultos/lavado-manos/dia-lavado-manos"
+            enlace="/adultos/lavado-manos/introduccion/dia-lavado-manos"
         />
     )
 }

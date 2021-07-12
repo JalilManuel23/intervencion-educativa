@@ -6,7 +6,7 @@ export const PresentacionVideo1 = () => {
         <Videos 
             titulo="¿Por qué esta medida de prevención es tan importante?"
             texto="Descubrelo en el siguiente vídeo"
-            enlace="/adultos/lavado-manos/video1"
+            enlace="/adultos/lavado-manos/videos/importancia-lavado-manos"
         />
     )
 }

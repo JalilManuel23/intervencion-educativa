@@ -18,7 +18,7 @@ export const Historia = () => {
                     disminuyó abruptamente a partir de ese momento, ésta estrategia se mantuvo
                     por varios años."
             lista={ [ 'Ignaz Semmelweis' , 'Oliver Holmes'] }
-            enlace="/adultos/lavado-manos/presentacion-video1"
+            enlace="/adultos/lavado-manos/introduccion/importancia"
         />
     )
 }

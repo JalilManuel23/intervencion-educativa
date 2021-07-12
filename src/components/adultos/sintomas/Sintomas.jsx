@@ -36,7 +36,7 @@ export const Sintomas = ({ tipo, color }) => {
                         { imagen }
                         
                         <Link 
-                            to="/" 
+                            to="/adultos/menu" 
                             className="regresar-menu mt-3"
                             onClick={ () => {                                         
                                     setStopAudio( sound );

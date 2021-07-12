@@ -7,7 +7,7 @@ export const MenuAdultos = () => {
             <div className="container my-5 animate__animated animate__fadeIn">
 
                 <div className="row d-flex flex-column align-items-center">
-                    <OpcionMenu texto="Introducción: ¿Qué es el COVID-19?" color="#004aad" ruta="/introduccion-adultos" />
+                    <OpcionMenu texto="Introducción: ¿Qué es el COVID-19?" color="#004aad" ruta="/adultos/introduccion" />
 
                     <OpcionMenu texto="Taller 1: Lavado de manos" color='#246cce' ruta="/adultos/lavado-manos/presentacion" />
 

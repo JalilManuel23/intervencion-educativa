@@ -10,7 +10,7 @@ export const Introduccion = () => {
             parrafo1= "El coronavirus SARS-cov-2 es un virus que apareció en china. Después se extendió a todos los continentes del mundo provocando una pandemia.Actualmente Europa y América son los mas afectados."
             parrafo2= "Este nuevo virus, provoca la enfermedad conocida con el nombre de COVID-19."
             sonido={ audioIntro }
-            enlace="sintomas-adultos"
+            enlace="/adultos/introduccion/sintomas"
         />
     )
 }

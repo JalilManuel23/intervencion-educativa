@@ -27,7 +27,7 @@ export const TiposLavado = () => {
         <ClasificacionTipos 
             titulo="Existen diferentes tipos de lavado de manos, sus nombre son:"
             imagenes={ imagenes }
-            enlace="/adultos/lavado-manos/final-intro"
+            enlace="/adultos/lavado-manos/introduccion/final-intro"
             opciones={ opciones }
         />
     )

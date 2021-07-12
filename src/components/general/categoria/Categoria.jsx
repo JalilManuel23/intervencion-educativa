@@ -5,6 +5,7 @@ import { Redirect } from 'react-router-dom';
 
 import { setStopAudio } from '../../../hooks/setStopAudio';
 
+
 export const Categoria = ({ audio }) => {
     const [redirect, setRedirect] = useState(null);
 
@@ -36,7 +37,7 @@ export const Categoria = ({ audio }) => {
                     <div className="opcion col-4"
                         onClick={() => {
                             setStopAudio( audio );
-                            setRedirect("/menu-adultos")
+                            setRedirect( "/adultos/menu" );
                         }
                     }
                         data-bs-dismiss="modal"

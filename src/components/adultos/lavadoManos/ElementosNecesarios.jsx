@@ -26,7 +26,7 @@ export const ElementosNecesarios = () => {
                 <div className="d-flex justify-content-end">
                     <Link 
                         className="regresar-menu mt-3"
-                        to="/adultos/lavado-manos/presentacion-video2"
+                        to="/adultos/lavado-manos/5-momentos-oms"
                     >
                         Seguir leyendo >>
                     </Link>
