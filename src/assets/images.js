@@ -28,6 +28,10 @@ import doctora from './images/taller1/dra.png';
 import joven from './images/taller1/joven.png';
 import agua from './images/taller1/agua.jpg';
 import jabon from './images/taller1/jabon.png';
+import clinico from './images/taller1/clinico.jpg';
+import lavManos from './images/taller1/lav_manos.jpg';
+import quirurgico from './images/taller1/quirurguico.jpg';
+import gel from './images/taller1/gel.jpg';
 
 import tos from './images/memorama-sintomas/tos.png';
 import fatiga from './images/memorama-sintomas/fatiga.png';
@@ -65,6 +69,10 @@ export default {
     "joven": joven,
     "agua": agua,
     "jabon": jabon,
+    "clinico": clinico,
+    "lavManos": lavManos,
+    "quirurgico": quirurgico,
+    "gel": gel,
 
     "tos": tos,
     "fatiga": fatiga,

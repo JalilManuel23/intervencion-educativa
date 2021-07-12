@@ -86,6 +86,30 @@
     height: 100vh;
 }
 
+.tipo-clasificacion {
+    display: flex;
+    align-items: center;
+    margin-top: 5vmin;
+    border-radius: 0 100px 100px 0;
+    background: rgb(32, 82, 139);
+    padding: 2vmin;
+    box-shadow: var(--sombra);
+}
+
+.tipo-clasificacion img {
+    width: 30%;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.tipo-clasificacion p {
+    color: #fff;
+    font-size: 3vmin;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
 @media screen and (max-width: 1200px) {
     .contenedor-intro {
         width: 100%;

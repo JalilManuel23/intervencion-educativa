@@ -28,6 +28,7 @@ import { FinalIntro } from './components/adultos/lavadoManos/FinalIntro';
 import { LavadoSocial } from './components/adultos/lavadoManos/LavadoSocial';
 import { ElementosNecesarios } from './components/adultos/lavadoManos/ElementosNecesarios';
 import { PresentacionVideo2 } from './components/adultos/lavadoManos/PresentacionVideo2';
+import { TiposLavado } from './components/adultos/lavadoManos/TiposLavado';
 
 export const App = () => {
     return (
@@ -54,6 +55,7 @@ export const App = () => {
                 <Route exact path="/adultos/lavado-manos/elementos-necesarios" component={ ElementosNecesarios } />
                 <Route exact path="/adultos/lavado-manos/presentacion-video2" component={ PresentacionVideo2 } />
                 <Route exact path="/adultos/lavado-manos/video2" component={ Video2 } />
+                <Route exact path="/adultos/lavado-manos/tipos-lavado" component={ TiposLavado } />
 
 
                 <Route exact path="/sintomas-adultos" render={() => {
