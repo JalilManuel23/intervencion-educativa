@@ -17,7 +17,8 @@ export const Sintomas = ({ tipo, color }) => {
     let sound = usePlayAudio( audio );
 
     let imagen = ( tipo == 'ninos' ) ? <img src={ imagenes.sintomasNinos } alt="sintomas" /> : <img src={ imagenes.sintomas } alt="sintomas" />;
-    
+    let enlace = ( tipo == 'ninos' ) ? "/ninos/menu" : "/adultos/menu";
+
     let colors = { 
         background : color   
     }
@@ -36,7 +37,7 @@ export const Sintomas = ({ tipo, color }) => {
                         { imagen }
                         
                         <Link 
-                            to="/adultos/menu" 
+                            to={ enlace } 
                             className="regresar-menu mt-3"
                             onClick={ () => {                                         
                                     setStopAudio( sound );

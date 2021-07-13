@@ -33,6 +33,8 @@ import lavManos from './images/taller1/lav_manos.jpg';
 import quirurgico from './images/taller1/quirurguico.jpg';
 import gel from './images/taller1/gel.jpg';
 
+import bienvenida from './images/taller1-ninos/bienvenida.jpg';
+
 import tos from './images/memorama-sintomas/tos.png';
 import fatiga from './images/memorama-sintomas/fatiga.png';
 import dolor from './images/memorama-sintomas/dolor.png';
@@ -73,6 +75,8 @@ export default {
     "lavManos": lavManos,
     "quirurgico": quirurgico,
     "gel": gel,
+
+    "bienvenida": bienvenida,
 
     "tos": tos,
     "fatiga": fatiga,

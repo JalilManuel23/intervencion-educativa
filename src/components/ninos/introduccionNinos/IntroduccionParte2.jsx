@@ -29,7 +29,7 @@ export const IntroduccionParte2 = () => {
 
                 <p className="text-center mt-4">
                     <Link 
-                        to="sintomas-ninos" 
+                        to="/ninos/introduccion/sintomas" 
                         className="seguir-leyendo"
                         onClick={ () => {                                         
                                 setStopAudio( sound );

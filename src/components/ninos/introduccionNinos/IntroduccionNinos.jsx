@@ -27,7 +27,7 @@ export const IntroduccionNinos = () => {
                         <p className="tit-intro-ninos">¿Por qué todos hablan de algo que se llama CORONAVIRUS?</p>
                         <p className="contenedor-intro">CORONAVIRUS es un grupo de virus que pueden hacer que las personas se sientan enfermas.</p>
                         <Link 
-                            to="introduccion-ninos2" 
+                            to="/ninos/introduccion/pt2" 
                             className="seguir-leyendo"
                             onClick={ () => {                                         
                                     setStopAudio( sound );

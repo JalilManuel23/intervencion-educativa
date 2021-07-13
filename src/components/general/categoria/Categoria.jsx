@@ -26,7 +26,7 @@ export const Categoria = ({ audio }) => {
                     <div className="opcion ninos col-4"
                         onClick={() => {
                             setStopAudio( audio );
-                            setRedirect("/menu-ninos");
+                            setRedirect("/ninos/menu");
                         }
                     }
                         data-bs-dismiss="modal"
