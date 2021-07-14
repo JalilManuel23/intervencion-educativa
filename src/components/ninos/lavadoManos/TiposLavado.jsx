@@ -7,15 +7,15 @@ export const TiposLavado = () => {
     let opciones = [
         {
             titulo: 'Lavado higiénico o social',
-            imagen: imagenes.lavManos
+            imagen: imagenes.lavadoDeManosDos
         },
         {
             titulo: 'Lavado clínico o antiséptico',
-            imagen:  imagenes.clinico
+            imagen:  imagenes.clinicoNinos
         },
         {
             titulo: 'Lavado con alcohol en gel',
-            imagen: imagenes.gel
+            imagen: imagenes.gelNinos
         },
     ]
 
@@ -23,7 +23,7 @@ export const TiposLavado = () => {
         <ClasificacionTipos 
             titulo="Existen diferentes tipos de lavado de manos, sus nombre son:"
             imagenes={ imagenes }
-            enlace="/adultos/lavado-manos/introduccion/final-intro"
+            enlace="/ninos/lavado-manos/introduccion/final-intro"
             opciones={ opciones }
         />
     )

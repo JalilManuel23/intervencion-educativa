@@ -11,10 +11,15 @@ import audioMezclar from "../../../assets/sounds/mezclar.mp3";
 import audioMal from "../../../assets/sounds/mal.mp3";
 import audioBien from "../../../assets/sounds/bien.mp3";
 import audioGanar from "../../../assets/sounds/ganar.mp3";
+import { Link } from 'react-router-dom';
 
-export const Memorama = () => {
+export const Memorama = ({ 
+    datos,
+    titulo,
+    enlace 
+}) => {
 
-    const [baraja, setBaraja] = useState(construirBaraja());
+    const [baraja, setBaraja] = useState(construirBaraja( datos ));
     const [parejaSeleccionada, setParejaSeleccionada] = useState([]);
     const [estaComparando, setEstaComparando] = useState(false);
     const [numeroDeIntentos, setNumeroDeIntentos] = useState(0);
@@ -108,7 +113,7 @@ export const Memorama = () => {
 
     return (
         <div className="memorama container d-flex flex-column align-items-center mt-5">
-            <h1>Memorama "Sintomas COVID-19"</h1>
+            <h1>{ titulo }</h1>
 
             <div class="row-cartas mt-3">
                 {
@@ -127,16 +132,15 @@ export const Memorama = () => {
                 }
             </div>
             
-                <div className="opciones d-flex justify-content-around align-items-center my-4">
-                    <div className="bg-success text-white p-2 puntos"> Aciertos: {aciertos}  </div>
-                    <div className="bg-danger text-white p-2 puntos"> Errores: {errores} </div>
-                    <button className="btn btn-outline-dark btn-outline-primary" onClick = { () => {reiniciarJuego() }}>
-                        <span> Reiniciar</span> 
-                    </button>   
-                </div>
+            <div className="opciones d-flex justify-content-around align-items-center my-4">
+                <div className="bg-success text-white p-2 puntos"> Aciertos: {aciertos}  </div>
+                <div className="bg-danger text-white p-2 puntos"> Errores: {errores} </div>
+                <button className="btn btn-outline-dark btn-outline-primary" onClick = { () => {reiniciarJuego() }}>
+                    <span> Reiniciar</span> 
+                </button>   
+            </div>
             
-
- 
+            <Link to={ enlace }>Siguiente >></Link>
         
         </div>
     )

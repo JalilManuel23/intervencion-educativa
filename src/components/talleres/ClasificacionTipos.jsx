@@ -18,7 +18,7 @@ export const ClasificacionTipos = ({
                     opciones.map( opcion => {
                         return(
                             <div className="tipo-clasificacion col-12 col-md-5" key={ opcion.titulo }>
-                                <img src={ opcion.imagen } />
+                                <img src={ opcion.imagen } className="img-fluid" />
             
                                 <p>
                                     { opcion.titulo }

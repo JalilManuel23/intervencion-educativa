@@ -1,10 +1,9 @@
 import shuffle from 'lodash.shuffle';
-import { datosEjemplo } from '../data/sample';
 
-export default () => {
+export default ( datosRecibidos ) => {
     let cartas = [];
 
-    datosEjemplo.map( datos => {
+    datosRecibidos.map( datos => {
         const carta = {
             ...datos,
             fueAdivinada: false

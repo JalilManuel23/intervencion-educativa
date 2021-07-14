@@ -1,0 +1,17 @@
+.final-intro {
+    background: #b4d4eb;
+    height: 100vh;
+}
+
+.img-doctora {
+    max-width: 80vh;
+}
+
+.elementos {
+    max-width: 40vh;
+}
+
+.nombre-elementos {
+    font-weight: bold;
+    color: #2ae1e8;
+}

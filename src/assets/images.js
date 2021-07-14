@@ -34,6 +34,16 @@ import quirurgico from './images/taller1/quirurguico.jpg';
 import gel from './images/taller1/gel.jpg';
 
 import bienvenida from './images/taller1-ninos/bienvenida.jpg';
+import lavadoNino from './images/taller1-ninos/lavadonino.png';
+import ninos from './images/taller1-ninos/ninos.jpg';
+import pregunta from './images/taller1-ninos/pregunta.png';
+import clinicoNinos from './images/taller1-ninos/clinico.jpg';
+import gelNinos from './images/taller1-ninos/gel.jpg';
+import feliz from './images/taller1-ninos/feliz.jpg';
+import aguaMemo from './images/taller1-ninos/agua.png';
+import jabonMemo from './images/taller1-ninos/jabón.png';
+import gelAnti from './images/taller1-ninos/gelAnti.jpg';
+import toalla from './images/taller1-ninos/toalla.png';
 
 import tos from './images/memorama-sintomas/tos.png';
 import fatiga from './images/memorama-sintomas/fatiga.png';
@@ -75,8 +85,18 @@ export default {
     "lavManos": lavManos,
     "quirurgico": quirurgico,
     "gel": gel,
+    "lavadoNino": lavadoNino,
 
     "bienvenida": bienvenida,
+    "ninos": ninos,
+    "pregunta": pregunta, 
+    "clinicoNinos": clinicoNinos,
+    "gelNinos": gelNinos,
+    "feliz": feliz,
+    "aguaMemo": aguaMemo,
+    "jabonMemo": jabonMemo,
+    "gelAnti": gelAnti,
+    "toalla": toalla,
 
     "tos": tos,
     "fatiga": fatiga,

@@ -22,7 +22,7 @@ export const Presentacion2 = ({
                 <div className="container">
                     <div className="row">
                         {
-                            ( tipoImagen !== "completa") ?
+                            ( tipoImagen !== "completa" ) ?
                                 <div className="col-md-3 d-none d-md-flex justify-content-center align-items-center div-img-intro">
                                     <img src={ imagen }
                                         alt="adulto mujer"
