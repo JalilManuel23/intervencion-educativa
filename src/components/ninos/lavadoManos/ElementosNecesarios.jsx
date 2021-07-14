@@ -1,8 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import imagenes from '../../../assets/images';
+import { usePlayAudio } from "../../../hooks/usePlayAudio";
+import { setStopAudio } from '../../../hooks/setStopAudio';
+import { AudioPlayer } from '../../general/audioPlayer/AudioPlayer';
+import audioIntro from "../../../assets/sounds/adulto_informacion_covid_19.mp3";
 
 export const ElementosNecesarios = () => {
+
+    let sound = usePlayAudio( audioIntro );
+
     return (
         <div>
             <div className="text-center text-white py-2 mt-4 barra-titulo"> 
@@ -27,10 +34,16 @@ export const ElementosNecesarios = () => {
                     <Link 
                         className="regresar-menu mt-3"
                         to="/ninos/lavado-manos/preparate-jugar"
+                        onClick={
+                            () => {
+                                setStopAudio( sound );
+                            }
+                        }
                     >
                         Seguir leyendo >>
                     </Link>
-                </div>       
+                </div> 
+                <AudioPlayer sound={ sound } />       
             </div>
         </div>
     )

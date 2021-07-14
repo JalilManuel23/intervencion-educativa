@@ -1,6 +1,7 @@
 import React from 'react';
 import { Presentacion2 } from '../../talleres/Presentacion2';
 import imagenes from '../../../assets/images';
+import audioIntro from "../../../assets/sounds/adulto_informacion_covid_19.mp3";
 
 export const LavadoSocial = () => {
     return (
@@ -8,7 +9,8 @@ export const LavadoSocial = () => {
             imagen={ imagenes.joven }
             tipoImagen="completa"
             parrafo1="Se define como un frote breve de todas las superficies de las manos con jabón, después de un enjuague al chorro de agua. Su objetivo es remover la suciedad. Es parte de la higiene personal.
-"            enlace="/ninos/lavado-manos/elementos-necesarios"
+"           enlace="/ninos/lavado-manos/elementos-necesarios"
+            sonido={ audioIntro }
         />
     )
 }

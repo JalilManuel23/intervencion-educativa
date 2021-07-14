@@ -1,6 +1,7 @@
 import React from 'react'
 import { Videos } from '../../talleres/Videos'
 import imagenes from '../../../assets/images';
+import audioIntro from "../../../assets/sounds/adulto_informacion_covid_19.mp3";
 
 export const PreparateJugar = () => {
     return (
@@ -10,6 +11,7 @@ export const PreparateJugar = () => {
             enlace="/ninos/lavado-manos/memorama-elementos"
             imagen={ imagenes.feliz }
             jugar={true}
+            sonido={ audioIntro }
         />
     )
 }

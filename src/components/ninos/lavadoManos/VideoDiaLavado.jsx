@@ -1,6 +1,7 @@
 import React from 'react'
 import { VerVideo } from '../../talleres/VerVideo'
 
+
 export const VideoDiaLavado = () => {
     return (
         <VerVideo 

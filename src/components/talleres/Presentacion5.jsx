@@ -1,12 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { usePlayAudio } from "../../hooks/usePlayAudio";
+import { setStopAudio } from '../../hooks/setStopAudio';
+import { AudioPlayer } from '../general/audioPlayer/AudioPlayer';
 
 export const Presentacion5 = ({
     parrafo, 
     imagen, 
     enlace,
-    imagenes
+    sonido
 }) => {
+
+    let sound = usePlayAudio( sonido );
+
     return (
         <div className="bg-circulos d-flex align-items-center">
             <div className="container">
@@ -16,15 +22,21 @@ export const Presentacion5 = ({
                         <p>{parrafo}</p>
                     </div>
                 </div>
+                <AudioPlayer sound={ sound } />
             </div>
             <div className="d-flex justify-content-end">
                 <Link 
                     className="regresar-menu mt-3"
                     to={ enlace }
-                    >
+                    onClick={
+                        () => {
+                            setStopAudio( sound );
+                        }
+                    }
+                >
                         Seguir leyendo >>
-                    </Link>
-        </div>
+                </Link>
+            </div>
         </div>
     )
 }

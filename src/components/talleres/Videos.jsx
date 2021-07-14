@@ -1,15 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './css/estilos.css';
+import { usePlayAudio } from "../../hooks/usePlayAudio";
+import { setStopAudio } from '../../hooks/setStopAudio';
+import { AudioPlayer } from '../general/audioPlayer/AudioPlayer';
 
 export const Videos = ({
     titulo,
     texto,
     enlace,
     imagen,
-    jugar
+    jugar,
+    sonido
 }) => {
 
+    let sound = usePlayAudio( sonido );
     let textoBtn = ( jugar ) ? "Jugar" : "Ver video";
 
     return (
@@ -27,12 +32,18 @@ export const Videos = ({
                             <Link 
                                 className="btn btn-warning p-2  text-white btn-lg mt-5"
                                 to={ enlace } 
+                                onClick={
+                                    () => {
+                                        setStopAudio( sound );
+                                    }
+                                }
                             >
                                 <span className="display-6">{ textoBtn }</span>
                             </Link>                          
                         </div>
                     </div>
                 </div>
+                <AudioPlayer sound={ sound } />  
             </div>
         </div>
     )

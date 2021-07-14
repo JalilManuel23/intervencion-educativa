@@ -1,6 +1,7 @@
 import React from 'react'
 import { MenuSeleccion } from '../../talleres/MenuSeleccion/MenuSeleccion'
 import imagenes from '../../../assets/images';
+import audioIntro from "../../../assets/sounds/adulto_informacion_covid_19.mp3";
 
 export const Opciones = () => {
     let datos = [
@@ -43,6 +44,6 @@ export const Opciones = () => {
     ]
     
     return (
-        <MenuSeleccion datos={ datos } />
+        <MenuSeleccion datos={ datos } sonido={ audioIntro } />
     )
 }

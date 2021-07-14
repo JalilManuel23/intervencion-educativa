@@ -1,6 +1,7 @@
 import React from 'react';
 import { ClasificacionTipos } from '../../talleres/ClasificacionTipos';
 import imagenes from '../../../assets/images';
+import audioIntro from "../../../assets/sounds/adulto_informacion_covid_19.mp3";
 
 export const TiposLavado = () => {
 
@@ -25,6 +26,7 @@ export const TiposLavado = () => {
             imagenes={ imagenes }
             enlace="/ninos/lavado-manos/introduccion/final-intro"
             opciones={ opciones }
+            sonido={ audioIntro }
         />
     )
 }

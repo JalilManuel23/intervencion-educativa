@@ -1,9 +1,8 @@
 import React from 'react';
 import { OpcionMenuSeleccion } from './OpcionMenuSeleccion';
 import './menuSeleccion.css';
-import imagenes from '../../../assets/images';
 
-export const MenuSeleccion = ({ datos }) => {
+export const MenuSeleccion = ({ datos, sonido }) => {
     return (
         <div>
             <div className="text-center text-white py-2 mt-4 barra-titulo"> 

@@ -1,13 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './css/estilos.css';
+import { usePlayAudio } from "../../hooks/usePlayAudio";
+import { setStopAudio } from '../../hooks/setStopAudio';
+import { AudioPlayer } from '../general/audioPlayer/AudioPlayer';
 
 export const Presentacion1 = ({
     titulo,
     parrafo,
     imagen,
-    enlace
+    enlace,
+    sonido
 }) => {
+
+    let sound = usePlayAudio( sonido );
+
     return (
         <div>
             <div className="text-center text-white py-2 mt-4 barra-titulo"> 
@@ -27,12 +34,17 @@ export const Presentacion1 = ({
                     <Link 
                         className="regresar-menu mt-3"
                         to={ enlace }
+                        onClick={
+                            () => {
+                                setStopAudio( sound );
+                            }
+                        }
                     >
                         Seguir leyendo >>
                     </Link>
-                </div>       
-            </div>
-            
-            </div>
+                </div> 
+                <AudioPlayer sound={ sound } />      
+            </div>  
+        </div>
     )
 }

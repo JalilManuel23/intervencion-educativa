@@ -5,7 +5,7 @@ import { Introduccion } from '../components/adultos/introduccion/Introduccion';
 
 import { DiaLavadoManos } from '../components/adultos/lavadoManos/DiaLavadoManos'
 import { ElementosNecesarios } from '../components/adultos/lavadoManos/ElementosNecesarios'
-import { FinalIntro } from '../components/adultos/lavadoManos/FinalIntro'
+import { FinalIntroAdultos } from '../components/adultos/lavadoManos/FinalIntroAdultos'
 import { Historia } from '../components/adultos/lavadoManos/Historia'
 import { IntroduccionLavadoManos } from '../components/adultos/lavadoManos/IntroduccionLavadoManos'
 import { LavadoManos } from '../components/adultos/lavadoManos/LavadoManos'
@@ -44,7 +44,7 @@ export const AdultosRouter = () => {
             <Route exact path="/adultos/lavado-manos/videos/importancia-lavado-manos" component={ Video1 } />
             <Route exact path="/adultos/lavado-manos/introduccion/dia-lavado-manos" component={ DiaLavadoManos } />
             <Route exact path="/adultos/lavado-manos/introduccion/tipos-lavado" component={ TiposLavado } />
-            <Route exact path="/adultos/lavado-manos/introduccion/final-intro" component={ FinalIntro } />
+            <Route exact path="/adultos/lavado-manos/introduccion/final-intro" component={ FinalIntroAdultos } />
             <Route exact path="/adultos/lavado-manos/lavado-social" component={ LavadoSocial } />
             <Route exact path="/adultos/lavado-manos/elementos-necesarios" component={ ElementosNecesarios } />
             <Route exact path="/adultos/lavado-manos/5-momentos-oms" component={ PresentacionVideo2 } />

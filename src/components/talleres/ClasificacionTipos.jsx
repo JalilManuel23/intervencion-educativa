@@ -1,12 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { usePlayAudio } from "../../hooks/usePlayAudio";
+import { setStopAudio } from '../../hooks/setStopAudio';
+import { AudioPlayer } from '../general/audioPlayer/AudioPlayer';
 
 export const ClasificacionTipos = ({
     titulo,
-    imagenes,
     enlace,
-    opciones
+    opciones,
+    sonido
 }) => {
+
+    let sound = usePlayAudio( sonido );
+
     return (
         <div>
             <div className="text-center text-white py-2 mt-4 barra-titulo"> 
@@ -30,9 +36,15 @@ export const ClasificacionTipos = ({
                 <Link
                     to={ enlace }
                     className="seguir-leyendo"
+                    onClick={
+                        () => {
+                            setStopAudio( sound );
+                        }
+                    }
                 >
                     Seguir leyendo >>
                 </Link>
+                <AudioPlayer sound={ sound } />
             </div>
         </div>
     )

@@ -53,7 +53,6 @@ export const NinosRouter = () => {
             <Route exact path="/ninos/lavado-manos/elementos-necesarios" component={ ElementosNecesarios } />
             <Route exact path="/ninos/lavado-manos/preparate-jugar" component={ PreparateJugar } />
             <Route exact path="/ninos/lavado-manos/memorama-elementos" component={ MemoramaElementos } />
-            <Route exact path="/ninos/lavado-manos/5-momentos-oms" component={ MemoramaElementos } />
             <Route exact path="/ninos/lavado-manos/videos" component={ Videos } />
         </>
     )

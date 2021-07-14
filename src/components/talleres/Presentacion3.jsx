@@ -1,6 +1,9 @@
 import React from 'react';
 import './css/estilos.css';
 import { Link } from 'react-router-dom';
+import { usePlayAudio } from "../../hooks/usePlayAudio";
+import { setStopAudio } from '../../hooks/setStopAudio';
+import { AudioPlayer } from '../general/audioPlayer/AudioPlayer';
 
 export const Presentacion3 = ({
     titulo,
@@ -12,8 +15,12 @@ export const Presentacion3 = ({
     sub2,
     sub3,
     lista,
-    enlace
+    enlace,
+    sonido
 }) => {
+
+    let sound = usePlayAudio( sonido );
+
     return (
         <div className="presentacion-3">
             <div className="container">
@@ -52,35 +59,17 @@ export const Presentacion3 = ({
                     <Link
                         to={ enlace }
                         className="regresar-menu mt-3"
+                        onClick={
+                            () => {
+                                setStopAudio( sound );
+                            }
+                        }
                     >
                         Seguir leyendo >>
                     </Link>
                 </div>
+                <AudioPlayer sound={ sound } />
             </div>
         </div>
     )
 }
-
-{/* <div className="presentacion-3">
-<div className="container">
-    <div className="row text-center">
-        <div className="col-12 mt-5 d-flex justify-content-center">
-            <div>
-                <img className="img-fluid img-historia" src={imagen}/>
-            </div>
-        </div>
-        <div className="col-12 mt-5 d-flex justify-content-center ">
-            <div className="text-center text-white p-3 rounded-pill texto-historia">
-                <p className="display-6">{parrafo} </p>
-            </div>
-        </div>
-        <Link
-        to={ enlace }
-        className="regresar-menu mt-3"
-    >
-        Seguir leyendo >>
-    </Link>
-    </div>
-</div>
-
-</div> */}

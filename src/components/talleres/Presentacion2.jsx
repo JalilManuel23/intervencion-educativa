@@ -52,9 +52,10 @@ export const Presentacion2 = ({
                             <Link
                                 to={ enlace }
                                 className="seguir-leyendo"
-                                onClick={() => {
-                                    setStopAudio( sound );
-                                }
+                                onClick={
+                                    () => {
+                                        setStopAudio( sound );
+                                    }
                                 }
                             >
                                 Seguir leyendo >>
