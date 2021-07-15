@@ -14,37 +14,34 @@ export const Videos = ({
     sonido
 }) => {
 
-    let sound = usePlayAudio( sonido );
-    let textoBtn = ( jugar ) ? "Jugar" : "Ver video";
+    let sound = usePlayAudio(sonido);
+    let textoBtn = (jugar) ? "Jugar" : "Ver video";
 
     return (
         <div className="videos">
-            <div className="container">
-                <div className="row text-center mt-5 d-flex align-items-center">
-                    <div className="col-12 ">
-                        <h2 className="display-4 titulo-videos">{titulo} </h2>
-                        <p className="display-6 my-5">{texto} </p>
-                        {
-                            ( imagen ) &&
-                                <img src={ imagen } />
+            <div className="wave"></div>
+            <div className="container d-flex flex-column align-items-center justify-content-between">
+                <h2 className="titulo-videos mt-5 text-center">{titulo} </h2>
+                <p className="display-6 mt-2 text-white">{texto} </p>
+                {
+                    (imagen) &&
+                    <img src={imagen} />
+                }
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <Link
+                        className="btn btn-warning p-2  text-white btn-lg mt-5"
+                        to={enlace}
+                        onClick={
+                            () => {
+                                setStopAudio(sound);
+                            }
                         }
-                        <div class="d-grid gap-2 col-6 mx-auto">
-                            <Link 
-                                className="btn btn-warning p-2  text-white btn-lg mt-5"
-                                to={ enlace } 
-                                onClick={
-                                    () => {
-                                        setStopAudio( sound );
-                                    }
-                                }
-                            >
-                                <span className="display-6">{ textoBtn }</span>
-                            </Link>                          
-                        </div>
-                    </div>
+                    >
+                        <span className="display-6">{textoBtn}</span>
+                    </Link>
                 </div>
-                <AudioPlayer sound={ sound } />  
             </div>
+            <AudioPlayer sound={sound} />
         </div>
     )
 }
