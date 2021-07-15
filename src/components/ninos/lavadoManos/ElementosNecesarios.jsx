@@ -4,7 +4,7 @@ import imagenes from '../../../assets/images';
 import { usePlayAudio } from "../../../hooks/usePlayAudio";
 import { setStopAudio } from '../../../hooks/setStopAudio';
 import { AudioPlayer } from '../../general/audioPlayer/AudioPlayer';
-import audioIntro from "../../../assets/sounds/adulto_informacion_covid_19.mp3";
+import audioIntro from "../../../assets/sounds/agua_jabon.mp3";
 
 export const ElementosNecesarios = () => {
 

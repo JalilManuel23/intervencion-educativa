@@ -1,6 +1,6 @@
 import React from 'react'
 import { FinalIntro } from '../../talleres/FinalIntro'
-import audioIntro from "../../../assets/sounds/adulto_informacion_covid_19.mp3";
+import audioIntro from "../../../assets/sounds/opc-menu.mp3";
 
 export const FinalIntroNinos = () => {
     return (
