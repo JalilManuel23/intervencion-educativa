@@ -1,6 +1,6 @@
 import React from 'react';
 import { Videos } from '../../talleres/Videos';
-import audioIntro from "../../../assets/sounds/adulto_informacion_covid_19.mp3";
+import audioIntro from "../../../assets/sounds/5-momentos.mp3";
 
 export const PresentacionVideo2 = () => {
     return (
