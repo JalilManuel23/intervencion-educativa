@@ -3,7 +3,7 @@ import imagenes from '../../../assets/images';
 import { Presentacion2 } from '../../talleres/Presentacion2';
 
 // CAMBIAR AUDIO
-import audioIntro from "../../../assets/sounds/adulto_informacion_covid_19.mp3";
+import audioIntro from "../../../assets/sounds/hiegiene.mp3";
 
 export const IntroduccionLavadoManos = () => {
     return (
