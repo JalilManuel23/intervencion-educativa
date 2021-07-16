@@ -1,7 +1,7 @@
 import React from 'react';
 import { Presentacion4 } from '../../talleres/Presentacion4';
 import imagenes from '../../../assets/images';
-import audioIntro from "../../../assets/sounds/adulto_informacion_covid_19.mp3";
+import audioIntro from "../../../assets/sounds/dia_mundial.mp3";
 
 export const DiaLavadoManos = () => {
     return (
