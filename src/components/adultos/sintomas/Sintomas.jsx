@@ -16,7 +16,7 @@ export const Sintomas = ({ tipo, color }) => {
 
     let sound = usePlayAudio( audio );
 
-    let imagen = ( tipo == 'ninos' ) ? <img src={ imagenes.sintomasNinos } alt="sintomas" /> : <img src={ imagenes.sintomas } alt="sintomas" />;
+    let imagen = ( tipo == 'ninos' ) ? <img src={ imagenes.sintomasNinos }  alt="sintomas" /> : <img src={ imagenes.sintomas } alt="sintomas" />;
     let enlace = ( tipo == 'ninos' ) ? "/ninos/menu" : "/adultos/menu";
 
     let colors = { 
@@ -28,7 +28,7 @@ export const Sintomas = ({ tipo, color }) => {
             <div className="container">
                 <div className="row ">
                     <div className="encabezado col-12 text-center mt-5" style={ colors }>
-                        <span className="fs-2">¿Cuáles son los sintomas?</span>
+                        <span className="fs-2">¿Cuáles son los síntomas?</span>
                     </div>
 
                     <div className="row d-flex flex-column align-items-center my-5 text-center">                    

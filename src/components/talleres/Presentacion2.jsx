@@ -38,7 +38,7 @@ export const Presentacion2 = ({
                             </div>
                         }
 
-                        <div className="col-md-7 col-12 d-flex flex-column align-items-center">
+                        <div className="col-md-7 col-12 d-flex flex-column align-items-center justify-content-center he-100">
                             <div className="container d-flex flex-column align-items-center justify-content-center">
                                 <div className="contenedor-intro my-5 ">
                                     <p className="lh-sm">

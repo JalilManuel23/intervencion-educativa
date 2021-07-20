@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Route } from "react-router-dom";
 import { Introduccion } from '../components/adultos/introduccion/Introduccion';
+import { Mapa } from '../components/adultos/introduccion/Mapa';
 
 import { DiaLavadoManos } from '../components/adultos/lavadoManos/DiaLavadoManos'
 import { ElementosNecesarios } from '../components/adultos/lavadoManos/ElementosNecesarios'
@@ -30,6 +31,7 @@ export const AdultosRouter = () => {
 
             {/* Introducción Adultos */}
             <Route exact path="/adultos/introduccion" component={ Introduccion } />
+            <Route exact path="/adultos/introduccion/mapa" component={ Mapa } />
             <Route exact path="/adultos/introduccion/sintomas" render={() => {
                 return <Sintomas tipo="adultos" color="#0249ac" />
             }}>

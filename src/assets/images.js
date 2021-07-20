@@ -6,12 +6,13 @@ import sorprendido from './images/sorprendido.jpg';
 import sorprendido2 from './images/sorprendido.png';
 import cubrebocas from './images/cubrebocas.png';
 import adultoMujer from './images/adulto_mujer.png';
-import sintomas from './images/sintomas.png';
+import sintomas from './images/sintomas.jpg';
 import nino2 from './images/niño2.png';
 import nina from './images/niña.png';
 import nino from './images/niño.png';
 import adulto from './images/adulto.jpg';
 import sintomasNinos from './images/sintomas_niños.png';
+import covid from './images/covi.jpg';
 
 import lavadoManos from './images/taller1/lavado-de-manos.png';
 import uno from './images/taller1/1.png';
@@ -21,7 +22,8 @@ import cuatro from './images/taller1/4.png';
 import cinco from './images/taller1/5.png';
 import seis from './images/taller1/6.png';
 import lavadoDeManosDos from './images/taller1/lavado-de-manos-2.png';
-import historia from './images/taller1/je.png';
+// import historia from './images/taller1/je.png';
+import historia from './images/taller1/historia.jpg';
 import historia2 from './images/taller1/historia2.jpg';
 import diaLavado from './images/taller1/dia-lavado.png';
 import doctora from './images/taller1/dra.png';
@@ -32,6 +34,9 @@ import clinico from './images/taller1/clinico.jpg';
 import lavManos from './images/taller1/lav_manos.jpg';
 import quirurgico from './images/taller1/quirurguico.jpg';
 import gel from './images/taller1/gel.jpg';
+import lavadoGif from './images/taller1/lavadoGif.gif';
+import lavadoGif2 from './images/taller1/lavadoGif2.gif';
+import omsOps from './images/taller1/oms-ops.png';
 
 import bienvenida from './images/taller1-ninos/bienvenida.jpg';
 import lavadoNino from './images/taller1-ninos/lavadonino.png';
@@ -86,6 +91,10 @@ export default {
     "quirurgico": quirurgico,
     "gel": gel,
     "lavadoNino": lavadoNino,
+    "covid": covid,
+    "lavadoGif": lavadoGif,
+    "lavadoGif2": lavadoGif2,
+    "omsOps": omsOps,
 
     "bienvenida": bienvenida,
     "ninos": ninos,

@@ -8,8 +8,8 @@ import audioIntro from "../../../assets/sounds/hiegiene.mp3";
 export const IntroduccionLavadoManos = () => {
     return (
         <Presentacion2 
-            imagen={ imagenes.lavadoDeManosDos}
-            parrafo1= "La higiene de manos es el termino general que se aplica al lavado de manos con agua y jabón, que se realiza en los centros sanitarios para prevenir las infecciones asociadas con la atencion en salud, aunque puede ser realizado con otras substancias antisepticas"
+            imagen={ imagenes.lavadoGif}
+            parrafo1= "La higiene de manos se refiere al lavado de manos con agua y jabón, que se realiza para prevenir las infecciones asociadas con la atención en salud, aunque puede ser realizado con otros elementos. Es la manera más eficaz conocida para prevenir el contagio por COVID-19."
             sonido={ audioIntro }
             enlace="/adultos/lavado-manos/introduccion/historia"
         />
