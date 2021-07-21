@@ -6,7 +6,7 @@ import { FinalIntro } from '../../talleres/FinalIntro';
 export const FinalIntroAdultos = () => {
     return (
         <FinalIntro 
-            enlace="/adultos/lavado-manos/lavado-social"
+            enlace="/adultos/lavado-manos/opciones"
             sonido={ audioIntro }
         />
     )

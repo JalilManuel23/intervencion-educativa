@@ -6,7 +6,7 @@ export const PresentacionTecnicaLavado = () => {
     return (
         <Videos 
             titulo="¿Sabes cómo lavarte las manos correctamente?"
-            texto="Descubrelo en el siguiente vídeo"
+            texto="Descúbrelo en el siguiente video"
             enlace="/adultos/lavado-manos/videos/tecnica-lavado-manos"
             sonido={ audioIntro }
         />

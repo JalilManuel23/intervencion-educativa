@@ -33,7 +33,7 @@ export const ElementosNecesarios = () => {
                 <div className="d-flex justify-content-end">
                     <Link 
                         className="regresar-menu mt-3"
-                        to="/adultos/lavado-manos/tecnica-lavado"
+                        to="/adultos/lavado-manos/opciones"
                         onClick={
                             () => {
                                 setStopAudio( sound );

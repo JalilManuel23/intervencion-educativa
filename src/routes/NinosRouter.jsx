@@ -21,6 +21,7 @@ import { VideoImportancia } from '../components/ninos/lavadoManos/VideoImportanc
 import { VideoMomentos } from '../components/ninos/lavadoManos/VideoMomentos';
 import { MenuNinos } from '../components/ninos/menuNinos/MenuNinos';
 import { Videos } from '../components/ninos/lavadoManos/Videos';
+import { Importancia2 } from '../components/ninos/lavadoManos/Importancia2';
 
 export const NinosRouter = () => {
     return (
@@ -45,6 +46,7 @@ export const NinosRouter = () => {
             <Route exact path="/ninos/lavado-manos/introduccion/historia" component={ Historia } />
             <Route exact path="/ninos/lavado-manos/introduccion/importancia" component={ Importancia } />
             <Route exact path="/ninos/lavado-manos/videos/importancia-lavado-manos" component={ VideoImportancia } />
+            <Route exact path="/ninos/lavado-manos/videos/importancia-lavado-manos2" component={ Importancia2 } />
             <Route exact path="/ninos/lavado-manos/introduccion/dia-lavado-manos" component={ DiaLavado } />
             <Route exact path="/ninos/lavado-manos/videos/dia-lavado-manos" component={ VideoDiaLavado } />
             <Route exact path="/ninos/lavado-manos/introduccion/tipos-lavado" component={ TiposLavado } />
@@ -53,7 +55,7 @@ export const NinosRouter = () => {
             <Route exact path="/ninos/lavado-manos/elementos-necesarios" component={ ElementosNecesarios } />
             <Route exact path="/ninos/lavado-manos/preparate-jugar" component={ PreparateJugar } />
             <Route exact path="/ninos/lavado-manos/memorama-elementos" component={ MemoramaElementos } />
-            <Route exact path="/ninos/lavado-manos/videos" component={ Videos } />
+            <Route exact path="/ninos/lavado-manos/tecnica-lavado" component={ Videos } />
         </>
     )
 }

@@ -7,7 +7,7 @@ export const Introduccion = () => {
     return (
         <Presentacion5 
             imagen={ imagenes.lavadoNino }
-            enlace='/ninos/lavado-manos/introduccion/historia'
+            enlace='/ninos/lavado-manos/introduccion/importancia'
             parrafo="Se refiere a un frote de las manos enjabonadas, para después enjuagarlas con abundante agua para lograr eliminar la suciedad y microorganismos existentes, siendo la manera más eficaz conocida de prevenir el contagio por COVID-19."
             sonido={ audioIntro }
         />

@@ -24,20 +24,14 @@ export const Opciones = () => {
             "color": "#23d8df"
         },
         {
-            "texto": "5 momentos del lavado de manos",
-            "imagen": imagenes.cuatro,
-            "ruta": "/ninos/lavado-manos/videos/5-momentos-oms",
-            "color": "#7bff5e"
-        },
-        {
             "texto": "Tecnica correcta de lavado",
-            "imagen": imagenes.cinco, 
+            "imagen": imagenes.cuatro, 
             "ruta": "/ninos/lavado-manos/tecnica-lavado",
             "color": "#d87dc3"
         },
         {
             "texto": "Cuestionario",
-            "imagen": imagenes.seis, 
+            "imagen": imagenes.cinco, 
             "ruta": "/ninos/lavado-manos/introduccion",
             "color": "#f9d541"
         },

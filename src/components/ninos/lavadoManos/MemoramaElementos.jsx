@@ -30,7 +30,7 @@ export const MemoramaElementos = () => {
         <Memorama 
             datos={ datos }
             titulo="Memorama Lavado  De Manos"
-            enlace="/ninos/lavado-manos/5-momentos-oms"
+            enlace="/ninos/lavado-manos/opciones"
         />
     )
 }

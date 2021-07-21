@@ -22,18 +22,13 @@ export const OpcionesLavadoManos = () => {
             "ruta": "/adultos/lavado-manos/elementos-necesarios"
         },
         {
-            "texto": "5 momentos del lavado de manos",
-            "imagen": imagenes.cuatro,
-            "ruta": "/adultos/lavado-manos/videos/5-momentos-oms"
-        },
-        {
             "texto": "Tecnica correcta de lavado",
-            "imagen": imagenes.cinco, 
+            "imagen": imagenes.cuatro, 
             "ruta": "/adultos/lavado-manos/tecnica-lavado"
         },
         {
             "texto": "Cuestionario",
-            "imagen": imagenes.seis, 
+            "imagen": imagenes.cinco, 
             "ruta": "/adultos/lavado-manos/introduccion"
         },
     ]

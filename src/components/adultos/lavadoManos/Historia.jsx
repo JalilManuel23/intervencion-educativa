@@ -10,7 +10,7 @@ export const Historia = () => {
             imagen={ imagenes.historia }
             imagen2={ imagenes.lavadoGif2 }
             imagen3={ imagenes.historia2 }
-            parrafo="En 1846, el médico Ignaz Semmelweis, fundamentó que el lavado de manos entre el personal de salud disminuyó  notoriamente la mortalidad de los pacientes. A partir de esto, el  lavado de manos se convirtió en una de las medidas más importantes para prevenir contagios de diferentes enfermedades y una medida de higiene que elimina los organismos presentes en nuestras manos."
+            parrafo="Gracias a que en el año de 1846, el médico Ignaz Semmelweis fundamentó que el lavado de manos entre el personal de salud era necesario, se disminuyó sorprendentemente la mortalidad de los pacientes y ahora en la sociedad, además de prevenir el contagio de otras enfermedades."
             enlace="/adultos/lavado-manos/introduccion/importancia"
             sonido={ audioIntro }
         />

@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './css/estilos.css';
 
-export const VideoDoble = ({ titulo, enlace1, enlace2 }) => {
+export const VideoDoble = ({ titulo, enlace, enlace1, enlace2 }) => {
     return (
         <>
             {/* //Barra */}
@@ -28,6 +29,12 @@ export const VideoDoble = ({ titulo, enlace1, enlace2 }) => {
                     <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
+            <Link
+                to={ enlace }
+                className="seguir-leyendo"
+            >
+                Seguir leyendo >>
+            </Link>
         </>
     )
 }

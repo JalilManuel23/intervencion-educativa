@@ -5,7 +5,7 @@ export const VideoImportancia = () => {
     return (
         <VerVideo 
             enlaceVideo="https://www.youtube.com/embed/J6HLlOSJuGM"
-            enlace="/ninos/lavado-manos/introduccion/dia-lavado-manos"
+            enlace="/ninos/lavado-manos/videos/importancia-lavado-manos2"
             ninos={true}
         />
     )

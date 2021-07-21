@@ -5,8 +5,8 @@ import { VerVideo } from '../../talleres/VerVideo'
 export const VideoDiaLavado = () => {
     return (
         <VerVideo 
-            enlaceVideo="https://www.youtube.com/embed/UqX7STfEp-Y"
-            enlace="/ninos/lavado-manos/introduccion/tipos-lavado"
+            enlaceVideo="https://www.youtube.com/embed/6BZHGJ5_D5A"
+            enlace="/ninos/lavado-manos/introduccion/final-intro"
             ninos={true}
         />
     )

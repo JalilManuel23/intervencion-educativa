@@ -44,7 +44,7 @@ import ninos from './images/taller1-ninos/ninos.jpg';
 import pregunta from './images/taller1-ninos/pregunta.png';
 import clinicoNinos from './images/taller1-ninos/clinico.jpg';
 import gelNinos from './images/taller1-ninos/gel.jpg';
-import feliz from './images/taller1-ninos/feliz.jpg';
+import feliz from './images/taller1-ninos/feliz.png';
 import aguaMemo from './images/taller1-ninos/agua.png';
 import jabonMemo from './images/taller1-ninos/jabón.png';
 import gelAnti from './images/taller1-ninos/gelAnti.jpg';
