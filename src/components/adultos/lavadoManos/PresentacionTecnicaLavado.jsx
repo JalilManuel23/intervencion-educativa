@@ -11,7 +11,7 @@ export const PresentacionTecnicaLavado = () => {
             enlace="/adultos/lavado-manos/videos/tecnica-lavado-manos"
             sonido={ audioIntro }
             rutas={ rutasLavadoAdultos }
-            id={ 10 }
+            id={ 12 }
         />
     )
 }

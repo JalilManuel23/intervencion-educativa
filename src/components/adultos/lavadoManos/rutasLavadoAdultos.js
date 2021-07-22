@@ -35,33 +35,23 @@ export const rutasLavadoAdultos = [
         "ruta": "/adultos/lavado-manos/introduccion/final-intro"
     },
     {
-        "id": 7,
-        "titulo": "Menú Taller Lavado Manos",
-        "ruta": "/adultos/lavado-manos/opciones"
-    },
-    {
         "id": 8,
         "titulo": "Lavado de manos social",
         "ruta": "/adultos/lavado-manos/lavado-social"
     },
     {
-        "id": 9,
+        "id": 10,
         "titulo": "Elementos necesarios",
         "ruta": "/adultos/lavado-manos/elementos-necesarios"
     },
     {
-        "id": 10,
+        "id": 12,
         "titulo": "Técnica de lavado",
         "ruta": "/adultos/lavado-manos/tecnica-lavado"
     },
     {
-        "id": 11,
+        "id": 13,
         "titulo": "Video - Técnica de lavado",
         "ruta": "/adultos/lavado-manos/videos/tecnica-lavado-manos"
-    },
-    {
-        "id": 12,
-        "titulo": "Menú Taller Lavado Manos",
-        "ruta": "/adultos/lavado-manos/opciones"
     }
 ]

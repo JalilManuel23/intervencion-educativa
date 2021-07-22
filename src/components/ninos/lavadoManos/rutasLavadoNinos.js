@@ -40,23 +40,18 @@ export const rutasLavadoNinos = [
         "ruta": "/ninos/lavado-manos/introduccion/final-intro"
     },
     {
-        "id": 8,
+        "id": 9,
         "titulo": "Lavado de manos social",
         "ruta": "/ninos/lavado-manos/lavado-social"
     },
     {
-        "id": 9,
+        "id": 11,
         "titulo": "Elementos necesarios",
         "ruta": "/ninos/lavado-manos/elementos-necesarios"
     },
     {
-        "id": 10,
+        "id": 13,
         "titulo": "Técnica de lavado",
         "ruta": "/ninos/lavado-manos/tecnica-lavado"
-    },
-    {
-        "id": 11,
-        "titulo": "Cuestionario",
-        "ruta": "/ninos/lavado-manos/cuestionario"
-    },
+    }
 ]

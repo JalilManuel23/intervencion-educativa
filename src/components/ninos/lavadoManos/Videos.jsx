@@ -9,7 +9,7 @@ export const Videos = () => {
             enlace="/ninos/lavado-manos/opciones"
             enlace1='https://www.youtube.com/embed/cYvspXZueSU'
             enlace2='https://www.youtube.com/embed/e0pecj7ZCcQ'
-            id={ 10 }
+            id={ 13 }
             rutas={ rutasLavadoNinos }
         />
     )

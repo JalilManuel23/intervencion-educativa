@@ -18,10 +18,5 @@ export const rutasIntroNinos = [
         "id": 3,
         "titulo": "Sintomas",
         "ruta": "/ninos/introduccion/sintomas"
-    },
-    {
-        "id": 4,
-        "titulo": "Menú",
-        "ruta": "/ninos/menu"
     }
 ]

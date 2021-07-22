@@ -13,7 +13,7 @@ export const LavadoSocial = () => {
 "           enlace="/ninos/lavado-manos/opciones"
             sonido={ audioIntro }
             rutas={ rutasLavadoNinos }
-            id={ 8 }
+            id={ 9 }
         />
     )
 }

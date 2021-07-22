@@ -38,7 +38,7 @@ export const ElementosNecesarios = () => {
 
                 <Control 
                     rutas={ rutasLavadoAdultos }
-                    id={ 9 }
+                    id={ 10 }
                     stopAudio={ stopAudio }
                 />
                 <AudioPlayer sound={ sound } />       

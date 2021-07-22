@@ -18,15 +18,19 @@ export const Control = ({ rutas, id, stopAudio }) => {
         return ruta.id === idAnterior;
     }
 
-    let { ruta: rutaSig } = rutas.find( findSiguiente );
-    let { ruta: rutaAnt } = rutas.find( findAnterior );
+    let rutaSig = rutas[0].ruta;
+    let rutaAnt = rutas[0].ruta;
 
-    console.log( rutaSig );
+    console.log(rutas.find( findSiguiente )  );
 
     if( rutas.find( findSiguiente ) ) {
-        console.log('hola');
-    } else {
-        console.log('adios');
+        let { ruta: sig } = rutas.find( findSiguiente );
+        rutaSig = sig;
+    }
+    
+    if( rutas.find( findAnterior )  ) {
+        let { ruta: ant } = rutas.find( findAnterior );
+        rutaAnt = ant;
     }
 
     return (
