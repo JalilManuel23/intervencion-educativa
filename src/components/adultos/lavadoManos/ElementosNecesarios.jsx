@@ -5,10 +5,16 @@ import audioIntro from "../../../assets/sounds/agua_jabon.mp3";
 import { usePlayAudio } from "../../../hooks/usePlayAudio";
 import { setStopAudio } from '../../../hooks/setStopAudio';
 import { AudioPlayer } from '../../general/audioPlayer/AudioPlayer';
+import { rutasLavadoAdultos } from './rutasLavadoAdultos';
+import { Control } from '../../general/control/Control';
 
 export const ElementosNecesarios = () => {
 
     let sound = usePlayAudio( audioIntro );
+
+    const stopAudio = () => { 
+        setStopAudio( sound );
+    }
 
     return (
         <div>
@@ -30,19 +36,11 @@ export const ElementosNecesarios = () => {
                     </div>
                 </div>
 
-                <div className="d-flex justify-content-end">
-                    <Link 
-                        className="regresar-menu mt-3"
-                        to="/adultos/lavado-manos/opciones"
-                        onClick={
-                            () => {
-                                setStopAudio( sound );
-                            }
-                        }
-                    >
-                        Seguir leyendo >>
-                    </Link>
-                </div> 
+                <Control 
+                    rutas={ rutasLavadoAdultos }
+                    id={ 9 }
+                    stopAudio={ stopAudio }
+                />
                 <AudioPlayer sound={ sound } />       
             </div>
         </div>
