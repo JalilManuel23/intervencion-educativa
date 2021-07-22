@@ -1,6 +1,5 @@
 import React from 'react';
 import './css/estilos.css';
-import { Link } from 'react-router-dom';
 import { usePlayAudio } from "../../hooks/usePlayAudio";
 import { setStopAudio } from '../../hooks/setStopAudio';
 import { AudioPlayer } from '../general/audioPlayer/AudioPlayer';
@@ -12,12 +11,15 @@ export const Presentacion2 = ({
     parrafo1,
     parrafo2,
     sonido,
-    enlace,
     rutas,
     id
 }) => {
 
     let sound = usePlayAudio( sonido );
+
+    const stopAudio = () => { 
+        setStopAudio( sound );
+    }
 
     return (
         <>
@@ -52,22 +54,12 @@ export const Presentacion2 = ({
                                     </p>
                                 </div>
                             </div>
-                            <Link
-                                to={ enlace }
-                                className="seguir-leyendo"
-                                onClick={
-                                    () => {
-                                        setStopAudio( sound );
-                                    }
-                                }
-                            >
-                                Seguir leyendo >>
-                            </Link>
                         </div>
                     </div> 
                     <Control 
                         rutas={ rutas }
                         id={ id }
+                        stopAudio={ stopAudio }
                     />
                 <AudioPlayer sound={ sound } />
                     <AudioPlayer sound={ sound } />

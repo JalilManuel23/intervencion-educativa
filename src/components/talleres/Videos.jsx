@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './css/estilos.css';
 import { usePlayAudio } from "../../hooks/usePlayAudio";
 import { setStopAudio } from '../../hooks/setStopAudio';
@@ -9,7 +8,6 @@ import { Control } from '../general/control/Control';
 export const Videos = ({
     titulo,
     texto,
-    enlace,
     imagen,
     jugar,
     sonido,
@@ -19,6 +17,10 @@ export const Videos = ({
 
     let sound = usePlayAudio(sonido);
     let textoBtn = (jugar) ? "Jugar" : "Ver video";
+
+    const stopAudio = () => { 
+        setStopAudio( sound );
+    }
 
     return (
         <div className="videos">
@@ -30,23 +32,11 @@ export const Videos = ({
                     (imagen) &&
                     <img src={imagen} className="img-videos" />
                 }
-                
-                <Link
-                    className="btn btn-primary btn-lg m-5"
-                    to={enlace}
-                    onClick={
-                        () => {
-                            setStopAudio(sound);
-                        }
-                    }
-                >
-                    <span className="display-6">{textoBtn}</span>
-                </Link>
-              
             </div>
             <Control 
                 rutas={ rutas }
                 id={ id }
+                stopAudio={ stopAudio }
             />
             <AudioPlayer sound={sound} />
         </div>

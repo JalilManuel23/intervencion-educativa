@@ -9,7 +9,6 @@ export const Importancia = () => {
         <Videos 
             titulo="¿Sabes cómo lavarte las manos correctamente?"
             texto="Descúbrelo en el siguiente video"
-            enlace="/ninos/lavado-manos/videos/importancia-lavado-manos"
             imagen={ imagenes.pregunta }
             sonido={ audioIntro }
             id={ 2 }

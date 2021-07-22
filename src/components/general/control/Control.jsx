@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { MenuControl } from './MenuControl';
 
-export const Control = ({ rutas, id }) => {
+export const Control = ({ rutas, id, stopAudio }) => {
 
     let idSiguiente = id + 1;
     let idAnterior = id - 1;
@@ -31,9 +31,22 @@ export const Control = ({ rutas, id }) => {
 
     return (
         <div className="control bg-secondary">
-            <Link to={ rutaAnt }><FontAwesomeIcon icon={ faArrowLeft } /></Link>
-            <MenuControl rutas={ rutas } />
-            <Link to={ rutaSig }><FontAwesomeIcon icon={ faArrowRight } /></Link>
+            <Link 
+                to={ rutaAnt }
+                onClick={ stopAudio }
+            >
+                <FontAwesomeIcon icon={ faArrowLeft } />
+            </Link>
+            <MenuControl 
+                rutas={ rutas } 
+                stopAudio={ stopAudio }
+            />
+            <Link 
+                to={ rutaSig }
+                onClick={ stopAudio }
+            >
+                <FontAwesomeIcon icon={ faArrowRight } />
+            </Link>
         </div>
     )
 }

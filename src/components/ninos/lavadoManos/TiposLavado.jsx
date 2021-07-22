@@ -2,6 +2,7 @@ import React from 'react';
 import { ClasificacionTipos } from '../../talleres/ClasificacionTipos';
 import imagenes from '../../../assets/images';
 import audioIntro from "../../../assets/sounds/tipos_lavado-ninos.mp3";
+import { rutasLavadoNinos } from './rutasLavadoNinos';
 
 export const TiposLavado = () => {
 
@@ -27,6 +28,8 @@ export const TiposLavado = () => {
             enlace="/ninos/lavado-manos/introduccion/final-intro"
             opciones={ opciones }
             sonido={ audioIntro }
+            rutas={ rutasLavadoNinos }
+            id={ 5 }
         />
     )
 }

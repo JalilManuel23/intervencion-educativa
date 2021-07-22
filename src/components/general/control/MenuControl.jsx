@@ -4,11 +4,14 @@ import './control.css';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export const MenuControl = ({ rutas }) => {
+export const MenuControl = ({ rutas, stopAudio }) => {
     return (
         <div class="btn-group dropup">
             <button type="button" class="btn btn-secondary">
-                <Link to={ rutas[0].ruta }>
+                <Link 
+                    to={ rutas[0].ruta }
+                    onClick={ stopAudio }
+                >
                     <FontAwesomeIcon icon={ faHome } />
                 </Link>
             </button>
@@ -20,7 +23,7 @@ export const MenuControl = ({ rutas }) => {
                     rutas.map( rutas => {
                         let { titulo, ruta } = rutas;
                         return(
-                            <li><Link to={ ruta } class="dropdown-item">{ titulo }</Link></li>
+                            <li><Link to={ ruta } class="dropdown-item" onClick={ stopAudio }>{ titulo }</Link></li>
                         )
                     })
                 }

@@ -1,17 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { usePlayAudio } from "../../hooks/usePlayAudio";
 import { setStopAudio } from '../../hooks/setStopAudio';
 import { AudioPlayer } from '../general/audioPlayer/AudioPlayer';
+import { Control } from '../general/control/Control';
 
 export const ClasificacionTipos = ({
     titulo,
-    enlace,
     opciones,
-    sonido
+    sonido,
+    rutas,
+    id
 }) => {
 
     let sound = usePlayAudio( sonido );
+
+    const stopAudio = () => { 
+        setStopAudio( sound );
+    }
 
     return (
         <div>
@@ -33,17 +38,11 @@ export const ClasificacionTipos = ({
                         )
                     })
                 }
-                <Link
-                    to={ enlace }
-                    className="seguir-leyendo"
-                    onClick={
-                        () => {
-                            setStopAudio( sound );
-                        }
-                    }
-                >
-                    Seguir leyendo >>
-                </Link>
+                <Control 
+                    rutas={ rutas }
+                    id={ id }
+                    stopAudio={ stopAudio }
+                />
                 <AudioPlayer sound={ sound } />
             </div>
         </div>
