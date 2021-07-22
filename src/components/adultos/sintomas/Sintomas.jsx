@@ -3,7 +3,7 @@ import './sintomas.css';
 import imagenes from '../../../assets/images';
 import { Link } from 'react-router-dom';
 
-import audioSintomas from "../../../assets/sounds/sintomas_adulto.mp3";
+import audioSintomas from "../../../assets/sounds/sintomas.mp3";
 import audioSintomasNino from "../../../assets/sounds/sintomas_nino.mp3";
 
 import { usePlayAudio } from "../../../hooks/usePlayAudio";

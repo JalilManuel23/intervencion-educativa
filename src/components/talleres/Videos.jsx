@@ -4,6 +4,7 @@ import './css/estilos.css';
 import { usePlayAudio } from "../../hooks/usePlayAudio";
 import { setStopAudio } from '../../hooks/setStopAudio';
 import { AudioPlayer } from '../general/audioPlayer/AudioPlayer';
+import { Control } from '../general/control/Control';
 
 export const Videos = ({
     titulo,
@@ -11,7 +12,9 @@ export const Videos = ({
     enlace,
     imagen,
     jugar,
-    sonido
+    sonido,
+    rutas,
+    id
 }) => {
 
     let sound = usePlayAudio(sonido);
@@ -41,6 +44,10 @@ export const Videos = ({
                 </Link>
               
             </div>
+            <Control 
+                rutas={ rutas }
+                id={ id }
+            />
             <AudioPlayer sound={sound} />
         </div>
     )

@@ -1,7 +1,8 @@
 import React from 'react'
 import { Videos } from '../../talleres/Videos'
 import imagenes from '../../../assets/images';
-import audioIntro from "../../../assets/sounds/video_sabes_como_lavarte.mp3";
+import audioIntro from "../../../assets/sounds/sabes_como_lavarte_correctamente.mp3";
+import { rutasLavadoNinos } from './rutasLavadoNinos';
 
 export const Importancia = () => {
     return (
@@ -11,6 +12,8 @@ export const Importancia = () => {
             enlace="/ninos/lavado-manos/videos/importancia-lavado-manos"
             imagen={ imagenes.pregunta }
             sonido={ audioIntro }
+            id={ 2 }
+            rutas={ rutasLavadoNinos }
         />
     )
 }

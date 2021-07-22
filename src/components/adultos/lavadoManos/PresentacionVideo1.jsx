@@ -1,6 +1,6 @@
 import React from 'react';
 import { Videos } from '../../talleres/Videos';
-import audioIntro from "../../../assets/sounds/prevencion.mp3";
+import audioIntro from "../../../assets/sounds/medida_prevencion.mp3";
 
 export const PresentacionVideo1 = () => {
     return (

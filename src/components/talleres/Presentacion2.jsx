@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { usePlayAudio } from "../../hooks/usePlayAudio";
 import { setStopAudio } from '../../hooks/setStopAudio';
 import { AudioPlayer } from '../general/audioPlayer/AudioPlayer';
+import { Control } from '../general/control/Control';
 
 export const Presentacion2 = ({
     imagen,
@@ -11,7 +12,9 @@ export const Presentacion2 = ({
     parrafo1,
     parrafo2,
     sonido,
-    enlace
+    enlace,
+    rutas,
+    id
 }) => {
 
     let sound = usePlayAudio( sonido );
@@ -61,7 +64,12 @@ export const Presentacion2 = ({
                                 Seguir leyendo >>
                             </Link>
                         </div>
-                    </div>
+                    </div> 
+                    <Control 
+                        rutas={ rutas }
+                        id={ id }
+                    />
+                <AudioPlayer sound={ sound } />
                     <AudioPlayer sound={ sound } />
                 </div>
             </div>

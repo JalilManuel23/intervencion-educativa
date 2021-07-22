@@ -1,0 +1,16 @@
+.control {
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    padding: 0 15px;
+    border-radius: 5px;
+    box-shadow: var(--sombra);
+}
+
+.control a{
+    color: white;
+}
+
+.dropdown-menu a {
+    color: gray;
+}

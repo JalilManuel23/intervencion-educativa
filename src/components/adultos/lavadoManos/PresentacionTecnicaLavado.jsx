@@ -1,6 +1,6 @@
 import React from 'react';
 import { Videos } from '../../talleres/Videos';
-import audioIntro from "../../../assets/sounds/video_sabes_como_lavarte.mp3";
+import audioIntro from "../../../assets/sounds/sabes_como_lavarte.mp3";
 
 export const PresentacionTecnicaLavado = () => {
     return (

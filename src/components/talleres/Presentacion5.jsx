@@ -3,12 +3,15 @@ import { Link } from 'react-router-dom';
 import { usePlayAudio } from "../../hooks/usePlayAudio";
 import { setStopAudio } from '../../hooks/setStopAudio';
 import { AudioPlayer } from '../general/audioPlayer/AudioPlayer';
+import { Control } from '../general/control/Control';
 
 export const Presentacion5 = ({
     parrafo, 
     imagen, 
     enlace,
-    sonido
+    sonido,
+    rutas,
+    id
 }) => {
 
     let sound = usePlayAudio( sonido );
@@ -22,6 +25,10 @@ export const Presentacion5 = ({
                         <p>{parrafo}</p>
                     </div>
                 </div>
+                <Control 
+                    rutas={ rutas }
+                    id={ id }
+                />
                 <AudioPlayer sound={ sound } />
             </div>
             <div className="d-flex justify-content-end">

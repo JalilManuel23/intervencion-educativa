@@ -1,7 +1,7 @@
 import React from 'react';
 import imagenes from '../../../assets/images';
 import { Presentacion3 } from '../../talleres/Presentacion3'
-import audioIntro from "../../../assets/sounds/historia_lavado-ninos.mp3";
+import audioIntro from "../../../assets/sounds/historia.mp3";
 
 export const Historia = () => {
     return (

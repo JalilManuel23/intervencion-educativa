@@ -1,7 +1,7 @@
 import React from 'react';
 import { Presentacion2 } from '../../talleres/Presentacion2';
 import imagenes from '../../../assets/images';
-import audioIntro from "../../../assets/sounds/lavadoSocial-adultos.mp3";
+import audioIntro from "../../../assets/sounds/eliminacion_organismos.mp3";
 
 export const LavadoSocial = () => {
     return (
