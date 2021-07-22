@@ -6,10 +6,16 @@ import audioCovidNino from "../../../assets/sounds/familia_covid_2.mp3";
 import { usePlayAudio } from "../../../hooks/usePlayAudio";
 import { setStopAudio } from '../../../hooks/setStopAudio';
 import { AudioPlayer } from '../../general/audioPlayer/AudioPlayer';
+import { rutasIntroNinos } from './rutasIntroNinos';
+import { Control } from '../../general/control/Control';
 
 export const IntroduccionParte2 = () => {
 
     let sound = usePlayAudio( audioCovidNino );
+
+    const stopAudio = () => { 
+        setStopAudio( sound );
+    }
 
     return (
         <div className="intro-ninos2 animate__animated animate__fadeIn">
@@ -27,18 +33,11 @@ export const IntroduccionParte2 = () => {
                     </div>
                 </div>
 
-                <p className="text-center mt-4">
-                    <Link 
-                        to="/ninos/introduccion/sintomas" 
-                        className="seguir-leyendo"
-                        onClick={ () => {                                         
-                                setStopAudio( sound );
-                            }
-                        }
-                    >
-                        Seguir leyendo >>
-                    </Link>
-                </p>
+                <Control 
+                    rutas={ rutasIntroNinos }
+                    id={ 2 }
+                    stopAudio={ stopAudio }
+                />
                 <AudioPlayer sound={ sound } />
             </div>
         </div>

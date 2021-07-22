@@ -56,7 +56,7 @@ export const rutasLavadoNinos = [
     },
     {
         "id": 11,
-        "titulo": "Elementos necesarios",
-        "ruta": "/ninos/lavado-manos/elementos-necesarios"
+        "titulo": "Cuestionario",
+        "ruta": "/ninos/lavado-manos/cuestionario"
     },
 ]

@@ -5,13 +5,20 @@ import { Link } from 'react-router-dom';
 import { usePlayAudio } from "../../hooks/usePlayAudio";
 import { setStopAudio } from '../../hooks/setStopAudio';
 import { AudioPlayer } from '../general/audioPlayer/AudioPlayer';
+import { Control } from '../general/control/Control';
 
 export const FinalIntro = ({
     enlace,
-    sonido
+    sonido,
+    rutas,
+    id
 }) => {
 
     let sound = usePlayAudio( sonido );
+
+    const stopAudio = () => { 
+        setStopAudio( sound );
+    }
 
     return (
         <div className="final-intro d-flex flex-column justify-content-center align-items-center">
@@ -26,6 +33,11 @@ export const FinalIntro = ({
                 }
             >Siguiente >></Link>
             <AudioPlayer sound={ sound } />
+            <Control 
+                rutas={ rutas }
+                id={ id }
+                stopAudio={ stopAudio }
+            />
         </div>
     )
 }

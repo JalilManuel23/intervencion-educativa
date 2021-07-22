@@ -1,8 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './css/estilos.css';
+import { Control } from '../general/control/Control';
 
-export const VideoDoble = ({ titulo, enlace, enlace1, enlace2 }) => {
+export const VideoDoble = ({ 
+    titulo, 
+    enlace, 
+    enlace1, 
+    enlace2,
+    rutas,
+    id 
+}) => {
     return (
         <>
             {/* //Barra */}
@@ -11,7 +19,7 @@ export const VideoDoble = ({ titulo, enlace, enlace1, enlace2 }) => {
             </div>
 
             {/* //carousel */}
-            <div id="carouselExampleControls" class="carousel slide container mt-4" data-bs-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide container my-5" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active ratio ratio-16x9">
                         <iframe className="first-slide" src={ enlace1 } allowfullscreen ></iframe>
@@ -29,12 +37,10 @@ export const VideoDoble = ({ titulo, enlace, enlace1, enlace2 }) => {
                     <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
-            <Link
-                to={ enlace }
-                className="seguir-leyendo"
-            >
-                Seguir leyendo >>
-            </Link>
+            <Control 
+                rutas={ rutas }
+                id={ id }
+            />
         </>
     )
 }
