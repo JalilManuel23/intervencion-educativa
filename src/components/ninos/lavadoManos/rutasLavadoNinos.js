@@ -11,17 +11,17 @@ export const rutasLavadoNinos = [
     },
     {
         "id": 2,
-        "titulo": "Presentación importancia",
+        "titulo": "Importancia del lavado de manos",
         "ruta": "/ninos/lavado-manos/introduccion/importancia"
     },
     {
         "id": 3,
-        "titulo": "Video importancia",
+        "titulo": "Video - Importancia del lavado de manos",
         "ruta": "/ninos/lavado-manos/videos/importancia-lavado-manos"
     },
     {
         "id": 4,
-        "titulo": "Video importancia",
+        "titulo": "Video - Importancia del lavado de manos 2",
         "ruta": "/ninos/lavado-manos/videos/importancia-lavado-manos2"
     },
     {

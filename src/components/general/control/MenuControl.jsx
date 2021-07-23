@@ -5,6 +5,9 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const MenuControl = ({ rutas, stopAudio }) => {
+
+    let contador = 0;
+
     return (
         <div class="btn-group dropup">
             <button type="button" class="btn btn-secondary">
@@ -21,9 +24,10 @@ export const MenuControl = ({ rutas, stopAudio }) => {
             <ul class="dropdown-menu">
                 {
                     rutas.map( rutas => {
+                        contador++;
                         let { titulo, ruta } = rutas;
                         return(
-                            <li><Link to={ ruta } class="dropdown-item" onClick={ stopAudio }>{ titulo }</Link></li>
+                            <li><Link to={ ruta } class="dropdown-item" onClick={ stopAudio }>{ contador }. { titulo }</Link></li>
                         )
                     })
                 }

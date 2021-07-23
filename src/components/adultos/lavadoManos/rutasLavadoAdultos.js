@@ -1,7 +1,7 @@
 export const rutasLavadoAdultos = [
     {
         "id": 0,
-        "titulo": "Menú Taller Lavado Manos",
+        "titulo": "Menú - Taller Lavado Manos",
         "ruta": "/adultos/lavado-manos/opciones"
     },
     {
@@ -16,12 +16,12 @@ export const rutasLavadoAdultos = [
     },
     {
         "id": 3,
-        "titulo": "Importancia",
+        "titulo": "Importancia del lavado de manos",
         "ruta": "/adultos/lavado-manos/introduccion/importancia"
     },
     {
         "id": 4,
-        "titulo": "Video importancia",
+        "titulo": "Video - Importancia del lavado de manos",
         "ruta": "/adultos/lavado-manos/videos/importancia-lavado-manos"
     },
     {
