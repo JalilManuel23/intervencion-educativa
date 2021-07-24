@@ -7,51 +7,52 @@ export const rutasAmorPropio = [
     {
         "id": 1,
         "titulo": "¿Qué es amor propio?",
-        "ruta": "/adultos/amor-propio/definicion"
+        "ruta": "/adultos/amor-propio/salud-mental/definicion"
     },
     {
         "id": 2,
         "titulo": "¿Qué es amor propio? - parte 2",
-        "ruta": "/adultos/amor-propio/definicion-pt2"
+        "ruta": "/adultos/amor-propio/salud-mental/definicion-pt2"
     },
     {
         "id": 3,
-        "titulo": "Importancia del lavado de manos",
-        "ruta": "/adultos/lavado-manos/introduccion/importancia"
+        "titulo": "¿Cómo cuidar nuestra salud mental?",
+        "ruta": "/adultos/amor-propio/salud-mental/como-cuidar-salud-mental"
     },
     {
         "id": 4,
-        "titulo": "Video - Importancia del lavado de manos",
-        "ruta": "/adultos/lavado-manos/videos/importancia-lavado-manos"
-    },
-    {
-        "id": 5,
-        "titulo": "Día del lavado de manos",
-        "ruta": "/adultos/lavado-manos/introduccion/dia-lavado-manos"
+        "titulo": "Video - ¿Cómo cuidar nuestra salud mental?",
+        "ruta": "/adultos/amor-propio/salud-mental/videos/como-cuidar-salud-mental"
     },
     {
         "id": 6,
-        "titulo": "Final introducción",
-        "ruta": "/adultos/lavado-manos/introduccion/final-intro"
+        "titulo": "Definición amor propio",
+        "ruta": "/adultos/amor-propio/definicion"
+    },
+    {
+        "id": 7,
+        "titulo": "Descubre los 4 ámbitos del amor propio",
+        "ruta": "/adultos/amor-propio/descubre-ambitos"
     },
     {
         "id": 8,
-        "titulo": "Lavado de manos social",
-        "ruta": "/adultos/lavado-manos/lavado-social"
+        "titulo": "4 ámbitos del amor propio",
+        "ruta": "/adultos/amor-propio/ambitos"
+    },
+    {
+        "id": 9,
+        "titulo": "¿Por qué es importante tener mucho amor propio?",
+        "ruta": "/adultos/amor-propio/importancia"
     },
     {
         "id": 10,
-        "titulo": "Elementos necesarios",
-        "ruta": "/adultos/lavado-manos/elementos-necesarios"
+        "titulo": "Video - ¿Por qué es importante tener mucho amor propio?",
+        "ruta": "/adultos/amor-propio/videos/importancia"
     },
     {
-        "id": 12,
-        "titulo": "Técnica de lavado",
-        "ruta": "/adultos/lavado-manos/tecnica-lavado"
+        "id": 11,
+        "titulo": "Final amor propio",
+        "ruta": "/adultos/amor-propio/final"
     },
-    {
-        "id": 13,
-        "titulo": "Video - Técnica de lavado",
-        "ruta": "/adultos/lavado-manos/videos/tecnica-lavado-manos"
-    }
+    
 ]

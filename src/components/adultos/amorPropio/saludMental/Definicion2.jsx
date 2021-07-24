@@ -7,10 +7,10 @@ import { rutasAmorPropio } from '../rutasAmorPropio';
 export const Definicion2 = () => {
     return (
         <Presentacion2 
-            imagen={ imagenes.saludMental }
-            parrafo1= "Es el estado de equilibrio que debe existir entre las personas y el entorno que los rodea, incluye el bienestar emocional, y social e influye en cómo piensa, siente, actúa y reacciona una persona ante momentos de estrés."
+            imagen={ imagenes.saludMental2 }
+            parrafo1= "Para combatir el miedo y momentos de estrés durante  la pandemia, es de gran importancia fortalecer nuestra salud mental, realizando acciones que nos cuiden a nosotros y a la vez a los demás."
             sonido={ audio }
-            id={ 1 }
+            id={ 2 }
             rutas={ rutasAmorPropio }
         />
     )

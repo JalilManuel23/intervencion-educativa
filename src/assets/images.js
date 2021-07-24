@@ -52,6 +52,13 @@ import toalla from './images/taller1-ninos/toalla.png';
 
 import portada from './images/taller2/portada.jpg';
 import saludMental from './images/taller2/salud-mental.png';
+import saludMental2 from './images/taller2/salud-mental-2.png';
+import duda from './images/taller2/duda.jpg';
+import fisica from './images/taller2/fisica.png';
+import mental from './images/taller2/mental.png';
+import espiritual from './images/taller2/espiritua.png';
+import emocional from './images/taller2/emocional.png';
+import adultos from './images/taller2/adultos.jpg';
 
 import tos from './images/memorama-sintomas/tos.png';
 import fatiga from './images/memorama-sintomas/fatiga.png';
@@ -112,6 +119,13 @@ export default {
 
     "portada": portada,
     "saludMental": saludMental,
+    "saludMental2": saludMental2,
+    "duda": duda,
+    "fisica": fisica,
+    "mental": mental,
+    "espiritual": espiritual,
+    "emocional": emocional,
+    "adultos": adultos,
 
     "tos": tos,
     "fatiga": fatiga,

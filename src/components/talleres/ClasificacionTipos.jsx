@@ -19,7 +19,7 @@ export const ClasificacionTipos = ({
     }
 
     return (
-        <div>
+        <div className="mb-5">
             <div className="text-center text-white py-2 mt-4 barra-titulo"> 
                 <h2 className="display-5">{titulo}</h2>
             </div>

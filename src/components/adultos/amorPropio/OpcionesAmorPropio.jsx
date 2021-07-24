@@ -9,17 +9,17 @@ export const OpcionesAmorPropio = () => {
         {
             "texto": "Cuidando nuestra salud mental",
             "imagen": imagenes.uno, 
-            "ruta": "/adultos/amor-propio/definicion", 
+            "ruta": "/adultos/amor-propio/salud-mental/definicion", 
         },
         {
             "texto": "Amor propio",
             "imagen": imagenes.dos, 
-            "ruta": "/adultos/amor-propio/lavado-social"
+            "ruta": "/adultos/amor-propio/definicion"
         },
         {
             "texto": "Cuestionario",
             "imagen": imagenes.tres, 
-            "ruta": "/adultos/amor-propio/elementos-necesarios"
+            "ruta": "/adultos/amor-propio/cuestionario"
         }
     ]
 

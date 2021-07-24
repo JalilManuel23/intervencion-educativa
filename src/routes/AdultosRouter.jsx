@@ -1,10 +1,18 @@
 import React from 'react';
 
 import { Route } from "react-router-dom";
+import { Ambitos } from '../components/adultos/amorPropio/amorProp/Ambitos';
+import { DefinicionAmorProp } from '../components/adultos/amorPropio/amorProp/DefinicionAmorProp';
+import { DescubreAmbitos } from '../components/adultos/amorPropio/amorProp/DescubreAmbitos';
+import { Final } from '../components/adultos/amorPropio/amorProp/Final';
+import { Importancia } from '../components/adultos/amorPropio/amorProp/Importancia';
+import { VideoImportancia } from '../components/adultos/amorPropio/amorProp/VideoImportancia';
 import { OpcionesAmorPropio } from '../components/adultos/amorPropio/OpcionesAmorPropio';
 import { PresentacionAmorPropio } from '../components/adultos/amorPropio/PresentacionAmorPropio';
+import { ComoCuidar } from '../components/adultos/amorPropio/saludMental/ComoCuidar';
 import { Definicion } from '../components/adultos/amorPropio/saludMental/Definicion';
 import { Definicion2 } from '../components/adultos/amorPropio/saludMental/Definicion2';
+import { VideoComoCuidar } from '../components/adultos/amorPropio/saludMental/VideoComoCuidar';
 import { Introduccion } from '../components/adultos/introduccion/Introduccion';
 import { Mapa } from '../components/adultos/introduccion/Mapa';
 
@@ -57,12 +65,21 @@ export const AdultosRouter = () => {
             <Route exact path="/adultos/lavado-manos/videos/5-momentos-oms" component={ Video2 } />
             <Route exact path="/adultos/lavado-manos/tecnica-lavado" component={ PresentacionTecnicaLavado } />
             <Route exact path="/adultos/lavado-manos/videos/tecnica-lavado-manos" component={ VideoLavadoManos } />
-       
+
             {/* Taller 2 de adultos */}
             <Route exact path="/adultos/amor-propio/presentacion" component={ PresentacionAmorPropio } />
             <Route exact path="/adultos/amor-propio/opciones" component={ OpcionesAmorPropio } />
-            <Route exact path="/adultos/amor-propio/definicion" component={ Definicion } />
-            <Route exact path="/adultos/amor-propio/definicion-pt2" component={ Definicion2 } />
+            <Route exact path="/adultos/amor-propio/salud-mental/definicion" component={ Definicion } />
+            <Route exact path="/adultos/amor-propio/salud-mental/definicion-pt2" component={ Definicion2 } />
+            <Route exact path="/adultos/amor-propio/salud-mental/como-cuidar-salud-mental" component={ ComoCuidar } />
+            <Route exact path="/adultos/amor-propio/salud-mental/videos/como-cuidar-salud-mental" component={ VideoComoCuidar } />
+
+            <Route exact path="/adultos/amor-propio/definicion" component={ DefinicionAmorProp } />
+            <Route exact path="/adultos/amor-propio/descubre-ambitos" component={ DescubreAmbitos } />
+            <Route exact path="/adultos/amor-propio/ambitos" component={ Ambitos } />
+            <Route exact path="/adultos/amor-propio/importancia" component={ Importancia } />
+            <Route exact path="/adultos/amor-propio/videos/importancia" component={ VideoImportancia } />
+            <Route exact path="/adultos/amor-propio/final" component={ Final } />
             
         </>
     )
