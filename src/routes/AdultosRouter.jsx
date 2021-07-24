@@ -1,6 +1,10 @@
 import React from 'react';
 
 import { Route } from "react-router-dom";
+import { OpcionesAmorPropio } from '../components/adultos/amorPropio/OpcionesAmorPropio';
+import { PresentacionAmorPropio } from '../components/adultos/amorPropio/PresentacionAmorPropio';
+import { Definicion } from '../components/adultos/amorPropio/saludMental/Definicion';
+import { Definicion2 } from '../components/adultos/amorPropio/saludMental/Definicion2';
 import { Introduccion } from '../components/adultos/introduccion/Introduccion';
 import { Mapa } from '../components/adultos/introduccion/Mapa';
 
@@ -53,6 +57,13 @@ export const AdultosRouter = () => {
             <Route exact path="/adultos/lavado-manos/videos/5-momentos-oms" component={ Video2 } />
             <Route exact path="/adultos/lavado-manos/tecnica-lavado" component={ PresentacionTecnicaLavado } />
             <Route exact path="/adultos/lavado-manos/videos/tecnica-lavado-manos" component={ VideoLavadoManos } />
+       
+            {/* Taller 2 de adultos */}
+            <Route exact path="/adultos/amor-propio/presentacion" component={ PresentacionAmorPropio } />
+            <Route exact path="/adultos/amor-propio/opciones" component={ OpcionesAmorPropio } />
+            <Route exact path="/adultos/amor-propio/definicion" component={ Definicion } />
+            <Route exact path="/adultos/amor-propio/definicion-pt2" component={ Definicion2 } />
+            
         </>
     )
 }

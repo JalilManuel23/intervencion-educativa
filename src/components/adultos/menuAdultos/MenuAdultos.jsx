@@ -11,7 +11,7 @@ export const MenuAdultos = () => {
 
                     <OpcionMenu texto="Taller 1: Lavado de manos" color='#246cce' ruta="/adultos/lavado-manos/presentacion" />
 
-                    <OpcionMenu texto="Taller 2" color='#468fee' />
+                    <OpcionMenu texto="Taller 2: Amor Propio" color='#468fee' ruta='/adultos/amor-propio/presentacion' />
 
                     <OpcionMenu texto="Taller 3" color='#6fa1e6' />
                 </div>

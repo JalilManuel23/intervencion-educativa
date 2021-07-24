@@ -50,6 +50,9 @@ import jabonMemo from './images/taller1-ninos/jabón.png';
 import gelAnti from './images/taller1-ninos/gelAnti.jpg';
 import toalla from './images/taller1-ninos/toalla.png';
 
+import portada from './images/taller2/portada.jpg';
+import saludMental from './images/taller2/salud-mental.png';
+
 import tos from './images/memorama-sintomas/tos.png';
 import fatiga from './images/memorama-sintomas/fatiga.png';
 import dolor from './images/memorama-sintomas/dolor.png';
@@ -106,6 +109,9 @@ export default {
     "jabonMemo": jabonMemo,
     "gelAnti": gelAnti,
     "toalla": toalla,
+
+    "portada": portada,
+    "saludMental": saludMental,
 
     "tos": tos,
     "fatiga": fatiga,
