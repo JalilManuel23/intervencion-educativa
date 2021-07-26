@@ -50,7 +50,17 @@ export const rutasLavadoNinos = [
         "ruta": "/ninos/lavado-manos/elementos-necesarios"
     },
     {
+        "id": 12,
+        "titulo": "¡Preparate para jugar!",
+        "ruta": "/ninos/lavado-manos/preparate-jugar"
+    },
+    {
         "id": 13,
+        "titulo": "Memorama de elementos de lavado de manos",
+        "ruta": "/ninos/lavado-manos/memorama-elementos"
+    },
+    {
+        "id": 15,
         "titulo": "Técnica de lavado",
         "ruta": "/ninos/lavado-manos/tecnica-lavado"
     }

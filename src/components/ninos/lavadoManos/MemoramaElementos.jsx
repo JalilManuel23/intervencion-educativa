@@ -1,6 +1,7 @@
 import React from 'react'
 import { Memorama } from '../../general/memorama/Memorama'
 import imagenes from '../../../assets/images';
+import { rutasLavadoNinos } from './rutasLavadoNinos';
 
 export const MemoramaElementos = () => {
     let datos =  [
@@ -31,6 +32,8 @@ export const MemoramaElementos = () => {
             datos={ datos }
             titulo="Memorama Lavado  De Manos"
             enlace="/ninos/lavado-manos/opciones"
+            rutas={ rutasLavadoNinos }
+            id={ 13 }
         />
     )
 }

@@ -12,11 +12,13 @@ import audioMal from "../../../assets/sounds/mal.mp3";
 import audioBien from "../../../assets/sounds/bien.mp3";
 import audioGanar from "../../../assets/sounds/ganar.mp3";
 import { Link } from 'react-router-dom';
+import { Control } from '../../general/control/Control';
 
 export const Memorama = ({ 
     datos,
     titulo,
-    enlace 
+    rutas,
+    id
 }) => {
 
     const [baraja, setBaraja] = useState(construirBaraja( datos ));
@@ -140,7 +142,10 @@ export const Memorama = ({
                 </button>   
             </div>
             
-            <Link to={ enlace }>Siguiente >></Link>
+            <Control 
+                rutas={ rutas }
+                id={ id }
+            />
         
         </div>
     )
