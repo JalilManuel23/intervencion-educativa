@@ -1,7 +1,7 @@
 import React from 'react';
 import { Presentacion1 } from '../../talleres/Presentacion1';
 import imagenes from '../../../assets/images';
-import audio from "../../../assets/sounds/adultos_amor_propio/Bienvenida.mp3";
+import audio from "../../../assets/sounds/adultos_amor_propio/bienvenida.mp3";
 
 export const PresentacionAmorPropio = () => {
     return (
