@@ -53,7 +53,7 @@ import toalla from './images/taller1-ninos/toalla.png';
 import portada from './images/taller2/portada.jpg';
 import saludMental from './images/taller2/salud-mental.png';
 import saludMental2 from './images/taller2/salud-mental-2.png';
-import duda from './images/taller2/duda.jpg';
+import duda from './images/taller2/duda.png';
 import fisica from './images/taller2/fisica.png';
 import mental from './images/taller2/mental.png';
 import espiritual from './images/taller2/espiritua.png';

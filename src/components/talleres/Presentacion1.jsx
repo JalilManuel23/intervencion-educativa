@@ -27,7 +27,7 @@ export const Presentacion1 = ({
                 </div>
 
                 <div className="col-12 text-center my-5">
-                    <img className="img-fluid" src={imagen} />
+                    <img className="img-fluid img-presen" src={imagen} />
                 </div>
 
                 <div className="d-flex justify-content-end">

@@ -26,6 +26,10 @@
     max-width: 80vh;
 }
 
+.img-presen {
+    max-height: 50vh;
+}
+
 .contenedor-intro {
     background: #fff;
     color: rgb(128, 126, 126);

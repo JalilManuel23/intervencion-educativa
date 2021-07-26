@@ -1,6 +1,6 @@
 import React from 'react';
 import imagenes from '../../../../assets/images';
-import audio from "../../../../assets/sounds/higiene.mp3";
+import audio from "../../../../assets/sounds/adultos_amor_propio/es_el_estado.mp3";
 import { Presentacion2 } from '../../../talleres/Presentacion2';
 import { rutasAmorPropio } from '../rutasAmorPropio';
 

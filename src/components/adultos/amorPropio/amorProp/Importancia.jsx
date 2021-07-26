@@ -1,6 +1,6 @@
 import React from 'react';
 import { Videos } from '../../../talleres/Videos';
-import audio from "../../../../assets/sounds/medida_prevencion.mp3";
+import audio from "../../../../assets/sounds/adultos_amor_propio/video_3.mp3";
 import { rutasAmorPropio } from '../rutasAmorPropio'
 
 export const Importancia = () => {

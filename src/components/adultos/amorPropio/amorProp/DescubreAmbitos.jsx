@@ -1,6 +1,6 @@
 import React from 'react';
 import { Videos } from '../../../talleres/Videos';
-import audio from "../../../../assets/sounds/medida_prevencion.mp3";
+import audio from "../../../../assets/sounds/adultos_amor_propio/video_2.mp3";
 import imagenes from "../../../../assets/images";
 import { rutasAmorPropio } from '../rutasAmorPropio'
 

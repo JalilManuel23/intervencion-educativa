@@ -1,7 +1,7 @@
 import React from 'react';
 import { ClasificacionTipos } from '../../../talleres/ClasificacionTipos';
 import imagenes from '../../../../assets/images';
-import audio from "../../../../assets/sounds/tipos_lavado-ninos.mp3";
+import audio from "../../../../assets/sounds/adultos_amor_propio/caras.mp3";
 import { rutasAmorPropio } from '../rutasAmorPropio';
 
 export const Ambitos = () => {
