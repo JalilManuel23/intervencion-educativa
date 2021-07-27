@@ -25,7 +25,7 @@ export const ElementosNecesarios = () => {
             </div>
 
             <div className="container"> 
-                <div className="d-flex justify-content-around mt-5">
+                <div className="d-flex flex-column flex-md-row justify-content-around mt-5">
                     <div className="d-flex flex-column align-items-center">
                         <img src={ imagenes.agua } alt="agua" className="elementos" />
                         <h4 className="display-6 mt-1 nombre-elementos">Agua</h4>

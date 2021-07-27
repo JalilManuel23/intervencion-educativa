@@ -35,8 +35,8 @@
     color: rgb(128, 126, 126);
     width: 100%;
     border-radius: 30px;
-    font-size: 2rem;
     padding: 2rem;
+    font-size: 5vmin;
     text-align: center;
 }
 
@@ -189,5 +189,10 @@
 @media screen and (max-width: 1200px) {
     .contenedor-intro {
         width: 100%;
+        font-size: 6.5vmin;
+    }
+
+    .parrafo-historia {
+        font-size: 5vmin;
     }
 }

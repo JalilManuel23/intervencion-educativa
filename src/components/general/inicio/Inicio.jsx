@@ -18,7 +18,7 @@ export const Inicio = () => {
                 <h1 className="titulo-inicio">Taller para la prevención del COVID-19</h1>
 
                 <button type="button" 
-                        class="btn btn-primary mt-5 btn-lg col-3" 
+                        class="btn btn-primary mt-5 btn-lg col-md-3 col-8" 
                         data-bs-toggle="modal" 
                         data-bs-target="#seleccionarCategoria"
                         onClick={ () => reproducirAudio() }

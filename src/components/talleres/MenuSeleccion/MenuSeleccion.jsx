@@ -9,8 +9,7 @@ export const MenuSeleccion = ({ datos, sonido }) => {
                 <h2 className="display-5">Selecciona una opción para continuar</h2>
             </div>
 
-            <div className="container my-5">
-                <div className="row ">
+            <div className="container my-5 d-md-flex flex-wrap">
 
                     {
                         datos.map(opcion => {
@@ -28,7 +27,7 @@ export const MenuSeleccion = ({ datos, sonido }) => {
                         })
                     }
                 </div>
-            </div>
+            
 
         </div>
     )

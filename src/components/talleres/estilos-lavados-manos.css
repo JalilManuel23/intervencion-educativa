@@ -4,7 +4,7 @@
 }
 
 .img-doctora {
-    max-width: 80vh;
+    max-height: 80%;
 }
 
 .elementos {
@@ -14,4 +14,16 @@
 .nombre-elementos {
     font-weight: bold;
     color: #2ae1e8;
+}
+
+.titulo-videos {
+    font-size: 9vmin;
+}
+
+.texto-videos {
+    font-size: 6vmin;
+}
+
+.img-doctora {
+    max-width: 98%;
 }

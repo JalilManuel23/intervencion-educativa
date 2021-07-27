@@ -1,5 +1,6 @@
 .opcion-menu-seleccion {
     padding: 0.8rem;
+    min-height: 20vh;
     border-radius: 20px;
     color: #FFF;
 }
@@ -14,5 +15,11 @@
 }
 
 .texto-opcion-menu {
-    font-size: 1.4rem;
+    font-size: 4vmin;
+}
+
+@media (max-width: 560px) {
+    .texto-opcion-menu {
+        font-size: 8vmin;
+    }
 }

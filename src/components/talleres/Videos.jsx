@@ -27,7 +27,7 @@ export const Videos = ({
             <div className="wave"></div>
             <div className="container d-flex flex-column align-items-center justify-content-between">
                 <h2 className="titulo-videos mt-5 text-center">{titulo} </h2>
-                <p className="display-6 mt-2 text-white">{texto} </p>
+                <p className="texto-videos display-6 mt-2 text-white">{texto} </p>
                 {
                     (imagen) &&
                     <img src={imagen} className="img-videos" />

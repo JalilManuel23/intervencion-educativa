@@ -12,7 +12,7 @@ export const OpcionMenuSeleccion = ({
 
     return (
         <Link 
-            className="mb-5 ms-5 opcion-menu-seleccion d-flex justify-content-start align-items-center col-5"
+            className="mb-5 ms-md-5 opcion-menu-seleccion d-flex justify-content-start align-items-center   col-md-5"
             to={ ruta }
             style={{
                 'background': bg 
