@@ -11,7 +11,6 @@ import audioMezclar from "../../../assets/sounds/mezclar.mp3";
 import audioMal from "../../../assets/sounds/mal.mp3";
 import audioBien from "../../../assets/sounds/bien.mp3";
 import audioGanar from "../../../assets/sounds/ganar.mp3";
-import { Link } from 'react-router-dom';
 import { Control } from '../../general/control/Control';
 
 export const Memorama = ({ 
@@ -20,7 +19,7 @@ export const Memorama = ({
     rutas,
     id
 }) => {
-
+    console.log( datos );
     const [baraja, setBaraja] = useState(construirBaraja( datos ));
     const [parejaSeleccionada, setParejaSeleccionada] = useState([]);
     const [estaComparando, setEstaComparando] = useState(false);
@@ -105,7 +104,7 @@ export const Memorama = ({
 
     const reiniciarJuego = () => { 
         playAudio( audioMezclar );
-        setBaraja(construirBaraja());
+        setBaraja(construirBaraja( datos ));
         setParejaSeleccionada([]);
         setEstaComparando(false);
         setNumeroDeIntentos(0);
