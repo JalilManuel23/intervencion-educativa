@@ -60,6 +60,8 @@ import espiritual from './images/taller2/espiritua.png';
 import emocional from './images/taller2/emocional.png';
 import adultos from './images/taller2/adultos.jpg';
 
+import portadaAmor from './images/taller2-ninos/portadaamor.jpg';
+
 import tos from './images/memorama-sintomas/tos.png';
 import fatiga from './images/memorama-sintomas/fatiga.png';
 import dolor from './images/memorama-sintomas/dolor.png';
@@ -126,6 +128,8 @@ export default {
     "espiritual": espiritual,
     "emocional": emocional,
     "adultos": adultos,
+
+    "portadaAmor": portadaAmor,
 
     "tos": tos,
     "fatiga": fatiga,

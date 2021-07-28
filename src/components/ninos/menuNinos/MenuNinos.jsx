@@ -10,7 +10,7 @@ export const MenuNinos = () => {
 
                 <OpcionMenu texto="Taller 1: Lavado de manos" color='#ffb053' tipoOpcion="ninos" ruta="/ninos/lavado-manos/bienvenida" />
 
-                <OpcionMenu texto="Taller 2" color='#2ae1e7' tipoOpcion="ninos" />
+                <OpcionMenu texto="Taller 2: Amor Propio" color='#2ae1e7' tipoOpcion="ninos"  ruta="/ninos/amor-propio/presentacion" />
 
                 <OpcionMenu texto="Taller 3" color='#7bff5e' tipoOpcion="ninos" />
             </div>
