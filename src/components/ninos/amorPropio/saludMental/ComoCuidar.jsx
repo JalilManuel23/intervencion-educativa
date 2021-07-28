@@ -8,7 +8,7 @@ export const ComoCuidar = () => {
     return (
         <Videos 
             titulo="¿Cómo cuidar nuestra salud mental?"
-            texto="Descúbrelo en el siguiente video"
+            texto="Descúbrelo a continuación"
             enlace="/ninos/amor-propio/videos/como-cuidar-salud-mental"
             imagen={ imagenes.feliz }
             sonido={ audio }

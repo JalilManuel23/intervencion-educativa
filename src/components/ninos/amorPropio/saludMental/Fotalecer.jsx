@@ -9,19 +9,19 @@ export const Fortalecer = () => {
     let opciones = [
         {
             titulo: 'Mantén la calma',
-            imagen: imagenes.fisica
+            imagen: imagenes.calma
         },
         {
             titulo: 'Habla con alguien si te sientes mal',
-            imagen:  imagenes.mental
+            imagen:  imagenes.hablar
         },
         {
             titulo: 'Juega con amigos cumpliendo las medidas de prevención',
-            imagen: imagenes.espiritual
+            imagen: imagenes.juego
         },
         {
             titulo: 'Ponte en movimiento',
-            imagen: imagenes.emocional
+            imagen: imagenes.movimiento
         },
     ]
 

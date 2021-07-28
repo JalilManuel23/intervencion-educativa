@@ -61,6 +61,11 @@ import emocional from './images/taller2/emocional.png';
 import adultos from './images/taller2/adultos.jpg';
 
 import portadaAmor from './images/taller2-ninos/portadaamor.jpg';
+import calma from './images/taller2-ninos/calma.png';
+import hablar from './images/taller2-ninos/hablar.png';
+import juego from './images/taller2-ninos/juego.png';
+import movimiento from './images/taller2-ninos/movimiento.png';
+import pensativo from './images/taller2-ninos/pensativo.png';
 
 import tos from './images/memorama-sintomas/tos.png';
 import fatiga from './images/memorama-sintomas/fatiga.png';
@@ -130,6 +135,11 @@ export default {
     "adultos": adultos,
 
     "portadaAmor": portadaAmor,
+    "calma": calma,
+    "hablar": hablar,
+    "juego": juego,
+    "movimiento": movimiento,
+    "pensativo": pensativo,
 
     "tos": tos,
     "fatiga": fatiga,
