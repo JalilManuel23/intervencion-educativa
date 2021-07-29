@@ -12,7 +12,7 @@ export const VideoDoble = ({
     id 
 }) => {
     return (
-        <>
+        <div className="animate__animated animate__fadeIn">
             {/* //Barra */}
             <div className="text-center text-white py-2  barra-titulo"> 
                 <h2 className="display-5">{titulo}</h2>
@@ -41,6 +41,6 @@ export const VideoDoble = ({
                 rutas={ rutas }
                 id={ id }
             />
-        </>
+        </div>
     )
 }

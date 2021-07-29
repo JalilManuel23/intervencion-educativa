@@ -31,19 +31,19 @@ export const Presentacion2 = ({
                                 <div className="col-md-3 d-none d-md-flex justify-content-center align-items-center div-img-intro">
                                     <img src={ imagen }
                                         alt="adulto mujer"
-                                        className="img-introduccion d-none d-md-block"
+                                        className="img-introduccion d-none d-md-block animate__animated animate__bounceInUp"
                                     />
                                 </div>
                             :
                             <div className="col-md-3 d-none d-md-flex justify-content-center align-items-end div-img-intro">
                                 <img src={ imagen }
                                     alt="adulto mujer"
-                                    className="img-introduccion-completa d-none d-md-block"
+                                    className="img-introduccion-completa d-none d-md-block animate__animated animate__bounceInUp"
                                 />
                             </div>
                         }
 
-                        <div className="col-md-7 col-12 d-flex flex-column align-items-center justify-content-center he-100">
+                        <div className="col-md-7 col-12 d-flex flex-column align-items-center justify-content-center he-100 animate__animated animate__bounceInUp">
                             <div className="container d-flex flex-column align-items-center justify-content-center">
                                 <div className="contenedor-intro my-5 ">
                                     <p className="lh-sm">

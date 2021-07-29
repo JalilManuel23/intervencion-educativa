@@ -27,11 +27,11 @@ export const Sintomas = ({ tipo, color }) => {
         <div className="categoria d-flex flex-column justify-content-between animate__animated animate__fadeIn">
             <div className="container">
                 <div className="row ">
-                    <div className="encabezado col-12 text-center mt-5" style={ colors }>
+                    <div className="encabezado col-12 text-center mt-5 animate__animated animate__fadeInLeft" style={ colors }>
                         <span className="fs-2">¿Cuáles son los síntomas?</span>
                     </div>
 
-                    <div className="row d-flex flex-column align-items-center my-5 text-center">                    
+                    <div className="row d-flex flex-column align-items-center my-5 text-center animate__animated animate__fadeInLeft">                    
                         <p className="fs-3"> Las personas con COVID-19 tienen los siguientes signos y sintomas:</p>
 
                         { imagen }

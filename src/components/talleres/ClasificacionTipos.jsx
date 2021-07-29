@@ -19,8 +19,8 @@ export const ClasificacionTipos = ({
     }
 
     return (
-        <div className="mb-5">
-            <div className="text-center text-white py-2 mt-4 barra-titulo"> 
+        <div className="mb-5 animate__animated animate__fadeIn">
+            <div className="text-center text-white py-2 mt-4 barra-titulo animate__animated animate__backInRight"> 
                 <h2 className="display-5">{titulo}</h2>
             </div>
 
@@ -28,7 +28,7 @@ export const ClasificacionTipos = ({
                 {
                     opciones.map( opcion => {
                         return(
-                            <div className="tipo-clasificacion col-12 col-md-5" key={ opcion.titulo }>
+                            <div className="tipo-clasificacion col-12 col-md-5 animate__animated animate__bounceInUp" key={ opcion.titulo }>
                                 <img src={ opcion.imagen } className="img-fluid" />
             
                                 <p>

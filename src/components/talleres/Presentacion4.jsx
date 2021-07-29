@@ -13,7 +13,7 @@ export const Presentacion4 = ({
 }) => {
     let sound = usePlayAudio( sonido );
     return (
-        <div className="presentacion-4">
+        <div className="presentacion-4 animate__animated animate__fadeIn">
             <div className="container">
                     <div className="container-presentacion4 row d-flex justify-content-center align-items-center">
                         <div className="col-md-7 col-12 d-flex flex-column align-items-center">

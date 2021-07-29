@@ -5,7 +5,7 @@ export const MenuNinos = () => {
     return (
         <div className="container my-5 animate__animated animate__fadeIn">
 
-            <div className="row d-flex flex-column align-items-center">
+            <div className="row d-flex flex-column align-items-center animate__animated animate__fadeInLeft">
                 <OpcionMenu texto="Introducción: ¿Qué es el COVID-19?" color="#ff87ab" tipoOpcion="ninos" ruta="/ninos/introduccion" />
 
                 <OpcionMenu texto="Taller 1: Lavado de manos" color='#ffb053' tipoOpcion="ninos" ruta="/ninos/lavado-manos/bienvenida" />

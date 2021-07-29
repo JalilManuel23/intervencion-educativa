@@ -16,7 +16,7 @@ export const Definicion2 = () => {
                         <p>Para combatir el miedo durante la pandemia, tenemos que fortalecer nuestra salud mental, haciendo cosas que nos cuiden a nosotros y a la vez a los demás
                         </p>
 
-                        <img src={imagenes.sorprendido} className="img-fluid img-sorprendido mt-3" alt="expresión" />
+                        <img src={imagenes.sorprendido} className="img-fluid img-sorprendido mt-3 animate__bounceIn" alt="expresión" />
                     </div>
                 </div>
 

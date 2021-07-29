@@ -22,14 +22,14 @@ export const IntroduccionParte2 = () => {
 
             <div className="container">
 
-                <div className="row pt-5">
+                <div className="row pt-4 pb-3">
                     <div className="contenedor-intro d-flex flex-column align-items-center justify-content-center text-center">
-                        <p>Hace muchos años que existen los coronavirus, pero hace poco
+                        <p className="animate__animated animate__fadeIn">Hace muchos años que existen los coronavirus, pero hace poco
                             tiempo apareció un nuevo miembro en la familia coronavirus
                             que se llama "coronavirus 2019" ¡y que nadie conocía!
                         </p>
 
-                        <img src={imagenes.sorprendido2} className="img-fluid img-sorprendido mt-3" alt="expresión" />
+                        <img src={imagenes.sorprendido2} className="img-fluid img-sorprendido mt-3 animate__bounceIn" alt="expresión" />
                     </div>
                 </div>
 

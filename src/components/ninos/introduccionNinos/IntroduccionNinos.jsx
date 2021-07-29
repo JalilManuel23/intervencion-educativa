@@ -25,10 +25,10 @@ export const IntroduccionNinos = () => {
                         <img 
                             src={ imagenes.nina }
                             alt="niña"
-                            className="img-intro-ninos"
+                            className="img-intro-ninos animate__animated animate__backInDown"
                         />
                     </div>
-                    <div className="info-intro-ninos d-flex flex-column justify-content-between align-items-center col-12 col-md-6">
+                    <div className="info-intro-ninos d-flex flex-column justify-content-between align-items-center col-12 col-md-6 animate__animated animate__bounceIn">
                         <p className="tit-intro-ninos">¿Por qué todos hablan de algo que se llama CORONAVIRUS?</p>
                         <p className="contenedor-intro">CORONAVIRUS es un grupo de virus que pueden hacer que las personas se sientan enfermas.</p>
                     </div>

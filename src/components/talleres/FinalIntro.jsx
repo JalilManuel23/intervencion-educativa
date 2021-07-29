@@ -19,8 +19,8 @@ export const FinalIntro = ({
     }
 
     return (
-        <div className="final-intro d-flex flex-column justify-content-center align-items-center">
-            <img src={ imagenes.doctora } alt="doctora" className="img-doctora" />
+        <div className="final-intro d-flex flex-column justify-content-center align-items-center animate__animated animate__fadeIn">
+            <img src={ imagenes.doctora } alt="doctora" className="img-doctora animate__animated animate__bounceInUp" />
             <AudioPlayer sound={ sound } />
             <Control 
                 rutas={ rutas }

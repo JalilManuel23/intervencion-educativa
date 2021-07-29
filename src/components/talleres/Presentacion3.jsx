@@ -23,7 +23,7 @@ export const Presentacion3 = ({
     }
 
     return (
-        <div className="presentacion-3">
+        <div className="presentacion-3 animate__animated animate__fadeIn">
             <div className="p3-container container d-flex flex-column align-items-center justify-content-center h-100">
                 <h1 className="titulo-rect">{ titulo }</h1>
                 <div className="d-flex flex-column justify-content-around mt-3">    

@@ -9,7 +9,7 @@ export const VerVideo = ({
     id
 }) => {
 
-    let clase = ( ninos ) ? "presentacion-3-ninos" : "presentacion-3";
+    let clase = ( ninos ) ? "presentacion-3-ninos animate__animated animate__fadeIn" : "presentacion-3 animate__animated animate__fadeIn";
 
     return (
         <div className={clase}>

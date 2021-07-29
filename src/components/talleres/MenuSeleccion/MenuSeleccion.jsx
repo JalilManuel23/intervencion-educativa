@@ -4,7 +4,7 @@ import './menuSeleccion.css';
 
 export const MenuSeleccion = ({ datos, sonido }) => {
     return (
-        <div>
+        <div className="animate__animated  animate__fadeInUp">
             <div className="text-center text-white py-2 mt-4 barra-titulo"> 
                 <h2 className="display-5">Selecciona una opción para continuar</h2>
             </div>

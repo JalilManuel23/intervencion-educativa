@@ -23,7 +23,7 @@ export const Videos = ({
     }
 
     return (
-        <div className="videos">
+        <div className="videos animate__animated animate__fadeIn">
             <div className="wave"></div>
             <div className="container d-flex flex-column align-items-center justify-content-between">
                 <h2 className="titulo-videos mt-5 text-center">{titulo} </h2>

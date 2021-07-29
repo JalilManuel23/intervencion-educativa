@@ -113,10 +113,10 @@ export const Memorama = ({
     }
 
     return (
-        <div className="memorama container d-flex flex-column align-items-center mt-5">
+        <div className="memorama container d-flex flex-column align-items-center mt-5 animate__animated animate__fadeIn">
             <h1>{ titulo }</h1>
 
-            <div class="row-cartas mt-3">
+            <div class="row-cartas mt-3 animate__animated animate__backInLeft">
                 {
                     baraja.map((carta, index) => {
                         const estaSiendoComparada = parejaSeleccionada.indexOf(carta) > -1;
