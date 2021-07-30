@@ -12,8 +12,8 @@ export const Definicion2 = () => {
             <div className="container">
 
                 <div className="row pt-5">
-                    <div className="contenedor-intro d-flex flex-column align-items-center justify-content-center text-center">
-                        <p>Para combatir el miedo durante la pandemia, tenemos que fortalecer nuestra salud mental, haciendo cosas que nos cuiden a nosotros y a la vez a los demás
+                    <div className="contenedor-intro-intro d-flex flex-column align-items-center justify-content-center text-center">
+                        <p className="animate__animated animate__fadeIn">Para combatir el miedo durante la pandemia, tenemos que fortalecer nuestra salud mental, haciendo cosas que nos cuiden a nosotros y a la vez a los demás
                         </p>
 
                         <img src={imagenes.sorprendido} className="img-fluid img-sorprendido mt-3 animate__bounceIn" alt="expresión" />

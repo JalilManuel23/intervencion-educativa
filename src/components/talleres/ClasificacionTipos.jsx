@@ -38,13 +38,13 @@ export const ClasificacionTipos = ({
                         )
                     })
                 }
-                <Control 
-                    rutas={ rutas }
-                    id={ id }
-                    stopAudio={ stopAudio }
-                />
-                <AudioPlayer sound={ sound } />
             </div>
+            <Control 
+                rutas={ rutas }
+                id={ id }
+                stopAudio={ stopAudio }
+            />
+            <AudioPlayer sound={ sound } />
         </div>
     )
 }
