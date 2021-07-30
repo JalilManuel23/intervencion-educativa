@@ -23,8 +23,8 @@ export const Presentacion5 = ({
             <div className="container my-5">
                 <div className="row d-flex align-items-center">
                     <img  className="col-12 col-md-6 animate__animated animate__bounceInRight" src={imagen} />
-                    <div className="col-12 col-md-6 display-6 text-white p-md-4 p-3 binfo animate__animated animate__bounceInLeft"> 
-                        <p>{parrafo}</p>
+                    <div className="col-12 col-md-6 text-white p-md-4 p-3 binfo animate__animated animate__bounceInLeft"> 
+                        <p className="p-p5">{parrafo}</p>
                     </div>
                 </div>
                 <Control 

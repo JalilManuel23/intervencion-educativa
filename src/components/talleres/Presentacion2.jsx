@@ -25,27 +25,28 @@ export const Presentacion2 = ({
         <>
             <div className="introduccion animate__animated animate__fadeIn">
                 <div className="container">
-                    <div className="row">
                         {
-                            ( tipoImagen !== "completa" ) ?
-                                <div className="col-md-3 d-none d-md-flex justify-content-center align-items-center div-img-intro">
+                            ( tipoImagen !== "completa" ) ?                                    
+                                <div className="d-flex flex-column align-items-center justify-content-around 
+                                    flex-xl-row
+                                min-vh-100">
+                                {/* <div className="d-flex justify-content-between align-items-center min-vh-100"> */}
                                     <img src={ imagen }
                                         alt="adulto mujer"
-                                        className="img-introduccion d-none d-md-block animate__animated animate__bounceInUp"
-                                    />
+                                        className="img-introduccion d-md-block animate__animated animate__bounceInUp mt-5"
+                                    /> 
+                                    <div className="contenedor-intro my-5">
+                                        <p className="lh-sm">
+                                            { parrafo1 }
+                                        </p>
+                                        <p className="lh-sm">
+                                            { parrafo2 }
+                                        </p>
+                                    </div>
                                 </div>
-                            :
-                            <div className="col-md-3 d-none d-md-flex justify-content-center align-items-end div-img-intro">
-                                <img src={ imagen }
-                                    alt="adulto mujer"
-                                    className="img-introduccion-completa d-none d-md-block animate__animated animate__bounceInUp"
-                                />
-                            </div>
-                        }
-
-                        <div className="col-md-7 col-12 d-flex flex-column align-items-center justify-content-center he-100 animate__animated animate__bounceInUp">
-                            <div className="container d-flex flex-column align-items-center justify-content-center">
-                                <div className="contenedor-intro my-5 ">
+                            :                            
+                            <div className="d-flex flex-column align-items-center justify-content-between min-vh-100">
+                                <div className="contenedor-intro-completa my-5 ">
                                     <p className="lh-sm">
                                         { parrafo1 }
                                     </p>
@@ -53,9 +54,13 @@ export const Presentacion2 = ({
                                         { parrafo2 }
                                     </p>
                                 </div>
+                                    
+                                <img src={ imagen }
+                                    alt="adulto mujer"
+                                    className="img-introduccion-completa d-md-block animate__animated animate__bounceInUp"
+                                />                              
                             </div>
-                        </div>
-                    </div> 
+                        }
                     <Control 
                         rutas={ rutas }
                         id={ id }

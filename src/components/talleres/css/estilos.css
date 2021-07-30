@@ -17,27 +17,38 @@
 
 .img-introduccion {
     border-radius: 50%;
-    width: 55vh;
-    height: 55vh;
+    width: 40%;
+    /* height: 55vh; */
     border: 2rem white solid;
 }
 
+@media (max-width: 768px) {
+    .img-introduccion {
+        width: 70%;
+    }
+    
+}
+
 .img-introduccion-completa {
-    max-width: 80vh;
+    height: 50vh;
 }
 
 .img-presen {
     max-height: 50vh;
 }
 
-.contenedor-intro {
+.contenedor-intro, .contenedor-intro-completa {
     background: #fff;
     color: rgb(128, 126, 126);
-    width: 100%;
+    width: 50%;
     border-radius: 30px;
     padding: 2rem;
     font-size: 5vmin;
     text-align: center;
+}
+
+.contenedor-intro-completa {
+    width: 90%;
 }
 
 .seguir-leyendo {
@@ -51,7 +62,7 @@
 }
 
 .div-img-intro {
-    width: 40%;
+    /* width: 40%; */
 }
 
 .presentacion-3, .presentacion-3-ninos {
@@ -184,6 +195,10 @@
 
 .img-videos {
     max-height: 35vh;
+}
+
+.p-p5 {
+    font-size: 4vmin;
 }
 
 @media screen and (max-width: 1200px) {

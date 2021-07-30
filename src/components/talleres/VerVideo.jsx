@@ -14,8 +14,8 @@ export const VerVideo = ({
     return (
         <div className={clase}>
             <div className="container">
-                <div className="row text-center">
-                    <div className="col-12 mt-5 d-flex justify-content-center">            
+                <div className="row text-center min-vh-100">
+                    <div className="col-12 d-flex justify-content-center align-items-center">            
                         {/* <iframe width="560" height="315" src={ enlaceVideo } title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>             */}
                         <div class="ratio ratio-16x9">
                             <iframe src={ enlaceVideo }  title="YouTube video" allowfullscreen></iframe>
