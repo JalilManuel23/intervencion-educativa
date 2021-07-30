@@ -5,17 +5,19 @@
 
 .tit-intro-ninos {
     color: #FFF;
-    font-size: 5vmin;
+    font-size: 3.8vmin;
+    font-weight: bold;
     text-align: center;
 }
 
 .info-intro-ninos {
-    padding-left: 8vmin;
+    /* padding-left: 8vmin; */
 }
 
 .img-intro-ninos {
     border-radius: 2rem;
     max-width: 100%;
+    /* max-height: 50%; */
 }
 
 .intro-ninos2 {
@@ -25,4 +27,18 @@
 
 .img-sorprendido {
     max-height: 50%;
+}
+
+.contenedor-intro {
+    font-size: 4vmin;
+}
+
+@media (max-width: 576px) {
+    .contenedor-intro {
+        font-size: 5vmin;
+    }
+
+    .tit-intro-ninos {
+        font-size: 6vmin;
+    }
 }
