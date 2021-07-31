@@ -7,7 +7,7 @@ export const VideoImportancia = () => {
         <VerVideo 
             enlaceVideo="https://www.youtube.com/embed/4xflq4Nk44E"
             rutas={ rutasAmorPropio }
-            id={ 10 }
+            id={ 11 }
         />
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import imagenes from '../../../../assets/images';
-import audio from "../../../../assets/sounds/adultos_amor_propio/para_combatir.mp3";
+import audio from "../../../../assets/sounds/concepto-salud-mental_2.mp3";
 import { AudioPlayer } from '../../../general/audioPlayer/AudioPlayer';
 import { Control } from '../../../general/control/Control';
 import { rutasAmorPropio } from '../rutasAmorPropio';

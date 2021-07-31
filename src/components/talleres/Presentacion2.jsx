@@ -10,6 +10,7 @@ export const Presentacion2 = ({
     tipoImagen,
     parrafo1,
     parrafo2,
+    titulo,
     sonido,
     rutas,
     id
@@ -24,18 +25,25 @@ export const Presentacion2 = ({
     return (
         <>
             <div className="introduccion animate__animated animate__fadeIn">
+                {
+                    ( titulo ) &&
+                        <div className="presen2-titulo d-flex justify-content-center align-items-center">
+                            <h2>{ titulo }</h2>
+                        </div>
+                }
                 <div className="container">
+
+
                         {
                             ( tipoImagen !== "completa" ) ?                                    
                                 <div className="d-flex flex-column align-items-center justify-content-around 
                                     flex-xl-row
-                                min-vh-100">
-                                {/* <div className="d-flex justify-content-between align-items-center min-vh-100"> */}
+                                min-vh-95">
                                     <img src={ imagen }
                                         alt="adulto mujer"
                                         className="img-introduccion d-md-block animate__animated animate__bounceInUp mt-5"
                                     /> 
-                                    <div className="contenedor-intro my-5">
+                                    <div className="contenedor-intro my-5 animate__animated animate__bounceInUp">
                                         <p className="lh-sm">
                                             { parrafo1 }
                                         </p>
@@ -45,8 +53,8 @@ export const Presentacion2 = ({
                                     </div>
                                 </div>
                             :                            
-                            <div className="d-flex flex-column align-items-center justify-content-between min-vh-100">
-                                <div className="contenedor-intro-completa my-5 ">
+                            <div className="d-flex flex-column align-items-center justify-content-between min-vh-95">
+                                <div className="contenedor-intro-completa my-5 animate__animated animate__bounceInUp">
                                     <p className="lh-sm">
                                         { parrafo1 }
                                     </p>

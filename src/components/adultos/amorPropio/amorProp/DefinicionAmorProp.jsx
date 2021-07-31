@@ -7,7 +7,8 @@ import { rutasAmorPropio } from '../rutasAmorPropio';
 export const DefinicionAmorProp = () => {
     return (
         <Presentacion2 
-            imagen={ imagenes.joven }
+            imagen={ imagenes.amorPropio }
+            titulo="¿Qué es el amor propio?"
             parrafo1= "Se refiere al aprecio que tiene una persona a si misma. Es la aceptación, el respeto, las percepciones, el valor, los pensamientos positivos y consideraciones que tenemos hacia nosotros mismos y que puede ser apreciado por quienes nos rodean."
             sonido={ audio }
             tipoImagen="completa"

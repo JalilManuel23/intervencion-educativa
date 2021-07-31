@@ -6,6 +6,7 @@ import { DefinicionAmorProp } from '../components/adultos/amorPropio/amorProp/De
 import { DescubreAmbitos } from '../components/adultos/amorPropio/amorProp/DescubreAmbitos';
 import { Final } from '../components/adultos/amorPropio/amorProp/Final';
 import { Importancia } from '../components/adultos/amorPropio/amorProp/Importancia';
+import { Relacion } from '../components/adultos/amorPropio/amorProp/Relacion';
 import { VideoImportancia } from '../components/adultos/amorPropio/amorProp/VideoImportancia';
 import { OpcionesAmorPropio } from '../components/adultos/amorPropio/OpcionesAmorPropio';
 import { PresentacionAmorPropio } from '../components/adultos/amorPropio/PresentacionAmorPropio';
@@ -78,6 +79,7 @@ export const AdultosRouter = () => {
             <Route exact path="/adultos/amor-propio/descubre-ambitos" component={ DescubreAmbitos } />
             <Route exact path="/adultos/amor-propio/ambitos" component={ Ambitos } />
             <Route exact path="/adultos/amor-propio/importancia" component={ Importancia } />
+            <Route exact path="/adultos/amor-propio/relacion-covid19" component={ Relacion } />
             <Route exact path="/adultos/amor-propio/videos/importancia" component={ VideoImportancia } />
             <Route exact path="/adultos/amor-propio/final" component={ Final } />
             

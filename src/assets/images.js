@@ -59,6 +59,9 @@ import mental from './images/taller2/mental.png';
 import espiritual from './images/taller2/espiritua.png';
 import emocional from './images/taller2/emocional.png';
 import adultos from './images/taller2/adultos.jpg';
+import amorPropio from './images/taller2/amor-propio.png';
+import autoestima from './images/taller2/autoestima.png';
+import autoestima2 from './images/taller2/autoestima2.png';
 
 import portadaAmor from './images/taller2-ninos/portadaamor.jpg';
 import calma from './images/taller2-ninos/calma.png';
@@ -133,6 +136,9 @@ export default {
     "espiritual": espiritual,
     "emocional": emocional,
     "adultos": adultos,
+    "amorPropio": amorPropio,
+    "autoestima": autoestima,
+    "autoestima2": autoestima2,
 
     "portadaAmor": portadaAmor,
     "calma": calma,

@@ -6,12 +6,12 @@ export const rutasAmorPropio = [
     },
     {
         "id": 1,
-        "titulo": "¿Qué es amor propio?",
+        "titulo": "¿Qué es la salud mental?",
         "ruta": "/adultos/amor-propio/salud-mental/definicion"
     },
     {
         "id": 2,
-        "titulo": "¿Qué es amor propio? - parte 2",
+        "titulo": "¿Qué es la salud mental? - parte 2",
         "ruta": "/adultos/amor-propio/salud-mental/definicion-pt2"
     },
     {
@@ -46,11 +46,16 @@ export const rutasAmorPropio = [
     },
     {
         "id": 10,
+        "titulo": "Relación del amor propio con el COVID-19",
+        "ruta": "/adultos/amor-propio/relacion-covid19"
+    },
+    {
+        "id": 11,
         "titulo": "Video - ¿Por qué es importante tener mucho amor propio?",
         "ruta": "/adultos/amor-propio/videos/importancia"
     },
     {
-        "id": 11,
+        "id": 12,
         "titulo": "Final amor propio",
         "ruta": "/adultos/amor-propio/final"
     },
