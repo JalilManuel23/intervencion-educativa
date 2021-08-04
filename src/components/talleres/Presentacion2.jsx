@@ -75,7 +75,6 @@ export const Presentacion2 = ({
                         stopAudio={ stopAudio }
                     />
                 <AudioPlayer sound={ sound } />
-                    <AudioPlayer sound={ sound } />
                 </div>
             </div>
 
