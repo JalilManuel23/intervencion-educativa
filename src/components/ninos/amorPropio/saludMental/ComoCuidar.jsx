@@ -1,7 +1,7 @@
 import React from 'react';
 import { Videos } from '../../../talleres/Videos';
 import imagenes from '../../../../assets/images';
-import audio from "../../../../assets/sounds/adultos_amor_propio/video_1.mp3";
+import audio from "../../../../assets/sounds/audio_faltante.mp3";
 import { rutasAmorPropio } from '../rutasAmorPropio'
 
 export const ComoCuidar = () => {
