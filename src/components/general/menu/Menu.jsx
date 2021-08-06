@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import imagenes from '../../../assets/images';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
 import './menu.css';
 
 export const Menu = () => {
@@ -18,19 +20,9 @@ export const Menu = () => {
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
                         <li class="nav nav-item"> 
-                        <Link class="nav-link active" aria-current="page" to="/">Inicio</Link>
-                        </li>
-                        <li class="nav nav-item">
-                        <a class="nav-link" href="#">Introducción</a>
-                        </li>
-                        <li class="nav nav-item">
-                        <a class="nav-link" href="#">Taller 1</a>
-                        </li>
-                        <li class="nav nav-item">
-                        <a class="nav-link" href="#">Taller 2</a>
-                        </li>
-                        <li class="nav nav-item">
-                        <a class="nav-link" href="#">Taller 3</a>
+                            <Link class="nav-link active" aria-current="page" to="/"> 
+                                <FontAwesomeIcon icon={ faHome } /> Inicio
+                            </Link>
                         </li>
                     </ul>
                 </div>

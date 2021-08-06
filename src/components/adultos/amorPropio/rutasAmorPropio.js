@@ -49,13 +49,13 @@ export const rutasAmorPropio = [
         "titulo": "Relación del amor propio con el COVID-19",
         "ruta": "/adultos/amor-propio/relacion-covid19"
     },
+    // {
+    //     "id": 11,
+    //     "titulo": "Video - ¿Por qué es importante tener mucho amor propio?",
+    //     "ruta": "/adultos/amor-propio/videos/importancia"
+    // },
     {
         "id": 11,
-        "titulo": "Video - ¿Por qué es importante tener mucho amor propio?",
-        "ruta": "/adultos/amor-propio/videos/importancia"
-    },
-    {
-        "id": 12,
         "titulo": "Final amor propio",
         "ruta": "/adultos/amor-propio/final"
     },
