@@ -32,6 +32,8 @@ import { DefinicionAmorProp } from '../components/ninos/amorPropio/amorProp/Defi
 import { PresenVideo } from '../components/ninos/amorPropio/amorProp/PresenVideo';
 import { VideoAmor } from '../components/ninos/amorPropio/amorProp/VideoAmor';
 import { Final } from '../components/ninos/amorPropio/amorProp/Final';
+import { PreparateJugarAmor } from '../components/ninos/amorPropio/amorProp/PreparateJugarAmor';
+import { MemoramaAmor } from '../components/ninos/amorPropio/amorProp/MemoramaAmor';
 
 export const NinosRouter = () => {
     return (
@@ -79,6 +81,8 @@ export const NinosRouter = () => {
             <Route exact path="/ninos/amor-propio/definicion" component={ DefinicionAmorProp } />
             <Route exact path="/ninos/amor-propio/presentacion-video-amor-propio" component={ PresenVideo } />
             <Route exact path="/ninos/amor-propio/videos/amor-propio" component={ VideoAmor } />
+            <Route exact path="/ninos/amor-propio/preparate-jugar" component={ PreparateJugarAmor } />
+            <Route exact path="/ninos/amor-propio/memorama-amor-propio" component={ MemoramaAmor } />
             <Route exact path="/ninos/amor-propio/final" component={ Final } />
 
         </>

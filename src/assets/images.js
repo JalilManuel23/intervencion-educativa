@@ -70,6 +70,12 @@ import juego from './images/taller2-ninos/juego.png';
 import movimiento from './images/taller2-ninos/movimiento.png';
 import pensativo from './images/taller2-ninos/pensativo.png';
 
+import unoMemo from './images/memo-amor/1.png';
+import dosMemo from './images/memo-amor/2.jpg';
+import tresMemo from './images/memo-amor/3.jpg';
+import cuatroMemo from './images/memo-amor/4.jpg';
+import cincoMemo from './images/memo-amor/5.jpg';
+
 import tos from './images/memorama-sintomas/tos.png';
 import fatiga from './images/memorama-sintomas/fatiga.png';
 import dolor from './images/memorama-sintomas/dolor.png';
@@ -97,7 +103,11 @@ export default {
     "tres": tres,
     "cuatro": cuatro,
     "cinco": cinco,
-    "seis": seis,
+    "unoMemo": unoMemo,
+    "dosMemo": dosMemo,
+    "tresMemo": tresMemo,
+    "cuatroMemo": cuatroMemo,
+    "cincoMemo": cincoMemo,
     "lavadoDeManosDos": lavadoDeManosDos,
     "historia": historia,
     "historia2": historia2,

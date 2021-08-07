@@ -11,7 +11,7 @@ export const Final = () => {
             parrafo="¡No lo olvides! Tener amor propio nos protegerá de la pandemia pues nos motivará a cuidarnos y seguir las medidas de prevención. ¡ÁMATE MUCHO!"
             sonido={ audioIntro }
             rutas={ rutasAmorPropio }
-            id={ 9 }
+            id={ 11 }
         />
     )
 }
