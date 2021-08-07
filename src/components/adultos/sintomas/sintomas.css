@@ -12,3 +12,8 @@
     transform: scale(1.01);
     color: #000000;
 }
+
+.img-sintomas {
+    max-height: 60vh;
+    max-width: 50vw;;
+}

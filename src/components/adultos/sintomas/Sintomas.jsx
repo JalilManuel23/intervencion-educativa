@@ -16,7 +16,7 @@ export const Sintomas = ({ tipo, color }) => {
 
     let sound = usePlayAudio( audio );
 
-    let imagen = ( tipo == 'ninos' ) ? <img src={ imagenes.sintomasNinos }  alt="sintomas" /> : <img src={ imagenes.sintomas } alt="sintomas" />;
+    let imagen = ( tipo == 'ninos' ) ? <img src={ imagenes.sintomasNinos }  alt="sintomas" className="img-sintomas" /> : <img src={ imagenes.sintomas } alt="sintomas" className="img-sintomas" />;
     let enlace = ( tipo == 'ninos' ) ? "/ninos/menu" : "/adultos/menu";
 
     let colors = { 

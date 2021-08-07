@@ -17,7 +17,7 @@ export const Mapa = () => {
 
     return (
         <div className="container animate__animated animate__bounceInLeft"> 
-            <div className="row mt-5">  
+            <div className="row mt-3">  
                     <div className="vh-100">
                         <div className="text-center mb-5 encabezado bg-primary">
                             <span className="display-6" >Distribución del COVID-19 alrededor del mundo</span>

@@ -30,7 +30,7 @@ export const IntroduccionNinos = () => {
                     </div>
                     <div className="info-intro-ninos d-flex flex-column align-items-center col-12 col-xl-6 animate__animated animate__bounceIn">
                         <p className="tit-intro-ninos">¿Por qué todos hablan de algo que se llama CORONAVIRUS?</p>
-                        <p className="contenedor-intro mt-3">CORONAVIRUS es un grupo de virus que pueden hacer que las personas se sientan enfermas.</p>
+                        <p className="contenedor-intro-intro mt-3">CORONAVIRUS es un grupo de virus que pueden hacer que las personas se sientan enfermas.</p>
                     </div>
                 </div>
                 <Control 

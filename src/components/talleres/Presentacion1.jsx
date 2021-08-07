@@ -22,7 +22,7 @@ export const Presentacion1 = ({
             </div>
 
             <div className="container animate__animated  animate__zoomIn"> 
-                <div className="col-12 text-center my-5 display-5">
+                <div className="col-12 text-center my-5 ">
                     <p className="parrafo"> {parrafo}</p>
                 </div>
 
@@ -32,7 +32,7 @@ export const Presentacion1 = ({
 
                 <div className="d-flex justify-content-end">
                     <Link 
-                        className="regresar-menu mt-3"
+                        className="regresar-menu"
                         to={ enlace }
                         onClick={
                             () => {

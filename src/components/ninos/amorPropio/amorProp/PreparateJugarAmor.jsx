@@ -14,7 +14,7 @@ export const PreparateJugarAmor = () => {
             jugar={true}
             sonido={ audioIntro }
             rutas={ rutasAmorPropio }
-            id={ 12 }
+            id={ 9 }
         />
     )
 }

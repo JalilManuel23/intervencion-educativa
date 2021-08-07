@@ -10,14 +10,9 @@
     text-align: center;
 }
 
-.info-intro-ninos {
-    /* padding-left: 8vmin; */
-}
-
 .img-intro-ninos {
     border-radius: 2rem;
     max-width: 100%;
-    /* max-height: 50%; */
 }
 
 .intro-ninos2 {
@@ -26,10 +21,10 @@
 }
 
 .img-sorprendido {
-    max-height: 50%;
+    max-height: 40%;
 }
 
-.contenedor-intro-intro {
+.contenedor-intro-intro, .contenedor-intro-intro-2 {
     background: #fff;
     color: rgb(128, 126, 126);
     width: 100%;
@@ -37,6 +32,10 @@
     padding: 2rem;
     font-size: 5vmin;
     text-align: center;
+}
+
+.contenedor-intro-intro-2 {
+    padding: 0rem;
 }
 
 @media (max-width: 576px) {

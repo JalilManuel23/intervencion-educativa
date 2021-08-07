@@ -1,9 +1,11 @@
 import React from 'react'
+import { Menu } from '../../general/menu/Menu'
 import { OpcionMenu } from '../../general/opcionMenu/OpcionMenu'
 
 export const MenuAdultos = () => {
     return (
         <>
+            <Menu />
             <div className="container my-5 animate__animated animate__fadeIn">
 
                 <div className="row d-flex flex-column align-items-center animate__animated  animate__fadeInUp">

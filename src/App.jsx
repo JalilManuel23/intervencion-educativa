@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 
 import { Inicio } from './components/general/inicio/Inicio';
-import { Menu } from './components/general/menu/Menu';
 
 import { Memorama } from './components/general/memorama/Memorama';
 import { QuizGame } from './components/general/quizGame/QuizGame';
@@ -17,13 +16,12 @@ import { NinosRouter } from './routes/NinosRouter';
 export const App = () => {
     return (
         <Router>
-            <Menu />
             <Switch>
                 <Route exact path="/" component={ Inicio } />
 
                 <Route path="/adultos" component={ AdultosRouter } />
-                <Route path="/ninos" component={ NinosRouter } />
-               
+                <Route path="/ninos" component={ NinosRouter } />    
+
                 {/* Rutas de prueba */}
                 <Route exact path="/memorama" component={ Memorama } />
                 <Route exact path="/quiz" component={ QuizGame } />
