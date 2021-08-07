@@ -30,7 +30,7 @@ export const MemoramaAmor = () => {
     return (
         <Memorama 
             datos={ datos }
-            titulo="Memorama Lavado  De Manos"
+            titulo='Memorama "Amor Propio"'
             enlace="/ninos/lavado-manos/opciones"
             rutas={ rutasAmorPropio }
             id={ 13 }
