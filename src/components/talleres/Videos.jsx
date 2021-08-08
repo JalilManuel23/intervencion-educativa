@@ -9,14 +9,12 @@ export const Videos = ({
     titulo,
     texto,
     imagen,
-    jugar,
     sonido,
     rutas,
     id
 }) => {
 
     let sound = usePlayAudio(sonido);
-    let textoBtn = (jugar) ? "Jugar" : "Ver video";
 
     const stopAudio = () => { 
         setStopAudio( sound );
@@ -25,12 +23,16 @@ export const Videos = ({
     return (
         <div className="videos animate__animated animate__fadeIn">
             <div className="wave"></div>
-            <div className="container d-flex flex-column align-items-center justify-content-between">
+            <div className="min-vh-100 container d-flex flex-column align-items-center justify-content-around">
                 <h2 className="titulo-videos mt-5 text-center">{titulo} </h2>
-                <p className="texto-videos display-6 mt-2 text-white">{texto} </p>
                 {
-                    (imagen) &&
-                    <img src={imagen} className="img-videos" />
+                    (imagen) ?
+                        <>
+                            <p className="texto-videos display-6 mt-2 text-white text-center">{texto} </p>
+                            <img src={imagen} className="img-videos" />
+                        </>
+                    :
+                        <p className="texto-videos display-6 mt-2 text-muted text-center">{texto} </p>
                 }
             </div>
             <Control 

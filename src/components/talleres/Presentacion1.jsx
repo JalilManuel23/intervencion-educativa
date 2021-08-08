@@ -16,7 +16,7 @@ export const Presentacion1 = ({
     let sound = usePlayAudio( sonido );
 
     return (
-        <div className="animate__animated animate__fadeIn">
+        <div className="h-100 animate__animated animate__fadeIn">
             <div className="text-center text-white py-2 mt-4 barra-titulo animate__animated  animate__fadeInLeft"> 
                 <h2 className="display-5">{titulo}</h2>
             </div>

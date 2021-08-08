@@ -34,13 +34,13 @@ export const ElementosNecesarios = () => {
                     </div>
                 </div>
 
-                <Control 
-                    rutas={ rutasLavadoNinos }
-                    id={ 11 }
-                    stopAudio={ stopAudio }
-                />
-                <AudioPlayer sound={ sound } />       
             </div>
+            <Control 
+                rutas={ rutasLavadoNinos }
+                id={ 11 }
+                stopAudio={ stopAudio }
+            />
+            <AudioPlayer sound={ sound } />       
         </div>
     )
 }
