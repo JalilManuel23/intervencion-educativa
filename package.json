@@ -1,0 +1,19 @@
+{
+  "name": "intervencion-educativa",
+  "version": "1.0.0",
+  "description": "proyecto de intervencion educativa",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JalilManuel23/intervencion-educativa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JalilManuel23/intervencion-educativa/issues"
+  },
+  "homepage": "https://github.com/JalilManuel23/intervencion-educativa#readme"
+}
