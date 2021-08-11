@@ -22,6 +22,8 @@ app.use(express.json());
 //      next();
 // });
 
+app.use(express.static(path.join(__dirname,'public')));
+
 app.use((req, res, next) => {
      res.header('Access-Control-Allow-Origin', '*');
      res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method');
@@ -30,6 +32,16 @@ app.use((req, res, next) => {
      next();
 });
  
+
+const publicPath = path.join(__dirname,'public');
+
+app.get('*', (req, res) => {    
+     res.sendFile(path.join(publicPath, 'index.html')), function(err) {             
+     if (err) {                 
+          res.status(500).send(err) 
+          }        
+     };
+});
 
 app.get('/prueba', (req, res) => {
      return res.status(200).send({
