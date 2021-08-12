@@ -10,6 +10,7 @@ export const ComoCuidar = () => {
             titulo="¿Cómo cuidar nuestra salud mental?"
             texto="Descúbrelo a continuación"
             enlace="/ninos/amor-propio/videos/como-cuidar-salud-mental"
+            fuente="2wCEAAkGBxAQEA4QEBAQDw8QEBEQEA4REBEOERARFxIYGBYXFxYZHiwiGRsnHBYXIzMlJystMTAyGSI2OzYuOiovMC0BCwsLDw4PHBERHDEoIicxLzEvLy8vLzEtLy8vLy8vMC8vLy8vLy8vLy8vLy8vLy8vLS8vLy8vLy8vLy8vLy8vL"
             imagen={ imagenes.feliz }
             sonido={ audio }
             rutas={ rutasAmorPropio }

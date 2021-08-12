@@ -29,7 +29,7 @@ export const ClasificacionTipos = ({
                     opciones.map( opcion => {
                         return(
                             <div className="tipo-clasificacion col-12 col-md-5 animate__animated animate__bounceInUp" key={ opcion.titulo }>
-                                <img src={ opcion.imagen } className="img-fluid" />
+                                <img src={ opcion.imagen } className="img-fluid" title={ opcion.fuente } />
             
                                 <p>
                                     { opcion.titulo }
