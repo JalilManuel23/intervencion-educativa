@@ -12,6 +12,7 @@ export const DiaLavado = () => {
             imagen={ imagenes.diaLavado }
             sonido={ audioIntro }
             rutas={ rutasLavadoNinos }
+            fuente="https://lh3.googleusercontent.com/gU6NlDpUJ8APbJz7DObDpq_5Y5cGO9qGzshVgXxj_nZHsb2LtB5z59MWi4OIVKykWGg3_Q=s167"
             id={ 5 }
         />
     )

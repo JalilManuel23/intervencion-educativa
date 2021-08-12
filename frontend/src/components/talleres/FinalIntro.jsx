@@ -9,6 +9,7 @@ import { Control } from '../general/control/Control';
 export const FinalIntro = ({
     sonido,
     rutas,
+    fuente,
     id
 }) => {
 
@@ -20,7 +21,7 @@ export const FinalIntro = ({
 
     return (
         <div className="final-intro d-flex flex-column justify-content-center align-items-center animate__animated animate__fadeIn">
-            <img src={ imagenes.doctora } alt="doctora" className="img-doctora animate__animated animate__bounceInUp" />
+            <img src={ imagenes.doctora } alt="doctora" className="img-doctora animate__animated animate__bounceInUp" title={ fuente } />
             <AudioPlayer sound={ sound } />
             <Control 
                 rutas={ rutas }

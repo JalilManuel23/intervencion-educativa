@@ -30,7 +30,7 @@ export const Videos = ({
                     (imagen) ?
                         <>
                             <p className="texto-videos display-6 mt-2 text-white text-center">{texto} </p>
-                            <img src={imagen} className="img-videos" title={ fuente } />
+                            <img src={imagen} className="img-videos" title={`Fuente: ${ fuente }`} />
                         </>
                     :
                         <p className="texto-videos display-6 mt-2 text-muted text-center">{texto} </p>

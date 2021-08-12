@@ -6,7 +6,6 @@ export const VerVideo = ({
     enlaceVideo,
     ninos,
     rutas,
-    fuente,
     id
 }) => {
 
@@ -17,12 +16,11 @@ export const VerVideo = ({
             <div className="container">
                 <div className="row text-center min-vh-100">
                     <div className="col-12 d-flex justify-content-center align-items-center">            
-                        {/* <iframe width="560" height="315" src={ enlaceVideo } title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>             */}
-                        <div class="ratio ratio-16x9">
+                        <div class="ratio ratio-16x9 mt-4">
                             <iframe src={ enlaceVideo }  title="YouTube video" allowfullscreen></iframe>
                         </div>
-                        <cite title="Source Title">Fuente: { fuente }</cite>
                     </div>
+                    <cite title="Source Title">Fuente: { enlaceVideo }</cite>
                 </div>
                 <Control 
                     rutas={ rutas }

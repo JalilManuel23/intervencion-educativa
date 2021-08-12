@@ -12,6 +12,7 @@ export const LavadoSocial = () => {
             parrafo1="Se define como un frote breve de todas las superficies de las manos con jabón, después de un enjuague al chorro de agua. Su objetivo es remover la suciedad. Es parte de la higiene personal.
 "           enlace="/ninos/lavado-manos/opciones"
             sonido={ audioIntro }
+            fuente="https://lh3.googleusercontent.com/1kr6mFzTHwVNf2SbNVa-Lrm-fsgmzKON19-vKh82UyrgbG2yqIrs0QYjKEpeEyIi9iNZwA=s96"
             rutas={ rutasLavadoNinos }
             id={ 9 }
         />

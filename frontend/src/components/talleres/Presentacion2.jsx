@@ -15,7 +15,6 @@ export const Presentacion2 = ({
     sonido,
     rutas,
     id,
-    // fuente
 }) => {
 
     let sound = usePlayAudio( sonido );
@@ -43,7 +42,7 @@ export const Presentacion2 = ({
                                 min-vh-95">
                                     <img src={ imagen }
                                         alt="adulto mujer"
-                                        // title={ fuente }
+                                        title={ `Fuente: ${ fuente }` }
                                         className="img-introduccion d-md-block animate__animated animate__bounceInUp mt-5"
                                     /> 
                                     <div className="contenedor-intro my-5 animate__animated animate__bounceInUp">
@@ -69,7 +68,7 @@ export const Presentacion2 = ({
                                 <img src={ imagen }
                                     alt="adulto mujer"
                                     className="img-introduccion-completa d-md-block animate__animated animate__bounceInUp"
-                                    // title={ fuente }
+                                    title={ `Fuente: ${ fuente }` }
                                 />                              
                             </div>
                         }

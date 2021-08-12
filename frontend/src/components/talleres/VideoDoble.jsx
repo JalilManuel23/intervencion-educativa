@@ -8,7 +8,6 @@ export const VideoDoble = ({
     enlace1, 
     enlace2,
     rutas,
-    fuente,
     id 
 }) => {
     return (
@@ -36,8 +35,9 @@ export const VideoDoble = ({
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Siguiente</span>
                 </button>
+                <cite title="Source Title">Fuente: { enlace1 }</cite><br/>
+                <cite title="Source Title">Fuente: { enlace2 }</cite>
             </div>
-            <cite title="Source Title">Fuente: { fuente }</cite>
             <Control 
                 rutas={ rutas }
                 id={ id }

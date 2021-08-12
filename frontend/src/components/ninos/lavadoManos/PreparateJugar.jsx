@@ -14,6 +14,7 @@ export const PreparateJugar = () => {
             jugar={true}
             sonido={ audioIntro }
             rutas={ rutasLavadoNinos }
+            fuente="https://i.pinimg.com/736x/56/a1/df/56a1df62056f1c7f5289a2e14d7b3215.jpg"
             id={ 12 }
         />
     )
