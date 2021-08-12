@@ -35,8 +35,10 @@ export const VideoDoble = ({
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Siguiente</span>
                 </button>
-                <cite title="Source Title">Fuente: { enlace1 }</cite><br/>
-                <cite title="Source Title">Fuente: { enlace2 }</cite>
+                <div>
+                    <p title="Source Title">Fuente: { enlace1 }</p>
+                    <p title="Source Title">Fuente: { enlace2 }</p>
+                </div>
             </div>
             <Control 
                 rutas={ rutas }

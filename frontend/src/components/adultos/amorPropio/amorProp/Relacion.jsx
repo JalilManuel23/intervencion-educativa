@@ -11,6 +11,7 @@ export const Relacion = () => {
             titulo="¿Cómo se relaciona la salud mental con el COVID-19?"
             parrafo1= "El tener una buena autoestima en tiempos de pandemia, te ayudará a estar más protegido, ya que el sistema inmune se fortalece, además de que el autocuidado será de vital importancia para ti."
             sonido={ audio }
+            fuente="https://lh3.googleusercontent.com/0W7pGasbszGxG7XBvfxqG8IF3ZIjYq67Zs9Uk7nakMAdHdMA98RaZMMuyjbWYg4pAp4q9mA=s151"
             id={ 10 }
             rutas={ rutasAmorPropio }
         />

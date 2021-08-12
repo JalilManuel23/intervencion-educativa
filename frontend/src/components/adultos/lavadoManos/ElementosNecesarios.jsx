@@ -27,11 +27,11 @@ export const ElementosNecesarios = () => {
             <div className="container"> 
                 <div className="d-flex flex-column flex-md-row justify-content-around mt-5 animate__animated animate__bounce">
                     <div className="d-flex flex-column align-items-center">
-                        <img src={ imagenes.agua } alt="agua" className="elementos" />
+                        <img src={ imagenes.agua } alt="agua" className="elementos" title={ `Fuente: https://lh3.googleusercontent.com/RZxKggmG6qx5I3WgmwG-Ydq320phC4hlNi9k-8GptjoJ31IgFETzI-VEwnx-cBtFIDdI=s85` } />
                         <h4 className="display-6 mt-1 nombre-elementos">Agua</h4>
                     </div>
                     <div className="d-flex flex-column align-items-center">
-                        <img src={ imagenes.jabon } alt="jabon"  className="elementos" />
+                        <img src={ imagenes.jabon } alt="jabon"  className="elementos" title={ `Fuente: https://lh3.googleusercontent.com/yoXs90ADt3JR97339rV5c4GKjbXK_IzTKB9J8nvwyAaACi2WT5pTG7xJjx0XcIiCVHLy5w=s85` } />
                         <h4 className="display-6 mt-1 nombre-elementos">Jabón</h4>
                     </div>
                 </div>

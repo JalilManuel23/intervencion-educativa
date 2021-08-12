@@ -13,6 +13,7 @@ export const DescubreAmbitos = () => {
             imagen={ imagenes.duda }
             sonido={ audio }
             rutas={ rutasAmorPropio }
+            fuente="https://lh3.googleusercontent.com/aDqZ09r5ko7UVG932jhy8dgcKQyufTWM7fg9lgbGeNxKtWqsMLvRfL2jLA3WTEsr31fW0Q=s85"
             id={ 7 }
         />
     )

@@ -11,6 +11,7 @@ export const DiaLavadoManos = () => {
             imagen={ imagenes.omsOps }
             parrafo1= "La Organización Panamericana de la salud y la Organización Mundial de la Salud invitan a celebrar el 15 de octubre el Día Mundial del Lavado de Manos."
             parrafo2 = " "
+            fuente="https://www.paho.org/hq/dmdocuments/2016/Corporate-Identity-Manual-Spanish.pdf"
             sonido={ audioIntro }
             rutas={ rutasLavadoAdultos }
             id={ 5 }

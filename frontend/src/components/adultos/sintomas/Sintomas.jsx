@@ -35,7 +35,7 @@ export const Sintomas = ({ tipo, color }) => {
                         <p className="fs-3"> Las personas con COVID-19 tienen los siguientes signos y sintomas:</p>
 
                         { imagen }
-                        <cite title="Source Title">Fuente: https://coronavirus.gob.mx/</cite>
+                        <p title="Source Title" className="text-black">Fuente: https://coronavirus.gob.mx/</p>
                         
                         <Link 
                             to={ enlace } 

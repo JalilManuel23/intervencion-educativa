@@ -13,6 +13,7 @@ export const IntroduccionLavadoManos = () => {
             parrafo1= "La higiene de manos se refiere al lavado de manos con agua y jabón, que se realiza para prevenir las infecciones asociadas con la atención en salud, aunque puede ser realizado con otros elementos. Es la manera más eficaz conocida para prevenir el contagio por COVID-19."
             sonido={ audioIntro }
             enlace="/adultos/lavado-manos/introduccion/historia"
+            fuente="https://lh3.googleusercontent.com/QfI2Hh9W-HbbUsmPngn561PREhDmdo8w-BKmleKfXhqkASPskntL7dV7mKQxcMPD_SBvWQ=s85"
             id={ 1 }
             rutas={ rutasLavadoAdultos }
         />

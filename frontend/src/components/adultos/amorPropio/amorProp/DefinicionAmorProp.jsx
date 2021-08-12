@@ -12,6 +12,7 @@ export const DefinicionAmorProp = () => {
             parrafo1= "Se refiere al aprecio que tiene una persona a si misma. Es la aceptación, el respeto, las percepciones, el valor, los pensamientos positivos y consideraciones que tenemos hacia nosotros mismos y que puede ser apreciado por quienes nos rodean."
             sonido={ audio }
             tipoImagen="completa"
+            fuente="https://lh3.googleusercontent.com/Wy29fNYtx4bwp_uOj5XEXnyoGcUyvACZedaXRfK05zBmOJLIZH8lZkGI2lB4jWyrw9S9=s93"
             id={ 6 }
             rutas={ rutasAmorPropio }
         />

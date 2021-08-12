@@ -12,6 +12,7 @@ export const LavadoSocial = () => {
             parrafo1="Es la eliminación de los microorganismos que se realiza con agua y jabón común, removiendo en un 80% dichos organismos presentes en nuestras manos."
             parrafo2="Su principal objetivo es remover la suciedad. Es parte de la higiene personal."
             enlace="/adultos/lavado-manos/opciones"
+            fuente="https://lh3.googleusercontent.com/BtQSpvULSTimjn1en9FL7mLrdVV9PVXp8OrtkPZBXZ4hWy1Co8hocC_v3yC_lli2oObt=s96"
             sonido={ audioIntro }
             rutas={ rutasLavadoAdultos }
             id={ 8 }
