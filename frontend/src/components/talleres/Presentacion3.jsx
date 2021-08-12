@@ -13,6 +13,9 @@ export const Presentacion3 = ({
     parrafo,
     sonido,
     rutas,
+    fuente1,
+    fuente2,
+    fuente3,
     id
 }) => {
 
@@ -32,9 +35,9 @@ export const Presentacion3 = ({
                     </p>
                 
                     <div className="d-flex justify-content-between">
-                        <img src={ imagen } className="img-historia" />
-                        <img src={ imagen2 } className="img-historia" />
-                        <img src={ imagen3 } className="img-historia" />
+                        <img src={ imagen } className="img-historia" title={ fuente1 } />
+                        <img src={ imagen2 } className="img-historia" title={ fuente2 } />
+                        <img src={ imagen3 } className="img-historia" title={ fuente3 } />
                     </div>
                 </div>
                 <AudioPlayer sound={ sound } />

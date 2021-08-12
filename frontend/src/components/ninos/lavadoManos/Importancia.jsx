@@ -11,6 +11,7 @@ export const Importancia = () => {
             texto="Descúbrelo en el siguiente video"
             imagen={ imagenes.pregunta }
             sonido={ audioIntro }
+            fuente="Fuente: https://lh3.googleusercontent.com/a8nGfpU1OVkq-KoU_6omACccUg1Ak5w9xNDAnoK8R1cuH03Q-Kqe5GIsgRdy6vSTIHi0pQ=s85"
             id={ 2 }
             rutas={ rutasLavadoNinos }
         />

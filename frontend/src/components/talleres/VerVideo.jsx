@@ -6,6 +6,7 @@ export const VerVideo = ({
     enlaceVideo,
     ninos,
     rutas,
+    fuente,
     id
 }) => {
 
@@ -20,6 +21,7 @@ export const VerVideo = ({
                         <div class="ratio ratio-16x9">
                             <iframe src={ enlaceVideo }  title="YouTube video" allowfullscreen></iframe>
                         </div>
+                        <cite title="Source Title">Fuente: { fuente }</cite>
                     </div>
                 </div>
                 <Control 

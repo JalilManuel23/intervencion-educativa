@@ -9,6 +9,7 @@ export const Presentacion4 = ({
     imagen,
     parrafo,
     sonido,
+    fuente,
     enlace
 }) => {
     let sound = usePlayAudio( sonido );
@@ -22,7 +23,7 @@ export const Presentacion4 = ({
                                     <p className="lh-sm mb-4 ">
                                         { parrafo }
                                     </p>
-                                    <img src={ imagen } /> 
+                                    <img src={ imagen } title={ fuente } /> 
                                 </div>
                             </div>
                             <Link

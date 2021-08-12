@@ -10,7 +10,8 @@ export const Presentacion1 = ({
     parrafo,
     imagen,
     enlace,
-    sonido
+    sonido,
+    fuente
 }) => {
 
     let sound = usePlayAudio( sonido );
@@ -27,7 +28,7 @@ export const Presentacion1 = ({
                 </div>
 
                 <div className="col-12 text-center my-5">
-                    <img className="img-fluid img-presen" src={imagen} />
+                    <img className="img-fluid img-presen" src={imagen} title={ `Fuente: ${fuente}` } />
                 </div>
 
                 <div className="d-flex justify-content-end">

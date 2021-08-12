@@ -5,10 +5,10 @@ import { Control } from '../general/control/Control';
 
 export const VideoDoble = ({ 
     titulo, 
-    enlace, 
     enlace1, 
     enlace2,
     rutas,
+    fuente,
     id 
 }) => {
     return (
@@ -37,6 +37,7 @@ export const VideoDoble = ({
                     <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
+            <cite title="Source Title">Fuente: { fuente }</cite>
             <Control 
                 rutas={ rutas }
                 id={ id }

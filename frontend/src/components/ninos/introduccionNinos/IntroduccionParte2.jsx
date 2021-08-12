@@ -29,7 +29,7 @@ export const IntroduccionParte2 = () => {
                             que se llama "coronavirus 2019" ¡y que nadie conocía!
                         </p>
 
-                        <img src={imagenes.sorprendido2} className="img-sorprendido mt-3 animate__bounceIn" alt="expresión" />
+                        <img src={imagenes.sorprendido2} className="img-sorprendido mt-3 animate__bounceIn" alt="expresión" title="Fuente: https://lh3.googleusercontent.com/SdpIQ6M4gIyRKBxb5NuJ31N0hYonSKfRcZYuaWaG7GEBp-rRe1YDoKWW4mnNTlppTUmD=s85" />
                     </div>
                 </div>
 
