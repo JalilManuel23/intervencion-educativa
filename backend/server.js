@@ -17,10 +17,14 @@ app.use(express.json());
 // app.use(bodyParser.urlencoded({extended: false}));
 
 
-// // Global variables
-// app.use((req, res, next) => {
-//      next();
-// });
+// Global variables
+app.use((req, res, next) => {
+     next();
+});
+
+// Rutas
+app.use(require('./routes/calificaciones.routes'));
+
 
 app.use(express.static(path.join(__dirname,'public')));
 
