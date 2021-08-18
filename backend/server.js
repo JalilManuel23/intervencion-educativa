@@ -14,9 +14,6 @@ app.set('port', process.env.PORT || 3100);
 app.use(morgan('dev'));
 app.use(express.json());
 
-// app.use(bodyParser.urlencoded({extended: false}));
-
-
 // Global variables
 app.use((req, res, next) => {
      next();

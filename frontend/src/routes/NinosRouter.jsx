@@ -34,6 +34,8 @@ import { VideoAmor } from '../components/ninos/amorPropio/amorProp/VideoAmor';
 import { Final } from '../components/ninos/amorPropio/amorProp/Final';
 import { PreparateJugarAmor } from '../components/ninos/amorPropio/amorProp/PreparateJugarAmor';
 import { MemoramaAmor } from '../components/ninos/amorPropio/amorProp/MemoramaAmor';
+import { CuestionarioLavado } from '../components/ninos/lavadoManos/CuestionarioLavado';
+import { CuestionarioAmor } from '../components/ninos/amorPropio/CuestionarioAmor';
 
 export const NinosRouter = () => {
     return (
@@ -68,6 +70,7 @@ export const NinosRouter = () => {
             <Route exact path="/ninos/lavado-manos/preparate-jugar" component={ PreparateJugar } />
             <Route exact path="/ninos/lavado-manos/memorama-elementos" component={ MemoramaElementos } />
             <Route exact path="/ninos/lavado-manos/tecnica-lavado" component={ Videos } />
+            <Route exact path="/ninos/lavado-manos/cuestionario" component={ CuestionarioLavado } />
 
             {/* Amor propio */}
             <Route exact path="/ninos/amor-propio/presentacion" component={ BienvenidaAmorProp } />
@@ -77,6 +80,7 @@ export const NinosRouter = () => {
             <Route exact path="/ninos/amor-propio/salud-mental/definicion-pt2" component={ Definicion2 } />
             <Route exact path="/ninos/amor-propio/salud-mental/como-cuidar-salud-mental" component={ ComoCuidar } />
             <Route exact path="/ninos/amor-propio/salud-mental/como-fortalecer-salud-mental" component={ Fortalecer } />
+            <Route exact path="/ninos/amor-propio/cuestionario" component={ CuestionarioAmor } />
 
             <Route exact path="/ninos/amor-propio/definicion" component={ DefinicionAmorProp } />
             <Route exact path="/ninos/amor-propio/presentacion-video-amor-propio" component={ PresenVideo } />

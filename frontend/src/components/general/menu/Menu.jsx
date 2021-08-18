@@ -18,7 +18,7 @@ export const Menu = () => {
                 max: 5,
                 step: 1
             },
-            inputValue: 1
+            inputValue: 5
         })
 
         fetch('/agregar_calif', {

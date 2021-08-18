@@ -32,7 +32,7 @@ export const Opciones = () => {
         {
             "texto": "Cuestionario",
             "imagen": imagenes.cinco, 
-            "ruta": "/ninos/lavado-manos/introduccion",
+            "ruta": "/ninos/lavado-manos/cuestionario",
             "color": "#f9d541"
         },
     ]

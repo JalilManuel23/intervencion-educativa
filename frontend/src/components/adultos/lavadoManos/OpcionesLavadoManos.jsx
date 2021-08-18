@@ -29,7 +29,7 @@ export const OpcionesLavadoManos = () => {
         {
             "texto": "Cuestionario",
             "imagen": imagenes.cinco, 
-            "ruta": "/adultos/lavado-manos/introduccion"
+            "ruta": "/adultos/lavado-manos/cuestionario"
         },
     ]
 

@@ -8,6 +8,7 @@ import { Final } from '../components/adultos/amorPropio/amorProp/Final';
 import { Importancia } from '../components/adultos/amorPropio/amorProp/Importancia';
 import { Relacion } from '../components/adultos/amorPropio/amorProp/Relacion';
 import { VideoImportancia } from '../components/adultos/amorPropio/amorProp/VideoImportancia';
+import { CuestionarioAmor } from '../components/adultos/amorPropio/CuestionarioAmor';
 import { OpcionesAmorPropio } from '../components/adultos/amorPropio/OpcionesAmorPropio';
 import { PresentacionAmorPropio } from '../components/adultos/amorPropio/PresentacionAmorPropio';
 import { ComoCuidar } from '../components/adultos/amorPropio/saludMental/ComoCuidar';
@@ -16,6 +17,7 @@ import { Definicion2 } from '../components/adultos/amorPropio/saludMental/Defini
 import { VideoComoCuidar } from '../components/adultos/amorPropio/saludMental/VideoComoCuidar';
 import { Introduccion } from '../components/adultos/introduccion/Introduccion';
 import { Mapa } from '../components/adultos/introduccion/Mapa';
+import { CuestionarioLavadoManos } from '../components/adultos/lavadoManos/CuestionarioLavadoManos';
 
 import { DiaLavadoManos } from '../components/adultos/lavadoManos/DiaLavadoManos'
 import { ElementosNecesarios } from '../components/adultos/lavadoManos/ElementosNecesarios'
@@ -66,6 +68,7 @@ export const AdultosRouter = () => {
             <Route exact path="/adultos/lavado-manos/videos/5-momentos-oms" component={ Video2 } />
             <Route exact path="/adultos/lavado-manos/tecnica-lavado" component={ PresentacionTecnicaLavado } />
             <Route exact path="/adultos/lavado-manos/videos/tecnica-lavado-manos" component={ VideoLavadoManos } />
+            <Route exact path="/adultos/lavado-manos/cuestionario" component={ CuestionarioLavadoManos } />
 
             {/* Taller 2 de adultos */}
             <Route exact path="/adultos/amor-propio/presentacion" component={ PresentacionAmorPropio } />
@@ -74,6 +77,7 @@ export const AdultosRouter = () => {
             <Route exact path="/adultos/amor-propio/salud-mental/definicion-pt2" component={ Definicion2 } />
             <Route exact path="/adultos/amor-propio/salud-mental/como-cuidar-salud-mental" component={ ComoCuidar } />
             <Route exact path="/adultos/amor-propio/salud-mental/videos/como-cuidar-salud-mental" component={ VideoComoCuidar } />
+            <Route exact path="/adultos/amor-propio/cuestionario" component={ CuestionarioAmor } />
 
             <Route exact path="/adultos/amor-propio/definicion" component={ DefinicionAmorProp } />
             <Route exact path="/adultos/amor-propio/descubre-ambitos" component={ DescubreAmbitos } />
