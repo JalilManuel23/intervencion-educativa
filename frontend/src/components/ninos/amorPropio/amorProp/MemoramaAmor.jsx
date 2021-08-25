@@ -31,9 +31,9 @@ export const MemoramaAmor = () => {
         <Memorama 
             datos={ datos }
             titulo='Memorama "Amor Propio"'
-            enlace="/ninos/lavado-manos/opciones"
+            enlace="/ninos/lavado-manos/final"
             rutas={ rutasAmorPropio }
-            id={ 13 }
+            id={ 10 }
         />
     )
 }
